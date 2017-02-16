@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Get the number of connected players.\n\nOn a client this returns 1 (the server)."), ActionCategory(ActionCategory.Network)]
+    [ActionCategory(ActionCategory.Network), HutongGames.PlayMaker.Tooltip("Get the number of connected players.\n\nOn a client this returns 1 (the server).")]
     public class NetworkGetConnectionsCount : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("Number of connected players."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Number of connected players.")]
         public FsmInt connectionsCount;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;

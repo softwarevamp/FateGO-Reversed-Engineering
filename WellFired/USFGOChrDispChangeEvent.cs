@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using UnityEngine;
 
-    [USequencerFriendlyName("FGO Set Chr Color Disp"), USequencerEvent("FGO/Character/Set Chr Disp"), USequencerEventHideDuration]
+    [USequencerEventHideDuration, USequencerFriendlyName("FGO Set Chr Color Disp"), USequencerEvent("FGO/Character/Set Chr Disp")]
     public class USFGOChrDispChangeEvent : USEventBase
     {
         private List<GameObject> dispObjects;

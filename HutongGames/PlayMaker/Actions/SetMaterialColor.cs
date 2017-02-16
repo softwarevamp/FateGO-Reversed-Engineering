@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Material), HutongGames.PlayMaker.Tooltip("Sets a named color value in a game object's material.")]
+    [HutongGames.PlayMaker.Tooltip("Sets a named color value in a game object's material."), ActionCategory(ActionCategory.Material)]
     public class SetMaterialColor : ComponentAction<Renderer>
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Set the parameter value.")]
+        [HutongGames.PlayMaker.Tooltip("Set the parameter value."), RequiredField]
         public FsmColor color;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the value is animated.")]
         public bool everyFrame;
@@ -17,7 +17,7 @@
         public FsmMaterial material;
         [HutongGames.PlayMaker.Tooltip("GameObjects can have multiple materials. Specify an index to target a specific material.")]
         public FsmInt materialIndex;
-        [UIHint(UIHint.NamedColor), HutongGames.PlayMaker.Tooltip("A named color parameter in the shader.")]
+        [HutongGames.PlayMaker.Tooltip("A named color parameter in the shader."), UIHint(UIHint.NamedColor)]
         public FsmString namedColor;
 
         private void DoSetMaterialColor()

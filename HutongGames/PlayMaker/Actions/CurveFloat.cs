@@ -11,7 +11,7 @@
         [Tooltip("Calculation lets you set a type of curve deformation that will be applied to otherwise linear move between fromValue and toValue.")]
         public CurveFsmAction.Calculation calculation;
         private bool finishInNextStep;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmFloat floatVariable;
         [RequiredField]
         public FsmFloat fromValue;

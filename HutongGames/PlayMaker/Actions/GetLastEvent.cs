@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Gets the event that caused the transition to the current state, and stores it in a String Variable."), ActionCategory(ActionCategory.StateMachine)]
+    [ActionCategory(ActionCategory.StateMachine), Tooltip("Gets the event that caused the transition to the current state, and stores it in a String Variable.")]
     public class GetLastEvent : FsmStateAction
     {
         [UIHint(UIHint.Variable)]

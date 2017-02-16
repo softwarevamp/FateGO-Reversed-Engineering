@@ -3,12 +3,12 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Convert), Tooltip("Converts a Material variable to an Object variable. Useful if you want to use Set Property (which only works on Object variables).")]
+    [Tooltip("Converts a Material variable to an Object variable. Useful if you want to use Set Property (which only works on Object variables)."), ActionCategory(ActionCategory.Convert)]
     public class ConvertMaterialToObject : FsmStateAction
     {
         [Tooltip("Repeat every frame. Useful if the Material variable is changing.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), Tooltip("The Material variable to convert to an Object."), RequiredField]
+        [UIHint(UIHint.Variable), RequiredField, Tooltip("The Material variable to convert to an Object.")]
         public FsmMaterial materialVariable;
         [Tooltip("Store the result in an Object variable."), RequiredField, UIHint(UIHint.Variable)]
         public FsmObject objectVariable;

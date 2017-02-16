@@ -3,13 +3,13 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.UnityObject), Tooltip("Sets the value of an Object Variable.")]
+    [Tooltip("Sets the value of an Object Variable."), ActionCategory(ActionCategory.UnityObject)]
     public class SetObjectValue : FsmStateAction
     {
         public bool everyFrame;
         [RequiredField]
         public FsmObject objectValue;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmObject objectVariable;
 
         public override void OnEnter()

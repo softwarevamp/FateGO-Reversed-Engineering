@@ -7,7 +7,7 @@
     [ActionCategory("FGOAction"), HutongGames.PlayMaker.Tooltip("Creates a Game Object, usually from a Prefab.")]
     public class FGOActorTreasureEffect : FsmStateAction
     {
-        [RequiredField, CheckForComponent(typeof(BattleActorControl)), HutongGames.PlayMaker.Tooltip("actor game object. require: ResourceFolder == ACTORE_EFFECT")]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("actor game object. require: ResourceFolder == ACTORE_EFFECT"), CheckForComponent(typeof(BattleActorControl))]
         public FsmGameObject actorGameObject;
         public FlipMode flipMode;
         [HutongGames.PlayMaker.Tooltip("GameObject name to create. Usually a Prefab.")]

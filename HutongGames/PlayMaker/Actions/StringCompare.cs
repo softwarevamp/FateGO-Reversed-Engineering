@@ -11,9 +11,9 @@
         [Tooltip("Repeat every frame. Useful if any of the strings are changing over time.")]
         public bool everyFrame;
         public FsmEvent notEqualEvent;
-        [UIHint(UIHint.Variable), Tooltip("Store the true/false result in a bool variable.")]
+        [Tooltip("Store the true/false result in a bool variable."), UIHint(UIHint.Variable)]
         public FsmBool storeResult;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmString stringVariable;
 
         private void DoStringCompare()

@@ -4,12 +4,12 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Network), HutongGames.PlayMaker.Tooltip("Get the network OnDisconnectedFromServer.")]
+    [HutongGames.PlayMaker.Tooltip("Get the network OnDisconnectedFromServer."), ActionCategory(ActionCategory.Network)]
     public class NetworkGetNetworkDisconnectionInfos : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("The connection to the system has been closed.")]
         public FsmEvent disConnectedEvent;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Disconnection label")]
+        [HutongGames.PlayMaker.Tooltip("Disconnection label"), UIHint(UIHint.Variable)]
         public FsmString disconnectionLabel;
         [HutongGames.PlayMaker.Tooltip("The connection to the system has been lost, no reliable packets could be delivered.")]
         public FsmEvent lostConnectionEvent;

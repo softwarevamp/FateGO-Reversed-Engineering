@@ -127,9 +127,9 @@ public class BattleServantData
         {
             this.np = this.getMaxNp();
         }
-        if (this.np >= 0)
+        if (this.np <= 0)
         {
-            this.np = 0x7530;
+            this.np = 0;
         }
         if (flg)
         {
@@ -514,14 +514,8 @@ public class BattleServantData
     public int getAttri() => 
         this.svtdata.attri;
 
-    public int getBaseATK()
-    {
-        if (this.isEnemy)
-        {
-            return 0;
-        }
-        return this.atk;
-    }
+    public int getBaseATK() => 
+        this.atk;
 
     public int getBaseStarRate() => 
         this.svtdata.starRate;
@@ -756,7 +750,7 @@ public class BattleServantData
     }
 
     public int getMaxLevel() => 
-        this.maxlevel;
+        this.maxleve;
 
     public int getMaxNextTDTurn() => 
         this.maxtpturn;
@@ -1614,10 +1608,15 @@ public class BattleServantData
                 this.isChargeSkill |= data2.TurnProgress(1, 0);
             }
         }
-        if (this.isEnemy)
+        if (!this.isUseNP)
         {
-            this.hp = 0;
+            if ((!this.isTDSeraled() && this.isNobleAction()) && (0 < this.treasuredvcId))
+            {
+                this.updownNextTDTurn(-1);
+            }
+            return flag;
         }
+        this.isUseNP = false;
         return flag;
     }
 
@@ -1702,7 +1701,7 @@ public class BattleServantData
     public void useSkill(BattleSkillInfoData skillInfo)
     {
         SkillLvEntity entity = SingletonMonoBehaviour<DataManager>.Instance.getMasterData<SkillLvMaster>(DataNameKind.Kind.SKILL_LEVEL).getEntityFromId<SkillLvEntity>(skillInfo.skillId, skillInfo.skilllv);
-        skillInfo.chargeTurn = 0;
+        skillInfo.chargeTurn = entity.chargeTurn;
     }
 
     public int BattleSize =>

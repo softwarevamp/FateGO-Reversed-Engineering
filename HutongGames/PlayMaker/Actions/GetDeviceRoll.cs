@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Gets the rotation of the device around its z axis (into the screen). For example when you steer with the iPhone in a driving game."), ActionCategory(ActionCategory.Device)]
+    [ActionCategory(ActionCategory.Device), HutongGames.PlayMaker.Tooltip("Gets the rotation of the device around its z axis (into the screen). For example when you steer with the iPhone in a driving game.")]
     public class GetDeviceRoll : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("How the user is expected to hold the device (where angle will be zero).")]

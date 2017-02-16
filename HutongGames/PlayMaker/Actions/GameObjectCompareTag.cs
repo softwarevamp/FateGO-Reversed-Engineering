@@ -12,9 +12,9 @@
         public FsmEvent falseEvent;
         [RequiredField, Tooltip("The GameObject to test.")]
         public FsmGameObject gameObject;
-        [UIHint(UIHint.Variable), Tooltip("Store the result in a Bool variable.")]
+        [Tooltip("Store the result in a Bool variable."), UIHint(UIHint.Variable)]
         public FsmBool storeResult;
-        [Tooltip("The Tag to check for."), RequiredField, UIHint(UIHint.Tag)]
+        [UIHint(UIHint.Tag), Tooltip("The Tag to check for."), RequiredField]
         public FsmString tag;
         [Tooltip("Event to send if the GameObject has the Tag.")]
         public FsmEvent trueEvent;

@@ -5,7 +5,7 @@
     using System.Text.RegularExpressions;
     using UnityEngine;
 
-    [USequencerEvent("FGO/Play Audio"), USequencerFriendlyName("FGO Play Audio"), USequencerEventHideDuration]
+    [USequencerEventHideDuration, USequencerEvent("FGO/Play Audio"), USequencerFriendlyName("FGO Play Audio")]
     public class USFGOPlayAudioEvent : USEventBase
     {
         public AudioClip audioClip;

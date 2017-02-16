@@ -3,13 +3,13 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.String), Tooltip("Sets the value of a String Variable.")]
+    [Tooltip("Sets the value of a String Variable."), ActionCategory(ActionCategory.String)]
     public class SetStringValue : FsmStateAction
     {
         public bool everyFrame;
         [RequiredField]
         public FsmString stringValue;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmString stringVariable;
 
         private void DoSetStringValue()

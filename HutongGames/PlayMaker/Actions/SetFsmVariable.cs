@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Set the value of a variable in another FSM.")]
+    [HutongGames.PlayMaker.Tooltip("Set the value of a variable in another FSM."), ActionCategory(ActionCategory.StateMachine)]
     public class SetFsmVariable : FsmStateAction
     {
         private GameObject cachedGO;
@@ -12,9 +12,9 @@
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
-        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM"), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM")]
         public FsmOwnerDefault gameObject;
-        [HideTypeFilter, RequiredField]
+        [RequiredField, HideTypeFilter]
         public FsmVar setValue;
         private PlayMakerFSM sourceFsm;
         private INamedVariable sourceVariable;

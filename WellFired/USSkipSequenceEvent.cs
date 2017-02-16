@@ -2,7 +2,7 @@
 {
     using System;
 
-    [USequencerFriendlyName("Skip uSequence"), USequencerEvent("Sequence/Skip uSequence"), USequencerEventHideDuration]
+    [USequencerEvent("Sequence/Skip uSequence"), USequencerFriendlyName("Skip uSequence"), USequencerEventHideDuration]
     public class USSkipSequenceEvent : USEventBase
     {
         public USSequencer sequence;

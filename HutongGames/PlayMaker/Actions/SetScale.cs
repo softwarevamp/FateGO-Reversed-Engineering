@@ -9,7 +9,7 @@
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;
-        [HutongGames.PlayMaker.Tooltip("The GameObject to scale."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to scale.")]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Perform in LateUpdate. This is useful if you want to override the position of objects that are animated or otherwise positioned in Update.")]
         public bool lateUpdate;

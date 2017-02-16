@@ -11,13 +11,13 @@
         public FsmString externalIPAddress;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the external port of the network interface. This will only be populated after some external connection has been made.")]
         public FsmInt externalPort;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the GUID for this player, used when connecting with NAT punchthrough.")]
+        [HutongGames.PlayMaker.Tooltip("Get the GUID for this player, used when connecting with NAT punchthrough."), UIHint(UIHint.Variable)]
         public FsmString guid;
         [RequiredField, HutongGames.PlayMaker.Tooltip("The player connection index.")]
         public FsmInt index;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the IP address of this player."), ActionSection("Result")]
+        [HutongGames.PlayMaker.Tooltip("Get the IP address of this player."), ActionSection("Result"), UIHint(UIHint.Variable)]
         public FsmString IpAddress;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the port of this player.")]
+        [HutongGames.PlayMaker.Tooltip("Get the port of this player."), UIHint(UIHint.Variable)]
         public FsmInt port;
 
         private void getPlayerProperties()

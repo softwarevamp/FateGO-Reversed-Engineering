@@ -4,13 +4,13 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Camera), HutongGames.PlayMaker.Tooltip("Sets the Culling Mask used by the Camera.")]
+    [HutongGames.PlayMaker.Tooltip("Sets the Culling Mask used by the Camera."), ActionCategory(ActionCategory.Camera)]
     public class SetCameraCullingMask : ComponentAction<Camera>
     {
-        [HutongGames.PlayMaker.Tooltip("Cull these layers."), UIHint(UIHint.Layer)]
+        [UIHint(UIHint.Layer), HutongGames.PlayMaker.Tooltip("Cull these layers.")]
         public FsmInt[] cullingMask;
         public bool everyFrame;
-        [RequiredField, CheckForComponent(typeof(Camera))]
+        [CheckForComponent(typeof(Camera)), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Invert the mask, so you cull all layers except those defined above.")]
         public FsmBool invertMask;

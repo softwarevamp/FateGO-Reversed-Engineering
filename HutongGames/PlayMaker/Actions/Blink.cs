@@ -8,7 +8,7 @@
     public class Blink : ComponentAction<Renderer>
     {
         private bool blinkOn;
-        [HutongGames.PlayMaker.Tooltip("The GameObject to blink on/off."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to blink on/off.")]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Ignore TimeScale. Useful if the game is paused.")]
         public bool realTime;

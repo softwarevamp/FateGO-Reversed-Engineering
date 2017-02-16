@@ -4,13 +4,13 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Vector3), HutongGames.PlayMaker.Tooltip("Clamps the Magnitude of Vector3 Variable.")]
+    [HutongGames.PlayMaker.Tooltip("Clamps the Magnitude of Vector3 Variable."), ActionCategory(ActionCategory.Vector3)]
     public class Vector3ClampMagnitude : FsmStateAction
     {
         public bool everyFrame;
         [RequiredField]
         public FsmFloat maxLength;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmVector3 vector3Variable;
 
         private void DoVector3ClampMagnitude()

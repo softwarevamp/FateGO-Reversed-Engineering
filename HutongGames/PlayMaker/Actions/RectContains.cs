@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Tests if a point is inside a rectangle."), ActionCategory(ActionCategory.Rect)]
+    [ActionCategory(ActionCategory.Rect), HutongGames.PlayMaker.Tooltip("Tests if a point is inside a rectangle.")]
     public class RectContains : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
@@ -15,7 +15,7 @@
         public FsmVector3 point;
         [HutongGames.PlayMaker.Tooltip("Rectangle to test."), RequiredField]
         public FsmRect rectangle;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the result in a variable.")]
+        [HutongGames.PlayMaker.Tooltip("Store the result in a variable."), UIHint(UIHint.Variable)]
         public FsmBool storeResult;
         [HutongGames.PlayMaker.Tooltip("Event to send if the Point is inside the Rectangle.")]
         public FsmEvent trueEvent;

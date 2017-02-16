@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory("iTween"), HutongGames.PlayMaker.Tooltip("Pause an iTween action.")]
+    [HutongGames.PlayMaker.Tooltip("Pause an iTween action."), ActionCategory("iTween")]
     public class iTweenPause : FsmStateAction
     {
         [RequiredField]

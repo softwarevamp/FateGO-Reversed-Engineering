@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("NGUI/UI/NGUI Panel"), ExecuteInEditMode]
+[ExecuteInEditMode, AddComponentMenu("NGUI/UI/NGUI Panel")]
 public class UIPanel : UIRect
 {
     public bool alwaysOnScreen;
@@ -20,17 +20,17 @@ public class UIPanel : UIRect
     private int mAlphaFrameID;
     [SerializeField]
     private Vector2 mClipOffset = Vector2.zero;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private UIDrawCall.Clipping mClipping;
     [HideInInspector, SerializeField]
     private Vector4 mClipRange = new Vector4(0f, 0f, 300f, 200f);
-    [HideInInspector, SerializeField]
-    private Vector2 mClipSoftness = new Vector2(4f, 4f);
     [SerializeField, HideInInspector]
+    private Vector2 mClipSoftness = new Vector2(4f, 4f);
+    [HideInInspector, SerializeField]
     private Texture2D mClipTexture;
     private static Vector3[] mCorners = new Vector3[4];
     private float mCullTime;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private int mDepth;
     private bool mForced;
     private bool mHalfPixelOffset;

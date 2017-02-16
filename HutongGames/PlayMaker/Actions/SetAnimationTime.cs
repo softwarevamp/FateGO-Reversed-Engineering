@@ -4,13 +4,13 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Animation), HutongGames.PlayMaker.Tooltip("Sets the current Time of an Animation, Normalize time means 0 (start) to 1 (end); useful if you don't care about the exact time. Check Every Frame to update the time continuosly.")]
+    [HutongGames.PlayMaker.Tooltip("Sets the current Time of an Animation, Normalize time means 0 (start) to 1 (end); useful if you don't care about the exact time. Check Every Frame to update the time continuosly."), ActionCategory(ActionCategory.Animation)]
     public class SetAnimationTime : ComponentAction<Animation>
     {
-        [RequiredField, UIHint(UIHint.Animation)]
+        [UIHint(UIHint.Animation), RequiredField]
         public FsmString animName;
         public bool everyFrame;
-        [CheckForComponent(typeof(Animation)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(Animation))]
         public FsmOwnerDefault gameObject;
         public bool normalized;
         public FsmFloat time;

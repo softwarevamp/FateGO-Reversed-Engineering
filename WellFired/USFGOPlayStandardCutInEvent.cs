@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("FGO/CutIn/Play Standard CutIn(Servant)"), USequencerFriendlyName("FGO Play Standard CutIn"), USequencerEventHideDuration]
+    [USequencerEventHideDuration, USequencerFriendlyName("FGO Play Standard CutIn"), USequencerEvent("FGO/CutIn/Play Standard CutIn(Servant)")]
     public class USFGOPlayStandardCutInEvent : USEventBase
     {
         private Animation[] animations;

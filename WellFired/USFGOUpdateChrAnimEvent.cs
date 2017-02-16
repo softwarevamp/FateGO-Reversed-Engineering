@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("FGO/Character/Update Character Animation"), USequencerFriendlyName("FGO Update Character Animation")]
+    [USequencerFriendlyName("FGO Update Character Animation"), USequencerEvent("FGO/Character/Update Character Animation")]
     public class USFGOUpdateChrAnimEvent : USEventBase
     {
         private Animation anim;

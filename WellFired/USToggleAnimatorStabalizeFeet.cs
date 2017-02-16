@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("Animation (Mecanim)/Animator/Toggle Stabalize Feet"), USequencerFriendlyName("Toggle Stabalize Feet"), USequencerEventHideDuration]
+    [USequencerFriendlyName("Toggle Stabalize Feet"), USequencerEvent("Animation (Mecanim)/Animator/Toggle Stabalize Feet"), USequencerEventHideDuration]
     public class USToggleAnimatorStabalizeFeet : USEventBase
     {
         private bool prevStabalizeFeet;

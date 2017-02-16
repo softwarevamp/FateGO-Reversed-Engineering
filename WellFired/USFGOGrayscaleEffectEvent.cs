@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("FGO/Effect/Grayscale Effect"), USequencerEventHideDuration, USequencerFriendlyName("FGO Grayscale Effect")]
+    [USequencerFriendlyName("FGO Grayscale Effect"), USequencerEvent("FGO/Effect/Grayscale Effect"), USequencerEventHideDuration]
     public class USFGOGrayscaleEffectEvent : USEventBase
     {
         private float currentCurveSampleTime;

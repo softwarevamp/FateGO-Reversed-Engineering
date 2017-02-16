@@ -11,13 +11,13 @@
         public RotationAxes axes;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;
-        [HutongGames.PlayMaker.Tooltip("The GameObject to rotate."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to rotate.")]
         public FsmOwnerDefault gameObject;
         [HasFloatSlider(-360f, 360f), RequiredField]
         public FsmFloat maximumX;
-        [HasFloatSlider(-360f, 360f), RequiredField]
+        [RequiredField, HasFloatSlider(-360f, 360f)]
         public FsmFloat maximumY;
-        [HasFloatSlider(-360f, 360f), RequiredField]
+        [RequiredField, HasFloatSlider(-360f, 360f)]
         public FsmFloat minimumX;
         [RequiredField, HasFloatSlider(-360f, 360f)]
         public FsmFloat minimumY;

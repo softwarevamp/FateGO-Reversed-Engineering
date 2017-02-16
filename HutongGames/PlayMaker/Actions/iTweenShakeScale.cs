@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Randomly shakes a GameObject's scale by a diminishing amount over time."), ActionCategory("iTween")]
+    [ActionCategory("iTween"), HutongGames.PlayMaker.Tooltip("Randomly shakes a GameObject's scale by a diminishing amount over time.")]
     public class iTweenShakeScale : iTweenFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("The time in seconds the animation will wait before beginning.")]

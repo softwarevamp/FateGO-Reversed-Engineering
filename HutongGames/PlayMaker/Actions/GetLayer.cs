@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Gets a Game Object's Layer and stores it in an Int Variable."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), Tooltip("Gets a Game Object's Layer and stores it in an Int Variable.")]
     public class GetLayer : FsmStateAction
     {
         public bool everyFrame;

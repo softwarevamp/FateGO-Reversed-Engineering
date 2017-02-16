@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the Drag of a Game Object's Rigid Body."), HelpUrl("http://hutonggames.com/playmakerforum/index.php?topic=4734.0"), ActionCategory(ActionCategory.Physics)]
+    [HelpUrl("http://hutonggames.com/playmakerforum/index.php?topic=4734.0"), ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Sets the Drag of a Game Object's Rigid Body.")]
     public class SetDrag : ComponentAction<Rigidbody>
     {
         [RequiredField, HasFloatSlider(0f, 10f)]

@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Performs boolean operations on 2 Bool Variables."), ActionCategory(ActionCategory.Math)]
+    [ActionCategory(ActionCategory.Math), Tooltip("Performs boolean operations on 2 Bool Variables.")]
     public class BoolOperator : FsmStateAction
     {
         [RequiredField, Tooltip("The first Bool variable.")]

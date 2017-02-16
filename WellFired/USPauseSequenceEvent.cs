@@ -2,7 +2,7 @@
 {
     using System;
 
-    [USequencerFriendlyName("Pause uSequence"), USequencerEventHideDuration, USequencerEvent("Sequence/Pause uSequence")]
+    [USequencerEventHideDuration, USequencerFriendlyName("Pause uSequence"), USequencerEvent("Sequence/Pause uSequence")]
     public class USPauseSequenceEvent : USEventBase
     {
         public USSequencer sequence;

@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the GUISkin used by GUI elements."), ActionCategory(ActionCategory.GUI)]
+    [ActionCategory(ActionCategory.GUI), HutongGames.PlayMaker.Tooltip("Sets the GUISkin used by GUI elements.")]
     public class SetGUISkin : FsmStateAction
     {
         public FsmBool applyGlobally;

@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("GUILayout Label for simple text.")]
+    [HutongGames.PlayMaker.Tooltip("GUILayout Label for simple text."), ActionCategory(ActionCategory.GUILayout)]
     public class GUILayoutTextLabel : GUILayoutAction
     {
         [HutongGames.PlayMaker.Tooltip("Optional GUIStyle in the active GUISkin.")]

@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("Makes an on/off Toggle Button and stores the button state in a Bool Variable.")]
+    [HutongGames.PlayMaker.Tooltip("Makes an on/off Toggle Button and stores the button state in a Bool Variable."), ActionCategory(ActionCategory.GUILayout)]
     public class GUILayoutToggle : GUILayoutAction
     {
         public FsmEvent changedEvent;

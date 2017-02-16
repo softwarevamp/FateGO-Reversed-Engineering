@@ -7,7 +7,7 @@
     [HutongGames.PlayMaker.Tooltip("Fade from a fullscreen Color. NOTE: Uses OnGUI so requires a PlayMakerGUI component in the scene."), ActionCategory(ActionCategory.Camera)]
     public class CameraFadeIn : FsmStateAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Color to fade from. E.g., Fade up from black.")]
+        [HutongGames.PlayMaker.Tooltip("Color to fade from. E.g., Fade up from black."), RequiredField]
         public FsmColor color;
         private Color colorLerp;
         private float currentTime;
@@ -16,7 +16,7 @@
         [HutongGames.PlayMaker.Tooltip("Ignore TimeScale. Useful if the game is paused.")]
         public bool realTime;
         private float startTime;
-        [RequiredField, HasFloatSlider(0f, 10f), HutongGames.PlayMaker.Tooltip("Fade in time in seconds.")]
+        [HasFloatSlider(0f, 10f), RequiredField, HutongGames.PlayMaker.Tooltip("Fade in time in seconds.")]
         public FsmFloat time;
 
         public override void OnEnter()

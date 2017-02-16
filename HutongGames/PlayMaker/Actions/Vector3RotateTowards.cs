@@ -9,9 +9,9 @@
     {
         [RequiredField]
         public FsmVector3 currentDirection;
-        [HutongGames.PlayMaker.Tooltip("Max Magnitude per second"), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Max Magnitude per second")]
         public FsmFloat maxMagnitude;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Rotation speed in degrees per second")]
+        [HutongGames.PlayMaker.Tooltip("Rotation speed in degrees per second"), RequiredField]
         public FsmFloat rotateSpeed;
         [RequiredField]
         public FsmVector3 targetDirection;

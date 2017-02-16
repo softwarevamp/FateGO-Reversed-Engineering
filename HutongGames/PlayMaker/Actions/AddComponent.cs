@@ -4,17 +4,17 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Adds a Component to a Game Object. Use this to change the behaviour of objects on the fly. Optionally remove the Component on exiting the state.")]
+    [HutongGames.PlayMaker.Tooltip("Adds a Component to a Game Object. Use this to change the behaviour of objects on the fly. Optionally remove the Component on exiting the state."), ActionCategory(ActionCategory.GameObject)]
     public class AddComponent : FsmStateAction
     {
         private Component addedComponent;
         [RequiredField, Title("Component Type"), UIHint(UIHint.ScriptComponent), HutongGames.PlayMaker.Tooltip("The type of Component to add to the Game Object.")]
         public FsmString component;
-        [HutongGames.PlayMaker.Tooltip("The GameObject to add the Component to."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to add the Component to.")]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Remove the Component when this State is exited.")]
         public FsmBool removeOnExit;
-        [UIHint(UIHint.Variable), ObjectType(typeof(Component)), HutongGames.PlayMaker.Tooltip("Store the component in an Object variable. E.g., to use with Set Property.")]
+        [ObjectType(typeof(Component)), UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the component in an Object variable. E.g., to use with Set Property.")]
         public FsmObject storeComponent;
 
         private void DoAddComponent()

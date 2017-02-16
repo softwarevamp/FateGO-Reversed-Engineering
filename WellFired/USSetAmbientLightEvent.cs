@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEventHideDuration, USequencerEvent("Light/Set Ambient Light"), USequencerFriendlyName("Set Ambient Light")]
+    [USequencerFriendlyName("Set Ambient Light"), USequencerEvent("Light/Set Ambient Light"), USequencerEventHideDuration]
     public class USSetAmbientLightEvent : USEventBase
     {
         public Color lightColor = Color.red;

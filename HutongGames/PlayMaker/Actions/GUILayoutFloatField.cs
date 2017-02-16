@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("GUILayout Text Field to edit a Float Variable. Optionally send an event if the text has been edited."), ActionCategory(ActionCategory.GUILayout)]
+    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("GUILayout Text Field to edit a Float Variable. Optionally send an event if the text has been edited.")]
     public class GUILayoutFloatField : GUILayoutAction
     {
         [HutongGames.PlayMaker.Tooltip("Optional event to send when the value changes.")]

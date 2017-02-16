@@ -6,7 +6,7 @@
     [ActionCategory(ActionCategory.Math), Tooltip("Flips the value of a Bool Variable.")]
     public class BoolFlip : FsmStateAction
     {
-        [RequiredField, Tooltip("Bool variable to flip."), UIHint(UIHint.Variable)]
+        [Tooltip("Bool variable to flip."), UIHint(UIHint.Variable), RequiredField]
         public FsmBool boolVariable;
 
         public override void OnEnter()

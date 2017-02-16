@@ -4,14 +4,14 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sends an Event based on a Game Object's Tag."), ActionCategory(ActionCategory.Logic)]
+    [ActionCategory(ActionCategory.Logic), HutongGames.PlayMaker.Tooltip("Sends an Event based on a Game Object's Tag.")]
     public class GameObjectTagSwitch : FsmStateAction
     {
-        [CompoundArray("Tag Switches", "Compare Tag", "Send Event"), UIHint(UIHint.Tag)]
+        [UIHint(UIHint.Tag), CompoundArray("Tag Switches", "Compare Tag", "Send Event")]
         public FsmString[] compareTo;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;
-        [HutongGames.PlayMaker.Tooltip("The GameObject to test."), UIHint(UIHint.Variable), RequiredField]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The GameObject to test."), RequiredField]
         public FsmGameObject gameObject;
         public FsmEvent[] sendEvent;
 

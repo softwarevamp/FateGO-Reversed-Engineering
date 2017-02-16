@@ -3,13 +3,13 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Sets the value of an Integer Variable."), ActionCategory(ActionCategory.Math)]
+    [ActionCategory(ActionCategory.Math), Tooltip("Sets the value of an Integer Variable.")]
     public class SetIntValue : FsmStateAction
     {
         public bool everyFrame;
         [RequiredField]
         public FsmInt intValue;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmInt intVariable;
 
         public override void OnEnter()

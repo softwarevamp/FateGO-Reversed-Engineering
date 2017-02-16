@@ -6,7 +6,7 @@
     [ActionCategory(ActionCategory.Debug), Tooltip("Logs the value of a Game Object Variable in the PlayMaker Log Window.")]
     public class DebugGameObject : FsmStateAction
     {
-        [Tooltip("Prints the value of a GameObject variable in the PlayMaker log window."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), Tooltip("Prints the value of a GameObject variable in the PlayMaker log window.")]
         public FsmGameObject gameObject;
         [Tooltip("Info, Warning, or Error.")]
         public LogLevel logLevel;

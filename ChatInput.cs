@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[RequireComponent(typeof(UIInput)), AddComponentMenu("NGUI/Examples/Chat Input")]
+[AddComponentMenu("NGUI/Examples/Chat Input"), RequireComponent(typeof(UIInput))]
 public class ChatInput : MonoBehaviour
 {
     public bool fillWithDummyData;

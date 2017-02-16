@@ -23,11 +23,11 @@ public class UIWidget : UIRect
     protected Color mColor = Color.white;
     [NonSerialized]
     protected Vector3[] mCorners = new Vector3[4];
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected int mDepth;
     [NonSerialized]
     protected Vector4 mDrawRegion = new Vector4(0f, 0f, 1f, 1f);
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected int mHeight = 100;
     [NonSerialized]
     private bool mIsInFront = true;
@@ -49,7 +49,7 @@ public class UIWidget : UIRect
     protected Pivot mPivot = Pivot.Center;
     [NonSerialized]
     protected bool mPlayMode = true;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected int mWidth = 100;
     public OnDimensionsChanged onChange;
     public OnPostFillCallback onPostFill;
@@ -128,7 +128,7 @@ public class UIWidget : UIRect
         return this.panel;
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public static int FullCompareFunc(UIWidget left, UIWidget right)
     {
         int num = UIPanel.CompareFunc(left.panel, right.panel);
@@ -393,7 +393,7 @@ public class UIWidget : UIRect
         }
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public static int PanelCompareFunc(UIWidget left, UIWidget right)
     {
         if (left.mDepth < right.mDepth)

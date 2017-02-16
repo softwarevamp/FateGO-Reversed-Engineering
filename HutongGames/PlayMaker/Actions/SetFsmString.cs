@@ -4,20 +4,20 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Set the value of a String Variable in another FSM."), ActionCategory(ActionCategory.StateMachine)]
+    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Set the value of a String Variable in another FSM.")]
     public class SetFsmString : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the value is changing.")]
         public bool everyFrame;
         private PlayMakerFSM fsm;
-        [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object.")]
+        [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object."), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
         [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM."), RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
         [HutongGames.PlayMaker.Tooltip("Set the value of the variable.")]
         public FsmString setValue;
-        [UIHint(UIHint.FsmString), RequiredField, HutongGames.PlayMaker.Tooltip("The name of the FSM variable.")]
+        [UIHint(UIHint.FsmString), HutongGames.PlayMaker.Tooltip("The name of the FSM variable."), RequiredField]
         public FsmString variableName;
 
         private void DoSetFsmString()

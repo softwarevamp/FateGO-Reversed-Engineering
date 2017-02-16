@@ -6,7 +6,7 @@
     [Tooltip("Logs the value of an Integer Variable in the PlayMaker Log Window."), ActionCategory(ActionCategory.Debug)]
     public class DebugInt : FsmStateAction
     {
-        [Tooltip("Prints the value of an Int variable in the PlayMaker log window."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), Tooltip("Prints the value of an Int variable in the PlayMaker log window.")]
         public FsmInt intVariable;
         [Tooltip("Info, Warning, or Error.")]
         public LogLevel logLevel;

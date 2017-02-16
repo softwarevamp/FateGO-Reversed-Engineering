@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Sets the value of a Bool Variable."), ActionCategory(ActionCategory.Math)]
+    [ActionCategory(ActionCategory.Math), Tooltip("Sets the value of a Bool Variable.")]
     public class SetBoolValue : FsmStateAction
     {
         [RequiredField]

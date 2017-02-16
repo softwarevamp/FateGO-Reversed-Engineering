@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("NGUI/Examples/Set Color on Selection"), ExecuteInEditMode, RequireComponent(typeof(UIWidget))]
+[ExecuteInEditMode, RequireComponent(typeof(UIWidget)), AddComponentMenu("NGUI/Examples/Set Color on Selection")]
 public class SetColorOnSelection : MonoBehaviour
 {
     [CompilerGenerated]

@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Debug), Tooltip("Logs the value of a Vector3 Variable in the PlayMaker Log Window.")]
+    [Tooltip("Logs the value of a Vector3 Variable in the PlayMaker Log Window."), ActionCategory(ActionCategory.Debug)]
     public class DebugVector3 : FsmStateAction
     {
         [Tooltip("Info, Warning, or Error.")]

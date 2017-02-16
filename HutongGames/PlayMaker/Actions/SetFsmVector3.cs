@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Set the value of a Vector3 Variable in another FSM.")]
+    [HutongGames.PlayMaker.Tooltip("Set the value of a Vector3 Variable in another FSM."), ActionCategory(ActionCategory.StateMachine)]
     public class SetFsmVector3 : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the value is changing.")]
@@ -12,12 +12,12 @@
         private PlayMakerFSM fsm;
         [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object")]
         public FsmString fsmName;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM."), RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
         [RequiredField, HutongGames.PlayMaker.Tooltip("Set the value of the variable.")]
         public FsmVector3 setValue;
-        [HutongGames.PlayMaker.Tooltip("The name of the FSM variable."), RequiredField, UIHint(UIHint.FsmVector3)]
+        [RequiredField, UIHint(UIHint.FsmVector3), HutongGames.PlayMaker.Tooltip("The name of the FSM variable.")]
         public FsmString variableName;
 
         private void DoSetFsmVector3()

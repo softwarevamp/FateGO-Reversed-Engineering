@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("Animation (Legacy)/Play Animation"), USequencerFriendlyName("Play Animation (Legacy)")]
+    [USequencerFriendlyName("Play Animation (Legacy)"), USequencerEvent("Animation (Legacy)/Play Animation")]
     public class USPlayAnimEvent : USEventBase
     {
         public AnimationClip animationClip;

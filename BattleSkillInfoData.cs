@@ -37,8 +37,16 @@ public class BattleSkillInfoData
 
     public bool TurnProgress(int turnCount, int max = 0)
     {
-        this.chargeTurn = 0;
-        this.isCharge = true;
+        if (this.isPassive || (this.chargeTurn <= 0))
+        {
+            return false;
+        }
+        this.chargeTurn -= turnCount;
+        if (this.chargeTurn < max)
+        {
+            this.chargeTurn = max;
+        }
+        this.isCharge = this.chargeTurn <= 0;
         return this.isCharge;
     }
 

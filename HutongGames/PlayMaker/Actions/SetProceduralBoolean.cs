@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory("Substance"), Tooltip("Set a named bool property in a Substance material. NOTE: Use Rebuild Textures after setting Substance properties.")]
+    [Tooltip("Set a named bool property in a Substance material. NOTE: Use Rebuild Textures after setting Substance properties."), ActionCategory("Substance")]
     public class SetProceduralBoolean : FsmStateAction
     {
         [RequiredField]

@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("FGO/Change BG"), USequencerFriendlyName("FGO Change BG")]
+    [USequencerFriendlyName("FGO Change BG"), USequencerEvent("FGO/Change BG")]
     public class USFGOChangeBgEvent : USEventBase
     {
         public string bgName = string.Empty;

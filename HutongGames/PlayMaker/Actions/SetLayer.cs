@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Sets a Game Object's Layer.")]
+    [HutongGames.PlayMaker.Tooltip("Sets a Game Object's Layer."), ActionCategory(ActionCategory.GameObject)]
     public class SetLayer : FsmStateAction
     {
         [RequiredField]

@@ -4,15 +4,15 @@ using UnityEngine;
 [AddComponentMenu("NGUI/UI/NGUI Texture"), ExecuteInEditMode]
 public class UITexture : UIBasicSprite
 {
-    [HideInInspector, SerializeField]
-    private Vector4 mBorder = Vector4.zero;
-    [HideInInspector, SerializeField]
-    private bool mFixedAspect;
     [SerializeField, HideInInspector]
+    private Vector4 mBorder = Vector4.zero;
+    [SerializeField, HideInInspector]
+    private bool mFixedAspect;
+    [HideInInspector, SerializeField]
     private Material mMat;
     [NonSerialized]
     private int mPMA = -1;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private Rect mRect = new Rect(0f, 0f, 1f, 1f);
     [SerializeField, HideInInspector]
     private Shader mShader;

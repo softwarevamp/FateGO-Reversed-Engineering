@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory("NGUI"), HutongGames.PlayMaker.Tooltip("Sets the text of a Ngui Label")]
+    [HutongGames.PlayMaker.Tooltip("Sets the text of a Ngui Label"), ActionCategory("NGUI")]
     public class NguiLabelSetText : FsmStateAction
     {
         private UILabel _label;

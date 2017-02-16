@@ -7,7 +7,7 @@
     [ActionCategory("FGOAction")]
     public class FGOActorCheckCombo : FsmStateAction
     {
-        [RequiredField, CheckForComponent(typeof(BattleActorControl))]
+        [CheckForComponent(typeof(BattleActorControl)), RequiredField]
         public FsmGameObject actorObject;
         public FsmEvent FLASH;
         public FsmEvent NOCOMBO;

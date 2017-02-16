@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory("AnimateVariables"), HutongGames.PlayMaker.Tooltip("Easing Animation - Rect.")]
+    [HutongGames.PlayMaker.Tooltip("Easing Animation - Rect."), ActionCategory("AnimateVariables")]
     public class EaseRect : EaseFsmAction
     {
         private bool finishInNextStep;

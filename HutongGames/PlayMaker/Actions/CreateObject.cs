@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Creates a Game Object, usually from a Prefab."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Creates a Game Object, usually from a Prefab.")]
     public class CreateObject : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("GameObject to create. Usually a Prefab."), RequiredField]

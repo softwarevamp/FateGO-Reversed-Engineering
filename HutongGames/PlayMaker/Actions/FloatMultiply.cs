@@ -3,12 +3,12 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Multiplies one Float by another."), ActionCategory(ActionCategory.Math)]
+    [ActionCategory(ActionCategory.Math), Tooltip("Multiplies one Float by another.")]
     public class FloatMultiply : FsmStateAction
     {
         [Tooltip("Repeat every frame. Useful if the variables are changing.")]
         public bool everyFrame;
-        [Tooltip("The float variable to multiply."), UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, Tooltip("The float variable to multiply."), UIHint(UIHint.Variable)]
         public FsmFloat floatVariable;
         [Tooltip("Multiply the float variable by this value."), RequiredField]
         public FsmFloat multiplyBy;

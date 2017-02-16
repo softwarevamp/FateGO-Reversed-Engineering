@@ -11,7 +11,7 @@
         protected SePlayer player;
         [Tooltip("Set the se name string.")]
         public FsmString seName;
-        [Tooltip("Set the volume."), HasFloatSlider(0f, 1f)]
+        [HasFloatSlider(0f, 1f), Tooltip("Set the volume.")]
         public FsmFloat volume = 1f;
 
         protected void EndPlaySe()

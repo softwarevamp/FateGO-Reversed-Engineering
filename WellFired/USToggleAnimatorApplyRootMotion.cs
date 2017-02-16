@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("Toggle Apply Root Motion"), USequencerEvent("Animation (Mecanim)/Animator/Toggle Apply Root Motion"), USequencerEventHideDuration]
+    [USequencerEvent("Animation (Mecanim)/Animator/Toggle Apply Root Motion"), USequencerEventHideDuration, USequencerFriendlyName("Toggle Apply Root Motion")]
     public class USToggleAnimatorApplyRootMotion : USEventBase
     {
         public bool applyRootMotion = true;

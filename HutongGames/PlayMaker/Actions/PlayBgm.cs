@@ -9,9 +9,9 @@
     {
         [HutongGames.PlayMaker.Tooltip("Set the bgm name string."), ObjectType(typeof(AudioClip))]
         public FsmString bgmName;
-        [HutongGames.PlayMaker.Tooltip("Set the fadein time."), HasFloatSlider(0f, 60f)]
+        [HasFloatSlider(0f, 60f), HutongGames.PlayMaker.Tooltip("Set the fadein time.")]
         public FsmFloat fadeTime = 0f;
-        [HutongGames.PlayMaker.Tooltip("Set the volume."), HasFloatSlider(0f, 1f)]
+        [HasFloatSlider(0f, 1f), HutongGames.PlayMaker.Tooltip("Set the volume.")]
         public FsmFloat volume = 1f;
 
         public override void OnEnter()

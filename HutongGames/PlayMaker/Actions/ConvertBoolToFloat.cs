@@ -3,16 +3,16 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Convert), Tooltip("Converts a Bool value to a Float value.")]
+    [Tooltip("Converts a Bool value to a Float value."), ActionCategory(ActionCategory.Convert)]
     public class ConvertBoolToFloat : FsmStateAction
     {
-        [RequiredField, UIHint(UIHint.Variable), Tooltip("The Bool variable to test.")]
+        [UIHint(UIHint.Variable), Tooltip("The Bool variable to test."), RequiredField]
         public FsmBool boolVariable;
         [Tooltip("Repeat every frame. Useful if the Bool variable is changing.")]
         public bool everyFrame;
         [Tooltip("Float value if Bool variable is false.")]
         public FsmFloat falseValue;
-        [Tooltip("The Float variable to set based on the Bool variable value."), RequiredField, UIHint(UIHint.Variable)]
+        [RequiredField, UIHint(UIHint.Variable), Tooltip("The Float variable to set based on the Bool variable value.")]
         public FsmFloat floatVariable;
         [Tooltip("Float value if Bool variable is true.")]
         public FsmFloat trueValue;

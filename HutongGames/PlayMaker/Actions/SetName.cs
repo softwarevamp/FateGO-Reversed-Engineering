@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets a Game Object's Name."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Sets a Game Object's Name.")]
     public class SetName : FsmStateAction
     {
         [RequiredField]

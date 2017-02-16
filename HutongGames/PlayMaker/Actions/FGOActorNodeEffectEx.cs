@@ -11,7 +11,7 @@
         public FsmString gameObjectName;
         public FsmString nodename;
         public FsmVector3 position;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Folder for load")]
+        [HutongGames.PlayMaker.Tooltip("Folder for load"), RequiredField]
         public ResourceFolder resourceFolder;
         public FsmGameObject storeObject;
         public FsmGameObject targetObject;

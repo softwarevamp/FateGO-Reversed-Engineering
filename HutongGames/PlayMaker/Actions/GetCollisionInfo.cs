@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Physics), Tooltip("Gets info on the last collision event and store in variables. See Unity Physics docs.")]
+    [Tooltip("Gets info on the last collision event and store in variables. See Unity Physics docs."), ActionCategory(ActionCategory.Physics)]
     public class GetCollisionInfo : FsmStateAction
     {
         [UIHint(UIHint.Variable), Tooltip("Get the collision normal vector. Useful for aligning spawned effects etc.")]
@@ -12,9 +12,9 @@
         public FsmVector3 contactPoint;
         [UIHint(UIHint.Variable), Tooltip("Get the GameObject hit.")]
         public FsmGameObject gameObjectHit;
-        [UIHint(UIHint.Variable), Tooltip("Get the name of the physics material of the colliding GameObject. Useful for triggering different effects. Audio, particles...")]
+        [Tooltip("Get the name of the physics material of the colliding GameObject. Useful for triggering different effects. Audio, particles..."), UIHint(UIHint.Variable)]
         public FsmString physicsMaterialName;
-        [Tooltip("Get the relative speed of the collision. Useful for controlling reactions. E.g., selecting an appropriate sound fx."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), Tooltip("Get the relative speed of the collision. Useful for controlling reactions. E.g., selecting an appropriate sound fx.")]
         public FsmFloat relativeSpeed;
         [Tooltip("Get the relative velocity of the collision."), UIHint(UIHint.Variable)]
         public FsmVector3 relativeVelocity;

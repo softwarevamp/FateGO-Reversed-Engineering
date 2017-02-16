@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Fills the screen with a Color. NOTE: Uses OnGUI so you need a PlayMakerGUI component in the scene."), ActionCategory(ActionCategory.GUI)]
+    [ActionCategory(ActionCategory.GUI), HutongGames.PlayMaker.Tooltip("Fills the screen with a Color. NOTE: Uses OnGUI so you need a PlayMakerGUI component in the scene.")]
     public class DrawFullscreenColor : FsmStateAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Color. NOTE: Uses OnGUI so you need a PlayMakerGUI component in the scene.")]
+        [HutongGames.PlayMaker.Tooltip("Color. NOTE: Uses OnGUI so you need a PlayMakerGUI component in the scene."), RequiredField]
         public FsmColor color;
 
         public override void OnGUI()

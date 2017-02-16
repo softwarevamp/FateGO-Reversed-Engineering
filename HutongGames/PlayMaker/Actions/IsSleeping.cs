@@ -9,7 +9,7 @@
     {
         public bool everyFrame;
         public FsmEvent falseEvent;
-        [RequiredField, CheckForComponent(typeof(Rigidbody))]
+        [CheckForComponent(typeof(Rigidbody)), RequiredField]
         public FsmOwnerDefault gameObject;
         [UIHint(UIHint.Variable)]
         public FsmBool store;

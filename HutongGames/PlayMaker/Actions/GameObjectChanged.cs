@@ -9,10 +9,10 @@
     {
         [HutongGames.PlayMaker.Tooltip("Event to send if the variable changes.")]
         public FsmEvent changedEvent;
-        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The GameObject variable to watch for a change.")]
+        [UIHint(UIHint.Variable), RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject variable to watch for a change.")]
         public FsmGameObject gameObjectVariable;
         private GameObject previousValue;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Set to True if the variable changes.")]
+        [HutongGames.PlayMaker.Tooltip("Set to True if the variable changes."), UIHint(UIHint.Variable)]
         public FsmBool storeResult;
 
         public override void OnEnter()

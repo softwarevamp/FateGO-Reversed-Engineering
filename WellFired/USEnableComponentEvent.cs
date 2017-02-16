@@ -3,10 +3,10 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("Toggle Component"), USequencerEvent("Object/Toggle Component"), USequencerEventHideDuration]
+    [USequencerEvent("Object/Toggle Component"), USequencerFriendlyName("Toggle Component"), USequencerEventHideDuration]
     public class USEnableComponentEvent : USEventBase
     {
-        [SerializeField, HideInInspector]
+        [HideInInspector, SerializeField]
         private string componentName;
         public bool enableComponent;
         private bool prevEnable;

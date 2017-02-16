@@ -8,9 +8,9 @@
     {
         [Tooltip("Repeat every frame. Useful if the Integer variable is changing.")]
         public bool everyFrame;
-        [RequiredField, UIHint(UIHint.Variable), Tooltip("Store the result in a Float variable.")]
+        [UIHint(UIHint.Variable), Tooltip("Store the result in a Float variable."), RequiredField]
         public FsmFloat floatVariable;
-        [RequiredField, Tooltip("The Integer variable to convert to a float."), UIHint(UIHint.Variable)]
+        [RequiredField, UIHint(UIHint.Variable), Tooltip("The Integer variable to convert to a float.")]
         public FsmInt intVariable;
 
         private void DoConvertIntToFloat()

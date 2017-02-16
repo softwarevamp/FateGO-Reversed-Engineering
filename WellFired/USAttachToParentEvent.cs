@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEventHideDuration, USequencerEvent("Attach/Attach To Parent"), USequencerFriendlyName("Attach Object To Parent")]
+    [USequencerFriendlyName("Attach Object To Parent"), USequencerEvent("Attach/Attach To Parent"), USequencerEventHideDuration]
     public class USAttachToParentEvent : USEventBase
     {
         private Transform originalParent;

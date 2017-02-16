@@ -4,13 +4,13 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Camera), HutongGames.PlayMaker.Tooltip("Sets the Background Color used by the Camera.")]
+    [HutongGames.PlayMaker.Tooltip("Sets the Background Color used by the Camera."), ActionCategory(ActionCategory.Camera)]
     public class SetBackgroundColor : ComponentAction<Camera>
     {
         [RequiredField]
         public FsmColor backgroundColor;
         public bool everyFrame;
-        [RequiredField, CheckForComponent(typeof(Camera))]
+        [CheckForComponent(typeof(Camera)), RequiredField]
         public FsmOwnerDefault gameObject;
 
         private void DoSetBackgroundColor()

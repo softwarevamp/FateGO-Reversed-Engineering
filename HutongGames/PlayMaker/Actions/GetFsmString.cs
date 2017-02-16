@@ -14,9 +14,9 @@
         [RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmString storeValue;
-        [RequiredField, UIHint(UIHint.FsmString)]
+        [UIHint(UIHint.FsmString), RequiredField]
         public FsmString variableName;
 
         private void DoGetFsmString()

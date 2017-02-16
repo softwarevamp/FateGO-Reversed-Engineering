@@ -5,7 +5,7 @@
     using System.Collections;
     using UnityEngine;
 
-    [ActionCategory("iTween"), HutongGames.PlayMaker.Tooltip("CSimilar to ScaleTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a 'live' set of changing values. Does not utilize an EaseType.")]
+    [HutongGames.PlayMaker.Tooltip("CSimilar to ScaleTo but incredibly less expensive for usage inside the Update function or similar looping situations involving a 'live' set of changing values. Does not utilize an EaseType."), ActionCategory("iTween")]
     public class iTweenScaleUpdate : FsmStateAction
     {
         [RequiredField]

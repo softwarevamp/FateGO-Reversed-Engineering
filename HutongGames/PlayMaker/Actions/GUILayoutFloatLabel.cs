@@ -7,7 +7,7 @@
     [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("GUILayout Label for a Float Variable.")]
     public class GUILayoutFloatLabel : GUILayoutAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Float variable to display."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField, HutongGames.PlayMaker.Tooltip("Float variable to display.")]
         public FsmFloat floatVariable;
         [HutongGames.PlayMaker.Tooltip("Text to put before the float variable.")]
         public FsmString prefix;

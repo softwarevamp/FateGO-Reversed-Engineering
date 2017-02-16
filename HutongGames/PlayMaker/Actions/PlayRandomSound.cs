@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Plays a Random Audio Clip at a position defined by a Game Object or a Vector3. If a position is defined, it takes priority over the game object. You can set the relative weight of the clips to control how often they are selected."), ActionCategory(ActionCategory.Audio)]
+    [ActionCategory(ActionCategory.Audio), HutongGames.PlayMaker.Tooltip("Plays a Random Audio Clip at a position defined by a Game Object or a Vector3. If a position is defined, it takes priority over the game object. You can set the relative weight of the clips to control how often they are selected.")]
     public class PlayRandomSound : FsmStateAction
     {
         [CompoundArray("Audio Clips", "Audio Clip", "Weight")]

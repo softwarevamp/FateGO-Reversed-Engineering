@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[AddComponentMenu("NGUI/Internal/Snapshot Point"), ExecuteInEditMode]
+[ExecuteInEditMode, AddComponentMenu("NGUI/Internal/Snapshot Point")]
 public class UISnapshotPoint : MonoBehaviour
 {
     public float farClip = 100f;

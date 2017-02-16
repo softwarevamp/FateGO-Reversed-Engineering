@@ -3,20 +3,20 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Compares 2 Game Objects and sends Events based on the result."), ActionCategory(ActionCategory.Logic)]
+    [ActionCategory(ActionCategory.Logic), Tooltip("Compares 2 Game Objects and sends Events based on the result.")]
     public class GameObjectCompare : FsmStateAction
     {
-        [RequiredField, Tooltip("Compare the variable with this Game Object")]
+        [Tooltip("Compare the variable with this Game Object"), RequiredField]
         public FsmGameObject compareTo;
         [Tooltip("Send this event if Game Objects are equal")]
         public FsmEvent equalEvent;
         [Tooltip("Repeat every frame. Useful if you're waiting for a true or false result.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), Tooltip("A Game Object variable to compare."), RequiredField, Title("Game Object")]
+        [UIHint(UIHint.Variable), Title("Game Object"), Tooltip("A Game Object variable to compare."), RequiredField]
         public FsmOwnerDefault gameObjectVariable;
         [Tooltip("Send this event if Game Objects are not equal")]
         public FsmEvent notEqualEvent;
-        [Tooltip("Store the result of the check in a Bool Variable. (True if equal, false if not equal)."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), Tooltip("Store the result of the check in a Bool Variable. (True if equal, false if not equal).")]
         public FsmBool storeResult;
 
         private void DoGameObjectCompare()

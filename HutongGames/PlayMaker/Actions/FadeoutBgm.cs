@@ -3,10 +3,10 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Audio), Tooltip("Fadeout the Game System BGM data.")]
+    [Tooltip("Fadeout the Game System BGM data."), ActionCategory(ActionCategory.Audio)]
     public class FadeoutBgm : FsmStateAction
     {
-        [Tooltip("Set the fadeout time."), HasFloatSlider(0f, 60f)]
+        [HasFloatSlider(0f, 60f), Tooltip("Set the fadeout time.")]
         public FsmFloat fadeTime = 0f;
 
         public override void OnEnter()

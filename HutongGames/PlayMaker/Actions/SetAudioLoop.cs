@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Audio), HutongGames.PlayMaker.Tooltip("Sets looping on the AudioSource component on a Game Object.")]
+    [HutongGames.PlayMaker.Tooltip("Sets looping on the AudioSource component on a Game Object."), ActionCategory(ActionCategory.Audio)]
     public class SetAudioLoop : ComponentAction<AudioSource>
     {
         [CheckForComponent(typeof(AudioSource)), RequiredField]

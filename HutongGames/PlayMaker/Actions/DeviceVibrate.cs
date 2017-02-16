@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Causes the device to vibrate for half a second."), ActionCategory(ActionCategory.Device)]
+    [ActionCategory(ActionCategory.Device), HutongGames.PlayMaker.Tooltip("Causes the device to vibrate for half a second.")]
     public class DeviceVibrate : FsmStateAction
     {
         public override void OnEnter()

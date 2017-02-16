@@ -5,10 +5,10 @@
     using System.Collections;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Activates/deactivates a Game Object. Use this to hide/show areas, or enable/disable many Behaviours at once."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Activates/deactivates a Game Object. Use this to hide/show areas, or enable/disable many Behaviours at once.")]
     public class ActivateGameObject : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("Check to activate, uncheck to deactivate Game Object."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Check to activate, uncheck to deactivate Game Object.")]
         public FsmBool activate;
         private GameObject activatedGameObject;
         [HutongGames.PlayMaker.Tooltip("Repeat this action every frame. Useful if Activate changes over time.")]

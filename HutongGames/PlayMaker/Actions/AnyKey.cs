@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sends an Event when the user hits any Key or Mouse Button."), ActionCategory(ActionCategory.Input)]
+    [ActionCategory(ActionCategory.Input), HutongGames.PlayMaker.Tooltip("Sends an Event when the user hits any Key or Mouse Button.")]
     public class AnyKey : FsmStateAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Event to send when any Key or Mouse Button is pressed.")]
+        [HutongGames.PlayMaker.Tooltip("Event to send when any Key or Mouse Button is pressed."), RequiredField]
         public FsmEvent sendEvent;
 
         public override void OnUpdate()

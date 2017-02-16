@@ -8,7 +8,7 @@
     public class FGOCheckBattleFaze : FsmStateAction
     {
         public FAZE Faze;
-        [CheckForComponent(typeof(BattlePerformance)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(BattlePerformance))]
         public FsmGameObject gameObject;
         public FsmEvent sendEvent;
 

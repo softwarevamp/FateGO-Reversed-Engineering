@@ -8,7 +8,7 @@
     {
         public bool everyFrame;
         public FsmGameObject gameObject;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmGameObject variable;
 
         public override void OnEnter()

@@ -7,11 +7,11 @@
     [HutongGames.PlayMaker.Tooltip("Gets the pressed state of the specified Button and stores it in a Bool Variable. See Unity Input Manager docs."), ActionCategory(ActionCategory.Input)]
     public class GetButton : FsmStateAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The name of the button. Set in the Unity Input Manager.")]
+        [HutongGames.PlayMaker.Tooltip("The name of the button. Set in the Unity Input Manager."), RequiredField]
         public FsmString buttonName;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), RequiredField, HutongGames.PlayMaker.Tooltip("Store the result in a bool variable.")]
+        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the result in a bool variable.")]
         public FsmBool storeResult;
 
         private void DoGetButton()

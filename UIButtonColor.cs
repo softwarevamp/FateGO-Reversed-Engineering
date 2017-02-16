@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[AddComponentMenu("NGUI/Interaction/Button Color"), ExecuteInEditMode]
+[ExecuteInEditMode, AddComponentMenu("NGUI/Interaction/Button Color")]
 public class UIButtonColor : UIWidgetContainer
 {
     public Color disabledColor = Color.grey;

@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Begins a vertical control group. The group must be closed with GUILayoutEndVertical action."), ActionCategory(ActionCategory.GUILayout)]
+    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("Begins a vertical control group. The group must be closed with GUILayoutEndVertical action.")]
     public class GUILayoutBeginVertical : GUILayoutAction
     {
         public FsmTexture image;

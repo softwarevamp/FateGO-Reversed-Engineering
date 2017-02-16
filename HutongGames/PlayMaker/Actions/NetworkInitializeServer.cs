@@ -7,9 +7,9 @@
     [HutongGames.PlayMaker.Tooltip("Launch a server."), ActionCategory(ActionCategory.Network)]
     public class NetworkInitializeServer : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("The number of allowed incoming connections/number of players allowed in the game."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The number of allowed incoming connections/number of players allowed in the game.")]
         public FsmInt connections;
-        [ActionSection("Errors"), HutongGames.PlayMaker.Tooltip("Event to send in case of an error creating the server.")]
+        [HutongGames.PlayMaker.Tooltip("Event to send in case of an error creating the server."), ActionSection("Errors")]
         public FsmEvent errorEvent;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the error string in a variable.")]
         public FsmString errorString;

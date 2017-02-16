@@ -269,7 +269,7 @@ public static class NGUIText
     public static string EncodeAlpha(float a) => 
         NGUIMath.DecimalToHex8(Mathf.Clamp(Mathf.RoundToInt(a * 255f), 0, 0xff));
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public static string EncodeColor(Color c) => 
         EncodeColor24(c);
 
@@ -280,18 +280,18 @@ public static class NGUIText
         return string.Concat(textArray1);
     }
 
-    [DebuggerHidden, DebuggerStepThrough]
+    [DebuggerStepThrough, DebuggerHidden]
     public static string EncodeColor24(Color c)
     {
         int num = 0xffffff & (NGUIMath.ColorToInt(c) >> 8);
         return NGUIMath.DecimalToHex24(num);
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public static string EncodeColor32(Color c) => 
         NGUIMath.DecimalToHex32(NGUIMath.ColorToInt(c));
 
-    [DebuggerHidden, DebuggerStepThrough]
+    [DebuggerStepThrough, DebuggerHidden]
     public static void EndLine(ref StringBuilder s)
     {
         int num = s.Length - 1;
@@ -477,7 +477,7 @@ public static class NGUIText
     public static bool IsHex(char ch) => 
         ((((ch >= '0') && (ch <= '9')) || ((ch >= 'a') && (ch <= 'f'))) || ((ch >= 'A') && (ch <= 'F')));
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     private static bool IsSpace(int ch) => 
         ((((ch == 0x20) || (ch == 0x200a)) || (ch == 0x200b)) || (ch == 0x2009));
 
@@ -488,7 +488,7 @@ public static class NGUIText
         return Mathf.Clamp01(((float) num) / 255f);
     }
 
-    [DebuggerHidden, DebuggerStepThrough]
+    [DebuggerStepThrough, DebuggerHidden]
     public static Color ParseColor(string text, int offset) => 
         ParseColor24(text, offset);
 
@@ -502,7 +502,7 @@ public static class NGUIText
         return new Color(num4 * num, num4 * num2, num4 * num3);
     }
 
-    [DebuggerHidden, DebuggerStepThrough]
+    [DebuggerStepThrough, DebuggerHidden]
     public static Color ParseColor32(string text, int offset)
     {
         int num = (NGUIMath.HexToDecimal(text[offset]) << 4) | NGUIMath.HexToDecimal(text[offset + 1]);
@@ -1705,7 +1705,7 @@ public static class NGUIText
         }
     }
 
-    [DebuggerHidden, DebuggerStepThrough]
+    [DebuggerStepThrough, DebuggerHidden]
     private static void ReplaceSpaceWithNewline(ref StringBuilder s)
     {
         int num = s.Length - 1;

@@ -4,12 +4,12 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Tests if a Game Object's Rigid Body is Kinematic."), ActionCategory(ActionCategory.Physics)]
+    [ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Tests if a Game Object's Rigid Body is Kinematic.")]
     public class IsKinematic : ComponentAction<Rigidbody>
     {
         public bool everyFrame;
         public FsmEvent falseEvent;
-        [CheckForComponent(typeof(Rigidbody)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(Rigidbody))]
         public FsmOwnerDefault gameObject;
         [UIHint(UIHint.Variable)]
         public FsmBool store;

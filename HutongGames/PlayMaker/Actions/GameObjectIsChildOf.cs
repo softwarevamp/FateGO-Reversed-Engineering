@@ -4,16 +4,16 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Tests if a GameObject is a Child of another GameObject."), ActionCategory(ActionCategory.Logic)]
+    [ActionCategory(ActionCategory.Logic), HutongGames.PlayMaker.Tooltip("Tests if a GameObject is a Child of another GameObject.")]
     public class GameObjectIsChildOf : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Event to send if GameObject is NOT a child.")]
         public FsmEvent falseEvent;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("GameObject to test.")]
+        [HutongGames.PlayMaker.Tooltip("GameObject to test."), RequiredField]
         public FsmOwnerDefault gameObject;
-        [HutongGames.PlayMaker.Tooltip("Is it a child of this GameObject?"), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Is it a child of this GameObject?")]
         public FsmGameObject isChildOf;
-        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store result in a bool variable")]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store result in a bool variable"), RequiredField]
         public FsmBool storeResult;
         [HutongGames.PlayMaker.Tooltip("Event to send if GameObject is a child.")]
         public FsmEvent trueEvent;

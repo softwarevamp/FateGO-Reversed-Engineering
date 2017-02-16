@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(UISprite)), ExecuteInEditMode, AddComponentMenu("NGUI/UI/Sprite Animation")]
+[ExecuteInEditMode, AddComponentMenu("NGUI/UI/Sprite Animation"), RequireComponent(typeof(UISprite))]
 public class UISpriteAnimation : MonoBehaviour
 {
     protected bool mActive = true;
@@ -10,11 +10,11 @@ public class UISpriteAnimation : MonoBehaviour
     [HideInInspector, SerializeField]
     protected int mFPS = 30;
     protected int mIndex;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected bool mLoop = true;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected string mPrefix = string.Empty;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected bool mSnap = true;
     protected UISprite mSprite;
     protected List<string> mSpriteNames = new List<string>();

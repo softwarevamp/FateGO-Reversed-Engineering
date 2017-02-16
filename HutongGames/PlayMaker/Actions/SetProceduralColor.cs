@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Set a named color property in a Substance material. NOTE: Use Rebuild Textures after setting Substance properties."), ActionCategory("Substance")]
+    [ActionCategory("Substance"), HutongGames.PlayMaker.Tooltip("Set a named color property in a Substance material. NOTE: Use Rebuild Textures after setting Substance properties.")]
     public class SetProceduralColor : FsmStateAction
     {
         [RequiredField]

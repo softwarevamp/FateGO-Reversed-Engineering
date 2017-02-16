@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Gets the Parent of a Game Object."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Gets the Parent of a Game Object.")]
     public class GetParent : FsmStateAction
     {
         [RequiredField]

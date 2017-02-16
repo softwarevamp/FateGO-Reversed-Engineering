@@ -2,7 +2,7 @@
 {
     using System;
 
-    [USequencerEventHideDuration, USequencerEvent("Sequence/Set Playback Rate"), USequencerFriendlyName("Set uSequence Playback Rate")]
+    [USequencerEvent("Sequence/Set Playback Rate"), USequencerEventHideDuration, USequencerFriendlyName("Set uSequence Playback Rate")]
     public class USSetPlaybackRateEvent : USEventBase
     {
         public float playbackRate = 1f;

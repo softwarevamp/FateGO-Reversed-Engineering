@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Get GameObject Vector3"), ActionCategory(ActionCategory.Vector3)]
+    [ActionCategory(ActionCategory.Vector3), Tooltip("Get GameObject Vector3")]
     public class GetGameObjectVector : FsmStateAction
     {
         public FsmGameObject gameObject;

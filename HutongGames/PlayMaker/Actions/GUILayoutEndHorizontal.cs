@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Close a group started with BeginHorizontal."), ActionCategory(ActionCategory.GUILayout)]
+    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("Close a group started with BeginHorizontal.")]
     public class GUILayoutEndHorizontal : FsmStateAction
     {
         public override void OnGUI()

@@ -2,7 +2,7 @@
 {
     using System;
 
-    [USequencerFriendlyName("FGO Actor Change Limit Count 2"), USequencerEvent("FGO/Character/Change Limit Count 2")]
+    [USequencerEvent("FGO/Character/Change Limit Count 2"), USequencerFriendlyName("FGO Actor Change Limit Count 2")]
     public class USFGOChangeLimitCount2Event : USEventBase
     {
         public int[] limitCountList = new int[] { 0, 1, 2, 3, 4 };

@@ -7,7 +7,7 @@
     [ActionCategory(ActionCategory.Level), HutongGames.PlayMaker.Tooltip("Makes the Game Object not be destroyed automatically when loading a new scene.")]
     public class DontDestroyOnLoad : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("GameObject to mark as DontDestroyOnLoad."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("GameObject to mark as DontDestroyOnLoad.")]
         public FsmOwnerDefault gameObject;
 
         public override void OnEnter()

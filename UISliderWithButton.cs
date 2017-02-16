@@ -5,7 +5,7 @@ public class UISliderWithButton : UIProgressBar
 {
     [HideInInspector, SerializeField]
     private Direction direction = Direction.Upgraded;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private Transform foreground;
     private bool isTouchEnable = true;
     [SerializeField]

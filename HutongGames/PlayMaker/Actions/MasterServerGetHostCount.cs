@@ -7,7 +7,7 @@
     [ActionCategory(ActionCategory.Network), HutongGames.PlayMaker.Tooltip("Get the number of hosts on the master server.\n\nUse MasterServer Get Host Data to get host data at a specific index.")]
     public class MasterServerGetHostCount : FsmStateAction
     {
-        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The number of hosts on the MasterServer.")]
+        [HutongGames.PlayMaker.Tooltip("The number of hosts on the MasterServer."), UIHint(UIHint.Variable), RequiredField]
         public FsmInt count;
 
         public override void OnEnter()

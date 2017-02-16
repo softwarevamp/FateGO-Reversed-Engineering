@@ -9,14 +9,14 @@
     {
         public bool everyFrame;
         private PlayMakerFSM fsm;
-        [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
+        [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object")]
         public FsmString fsmName;
         [RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmFloat storeValue;
-        [UIHint(UIHint.FsmFloat), RequiredField]
+        [RequiredField, UIHint(UIHint.FsmFloat)]
         public FsmString variableName;
 
         private void DoGetFsmFloat()

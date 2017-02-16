@@ -12,7 +12,7 @@
         public bool everyFrame;
         [Tooltip("Event to send if none of the Bool variables are True.")]
         public FsmEvent sendEvent;
-        [UIHint(UIHint.Variable), Tooltip("Store the result in a Bool variable.")]
+        [Tooltip("Store the result in a Bool variable."), UIHint(UIHint.Variable)]
         public FsmBool storeResult;
 
         private void DoNoneTrue()

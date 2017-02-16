@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.RenderSettings), HutongGames.PlayMaker.Tooltip("Sets the global Skybox.")]
+    [HutongGames.PlayMaker.Tooltip("Sets the global Skybox."), ActionCategory(ActionCategory.RenderSettings)]
     public class SetSkybox : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the Skybox is changing.")]

@@ -12,7 +12,7 @@
         private PlayMakerFSM fsmComponent;
         [HutongGames.PlayMaker.Tooltip("Optional name of FSM on GameObject. Useful if you have more than one FSM on a GameObject."), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
-        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM component."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM component.")]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Reset the initial enabled state when exiting the state.")]
         public FsmBool resetOnExit;

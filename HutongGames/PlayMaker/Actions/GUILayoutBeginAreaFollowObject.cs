@@ -7,7 +7,7 @@
     [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("Begin a GUILayout area that follows the specified game object. Useful for overlays (e.g., playerName). NOTE: Block must end with a corresponding GUILayoutEndArea.")]
     public class GUILayoutBeginAreaFollowObject : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("The GameObject to follow."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to follow.")]
         public FsmGameObject gameObject;
         [RequiredField]
         public FsmFloat height;

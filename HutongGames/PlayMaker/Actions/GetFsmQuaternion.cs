@@ -12,10 +12,10 @@
         protected PlayMakerFSM fsm;
         [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
-        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM.")]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmQuaternion storeValue;
         [RequiredField, UIHint(UIHint.FsmQuaternion)]
         public FsmString variableName;

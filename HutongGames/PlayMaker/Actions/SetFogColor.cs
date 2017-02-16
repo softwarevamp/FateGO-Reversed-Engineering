@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.RenderSettings), HutongGames.PlayMaker.Tooltip("Sets the color of the Fog in the scene.")]
+    [HutongGames.PlayMaker.Tooltip("Sets the color of the Fog in the scene."), ActionCategory(ActionCategory.RenderSettings)]
     public class SetFogColor : FsmStateAction
     {
         public bool everyFrame;

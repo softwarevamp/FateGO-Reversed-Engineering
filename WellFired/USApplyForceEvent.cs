@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("Physics/Apply Force"), USequencerFriendlyName("Apply Force"), USequencerEventHideDuration]
+    [USequencerFriendlyName("Apply Force"), USequencerEvent("Physics/Apply Force"), USequencerEventHideDuration]
     public class USApplyForceEvent : USEventBase
     {
         public Vector3 direction = Vector3.up;

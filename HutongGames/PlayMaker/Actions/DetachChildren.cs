@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Unparents all children from the Game Object."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Unparents all children from the Game Object.")]
     public class DetachChildren : FsmStateAction
     {
         [RequiredField, HutongGames.PlayMaker.Tooltip("GameObject to unparent children from.")]

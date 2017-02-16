@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory("iTween"), HutongGames.PlayMaker.Tooltip("Multiplies supplied values by 360 and rotates a GameObject by calculated amount over time.")]
+    [HutongGames.PlayMaker.Tooltip("Multiplies supplied values by 360 and rotates a GameObject by calculated amount over time."), ActionCategory("iTween")]
     public class iTweenRotateBy : iTweenFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("The time in seconds the animation will wait before beginning.")]

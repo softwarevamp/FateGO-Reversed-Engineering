@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.AnimateVariables), Tooltip("Animates the value of a Float Variable using an Animation Curve.")]
+    [Tooltip("Animates the value of a Float Variable using an Animation Curve."), ActionCategory(ActionCategory.AnimateVariables)]
     public class AnimateFloatV2 : AnimateFsmAction
     {
         [RequiredField]
@@ -11,7 +11,7 @@
         [Tooltip("Calculation lets you set a type of curve deformation that will be applied to floatVariable")]
         public AnimateFsmAction.Calculation calculation;
         private bool finishInNextStep;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmFloat floatVariable;
 
         public override void OnEnter()

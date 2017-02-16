@@ -3,10 +3,10 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Debug), Tooltip("Print the value of an FSM Variable in the PlayMaker Log Window.")]
+    [Tooltip("Print the value of an FSM Variable in the PlayMaker Log Window."), ActionCategory(ActionCategory.Debug)]
     public class DebugFsmVariable : FsmStateAction
     {
-        [Tooltip("Variable to print to the PlayMaker log window."), HideTypeFilter, UIHint(UIHint.Variable)]
+        [Tooltip("Variable to print to the PlayMaker log window."), UIHint(UIHint.Variable), HideTypeFilter]
         public FsmVar fsmVar;
         [Tooltip("Info, Warning, or Error.")]
         public LogLevel logLevel;

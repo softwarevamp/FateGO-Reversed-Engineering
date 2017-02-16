@@ -11,7 +11,7 @@
         public FsmBool adjustFixedDeltaTime;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful when animating the value.")]
         public bool everyFrame;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Scales time: 1 = normal, 0.5 = half speed, 2 = double speed."), HasFloatSlider(0f, 4f)]
+        [RequiredField, HasFloatSlider(0f, 4f), HutongGames.PlayMaker.Tooltip("Scales time: 1 = normal, 0.5 = half speed, 2 = double speed.")]
         public FsmFloat timeScale;
 
         private void DoTimeScale()

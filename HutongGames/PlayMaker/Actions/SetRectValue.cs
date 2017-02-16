@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Rect), Tooltip("Sets the value of a Rect Variable.")]
+    [Tooltip("Sets the value of a Rect Variable."), ActionCategory(ActionCategory.Rect)]
     public class SetRectValue : FsmStateAction
     {
         public bool everyFrame;

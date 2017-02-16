@@ -37,6 +37,7 @@ public class LoginToMemberCenterRequest : RequestBase
                     TerminalPramsManager.PhaseCnt = 0;
                     string str3 = PlayerPrefs.GetString("Asset", "offline");
                     PlayerPrefs.DeleteAll();
+                    BattleData.deleteSaveData();
                     PlayerPrefs.SetString("Asset", str3);
                     PlayerPrefs.Save();
                     NetworkManager.DeleteSaveData();

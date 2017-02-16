@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Sends an Event after an optional delay. NOTE: To send events between FSMs they must be marked as Global in the Events Browser."), ActionCategory(ActionCategory.StateMachine)]
+    [ActionCategory(ActionCategory.StateMachine), Tooltip("Sends an Event after an optional delay. NOTE: To send events between FSMs they must be marked as Global in the Events Browser.")]
     public class SendEvent : FsmStateAction
     {
         [HasFloatSlider(0f, 10f), Tooltip("Optional delay in seconds.")]

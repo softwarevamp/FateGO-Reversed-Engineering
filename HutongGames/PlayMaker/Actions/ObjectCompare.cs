@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Logic), Tooltip("Compare 2 Object Variables and send events based on the result.")]
+    [Tooltip("Compare 2 Object Variables and send events based on the result."), ActionCategory(ActionCategory.Logic)]
     public class ObjectCompare : FsmStateAction
     {
         [RequiredField]

@@ -7,7 +7,7 @@
     [HutongGames.PlayMaker.Tooltip("Check if this machine has a public IP address."), ActionCategory(ActionCategory.Network)]
     public class NetworkHavePublicIpAddress : FsmStateAction
     {
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("True if this machine has a public IP address")]
+        [HutongGames.PlayMaker.Tooltip("True if this machine has a public IP address"), UIHint(UIHint.Variable)]
         public FsmBool havePublicIpAddress;
         [HutongGames.PlayMaker.Tooltip("Event to send if this machine has a public IP address")]
         public FsmEvent publicIpAddressFoundEvent;

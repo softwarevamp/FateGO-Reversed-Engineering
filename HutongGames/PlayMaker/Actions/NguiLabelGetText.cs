@@ -10,9 +10,9 @@
         private UILabel _label;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame while the state is active. Useful to get the text over time")]
         public bool everyFrame;
-        [HutongGames.PlayMaker.Tooltip("The GameObject on which there is a UILabel"), RequiredField, CheckForComponent(typeof(UILabel))]
+        [CheckForComponent(typeof(UILabel)), HutongGames.PlayMaker.Tooltip("The GameObject on which there is a UILabel"), RequiredField]
         public FsmOwnerDefault gameObject;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The label"), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The label"), RequiredField]
         public FsmString text;
 
         private void GetText()

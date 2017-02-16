@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Logic), Tooltip("Sends Events based on the sign of a Float.")]
+    [Tooltip("Sends Events based on the sign of a Float."), ActionCategory(ActionCategory.Logic)]
     public class FloatSignTest : FsmStateAction
     {
         [Tooltip("Repeat every frame. Useful if the variable is changing and you're waiting for a particular result.")]

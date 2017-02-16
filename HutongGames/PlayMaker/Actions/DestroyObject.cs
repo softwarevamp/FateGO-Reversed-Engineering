@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Destroys a Game Object.")]
+    [HutongGames.PlayMaker.Tooltip("Destroys a Game Object."), ActionCategory(ActionCategory.GameObject)]
     public class DestroyObject : FsmStateAction
     {
         [HasFloatSlider(0f, 5f), HutongGames.PlayMaker.Tooltip("Optional delay before destroying the Game Object.")]

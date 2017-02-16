@@ -7,11 +7,11 @@
     [HutongGames.PlayMaker.Tooltip("Sends an Event when a Button is pressed."), ActionCategory(ActionCategory.Input)]
     public class GetButtonDown : FsmStateAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The name of the button. Set in the Unity Input Manager.")]
+        [HutongGames.PlayMaker.Tooltip("The name of the button. Set in the Unity Input Manager."), RequiredField]
         public FsmString buttonName;
         [HutongGames.PlayMaker.Tooltip("Event to send if the button is pressed.")]
         public FsmEvent sendEvent;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Set to True if the button is pressed.")]
+        [HutongGames.PlayMaker.Tooltip("Set to True if the button is pressed."), UIHint(UIHint.Variable)]
         public FsmBool storeResult;
 
         public override void OnUpdate()

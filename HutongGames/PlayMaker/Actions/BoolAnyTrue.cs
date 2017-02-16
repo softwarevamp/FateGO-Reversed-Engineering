@@ -6,7 +6,7 @@
     [ActionCategory(ActionCategory.Logic), Tooltip("Tests if any of the given Bool Variables are True.")]
     public class BoolAnyTrue : FsmStateAction
     {
-        [RequiredField, UIHint(UIHint.Variable), Tooltip("The Bool variables to check.")]
+        [UIHint(UIHint.Variable), Tooltip("The Bool variables to check."), RequiredField]
         public FsmBool[] boolVariables;
         [Tooltip("Repeat every frame while the state is active.")]
         public bool everyFrame;

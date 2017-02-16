@@ -6,7 +6,7 @@
     [ActionCategory(ActionCategory.Logic), Tooltip("Sends Events based on the value of a Boolean Variable.")]
     public class BoolTest : FsmStateAction
     {
-        [RequiredField, UIHint(UIHint.Variable), Tooltip("The Bool variable to test.")]
+        [UIHint(UIHint.Variable), Tooltip("The Bool variable to test."), RequiredField]
         public FsmBool boolVariable;
         [Tooltip("Repeat every frame while the state is active.")]
         public bool everyFrame;

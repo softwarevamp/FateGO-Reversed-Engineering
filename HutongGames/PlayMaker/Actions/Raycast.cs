@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Casts a Ray against all Colliders in the scene. Use either a Game Object or Vector3 world position as the origin of the ray. Use GetRaycastInfo to get more detailed info.")]
+    [HutongGames.PlayMaker.Tooltip("Casts a Ray against all Colliders in the scene. Use either a Game Object or Vector3 world position as the origin of the ray. Use GetRaycastInfo to get more detailed info."), ActionCategory(ActionCategory.Physics)]
     public class Raycast : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Draw a debug line. Note: Check Gizmos in the Game View to see it in game.")]
@@ -30,15 +30,15 @@
         public FsmInt repeatInterval;
         [HutongGames.PlayMaker.Tooltip("Cast the ray in world or local space. Note if no Game Object is specfied, the direction is in world space.")]
         public Space space;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Set a bool variable to true if hit something, otherwise false.")]
+        [HutongGames.PlayMaker.Tooltip("Set a bool variable to true if hit something, otherwise false."), UIHint(UIHint.Variable)]
         public FsmBool storeDidHit;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the distance along the ray to the hit point and store it in a variable.")]
+        [HutongGames.PlayMaker.Tooltip("Get the distance along the ray to the hit point and store it in a variable."), UIHint(UIHint.Variable)]
         public FsmFloat storeHitDistance;
-        [HutongGames.PlayMaker.Tooltip("Get the normal at the hit point and store it in a variable."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the normal at the hit point and store it in a variable.")]
         public FsmVector3 storeHitNormal;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the game object hit in a variable.")]
         public FsmGameObject storeHitObject;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the world position of the ray hit point and store it in a variable.")]
+        [HutongGames.PlayMaker.Tooltip("Get the world position of the ray hit point and store it in a variable."), UIHint(UIHint.Variable)]
         public FsmVector3 storeHitPoint;
 
         private void DoRaycast()

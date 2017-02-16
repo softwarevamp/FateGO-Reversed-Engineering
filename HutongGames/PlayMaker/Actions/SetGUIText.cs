@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the Text used by the GUIText Component attached to a Game Object."), ActionCategory(ActionCategory.GUIElement)]
+    [ActionCategory(ActionCategory.GUIElement), HutongGames.PlayMaker.Tooltip("Sets the Text used by the GUIText Component attached to a Game Object.")]
     public class SetGUIText : ComponentAction<GUIText>
     {
         public bool everyFrame;

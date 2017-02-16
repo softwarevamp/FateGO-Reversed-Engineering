@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sends Events based on mouse interactions with a Game Object: MouseOver, MouseDown, MouseUp, MouseOff. Use Ray Distance to set how close the camera must be to pick the object."), ActionCategory(ActionCategory.Input)]
+    [ActionCategory(ActionCategory.Input), HutongGames.PlayMaker.Tooltip("Sends Events based on mouse interactions with a Game Object: MouseOver, MouseDown, MouseUp, MouseOff. Use Ray Distance to set how close the camera must be to pick the object.")]
     public class MousePickEvent : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]

@@ -9,17 +9,17 @@
     {
         [HutongGames.PlayMaker.Tooltip("Only detect touches that match this fingerID, or set to None.")]
         public FsmInt fingerId;
-        [RequiredField, CheckForComponent(typeof(Collider)), HutongGames.PlayMaker.Tooltip("The Game Object to detect touches on.")]
+        [CheckForComponent(typeof(Collider)), HutongGames.PlayMaker.Tooltip("The Game Object to detect touches on."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("How far from the camera is the Game Object pickable."), RequiredField]
         public FsmFloat pickDistance;
-        [ActionSection("Store Results"), UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the fingerId of the touch.")]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the fingerId of the touch."), ActionSection("Store Results")]
         public FsmInt storeFingerId;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the surface normal vector where the object was touched.")]
         public FsmVector3 storeHitNormal;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the world position where the object was touched.")]
+        [HutongGames.PlayMaker.Tooltip("Store the world position where the object was touched."), UIHint(UIHint.Variable)]
         public FsmVector3 storeHitPoint;
-        [HutongGames.PlayMaker.Tooltip("Event to send on touch began."), ActionSection("Events")]
+        [ActionSection("Events"), HutongGames.PlayMaker.Tooltip("Event to send on touch began.")]
         public FsmEvent touchBegan;
         [HutongGames.PlayMaker.Tooltip("Event to send on touch cancel.")]
         public FsmEvent touchCanceled;

@@ -9,7 +9,7 @@
     {
         public bool everyFrame;
         private PlayMakerFSM fsm;
-        [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object")]
+        [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
         [RequiredField]
         public FsmOwnerDefault gameObject;

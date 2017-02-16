@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("FGO/Ambient Fade"), USequencerFriendlyName("FGO Ambient Fade"), USequencerEventHideDuration]
+    [USequencerFriendlyName("FGO Ambient Fade"), USequencerEvent("FGO/Ambient Fade"), USequencerEventHideDuration]
     public class USFGOAmbientFadeEvent : USEventBase
     {
         private float currentCurveSampleTime;

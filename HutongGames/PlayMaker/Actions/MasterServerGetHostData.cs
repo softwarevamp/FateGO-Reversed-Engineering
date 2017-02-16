@@ -9,25 +9,25 @@
     {
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("A miscellaneous comment (can hold data)")]
         public FsmString comment;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Currently connected players")]
+        [HutongGames.PlayMaker.Tooltip("Currently connected players"), UIHint(UIHint.Variable)]
         public FsmInt connectedPlayers;
-        [HutongGames.PlayMaker.Tooltip("The name of the game (e.g., 'John Does's Game')"), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The name of the game (e.g., 'John Does's Game')")]
         public FsmString gameName;
         [HutongGames.PlayMaker.Tooltip("The type of the game (e.g., 'MyUniqueGameType')"), UIHint(UIHint.Variable)]
         public FsmString gameType;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The GUID of the host, needed when connecting with NAT punchthrough.")]
         public FsmString guid;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The index into the MasterServer Host List")]
+        [HutongGames.PlayMaker.Tooltip("The index into the MasterServer Host List"), RequiredField]
         public FsmInt hostIndex;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Server IP address.")]
+        [HutongGames.PlayMaker.Tooltip("Server IP address."), UIHint(UIHint.Variable)]
         public FsmString ipAddress;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Does the server require a password?")]
+        [HutongGames.PlayMaker.Tooltip("Does the server require a password?"), UIHint(UIHint.Variable)]
         public FsmBool passwordProtected;
         [HutongGames.PlayMaker.Tooltip("Maximum players limit"), UIHint(UIHint.Variable)]
         public FsmInt playerLimit;
-        [HutongGames.PlayMaker.Tooltip("Server port"), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Server port")]
         public FsmInt port;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Does this server require NAT punchthrough?")]
+        [HutongGames.PlayMaker.Tooltip("Does this server require NAT punchthrough?"), UIHint(UIHint.Variable)]
         public FsmBool useNat;
 
         private void GetHostData()

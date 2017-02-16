@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Set the value of an Integer Variable in another FSM."), ActionCategory(ActionCategory.StateMachine)]
+    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Set the value of an Integer Variable in another FSM.")]
     public class SetFsmInt : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the value is changing.")]
@@ -12,7 +12,7 @@
         private PlayMakerFSM fsm;
         [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM."), RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
         [RequiredField, HutongGames.PlayMaker.Tooltip("Set the value of the variable.")]

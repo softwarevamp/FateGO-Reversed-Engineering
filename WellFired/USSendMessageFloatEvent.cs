@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEventHideDuration, USequencerEvent("Signal/Send Message (Float)"), USequencerFriendlyName("Send Message (Float)")]
+    [USequencerEvent("Signal/Send Message (Float)"), USequencerEventHideDuration, USequencerFriendlyName("Send Message (Float)")]
     public class USSendMessageFloatEvent : USEventBase
     {
         public string action = "OnSignal";

@@ -9,20 +9,20 @@
     {
         [HutongGames.PlayMaker.Tooltip("Get the external IP address of the network interface. This will only be populated after some external connection has been made."), UIHint(UIHint.Variable)]
         public FsmString externalIPAddress;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the external port of the network interface. This will only be populated after some external connection has been made.")]
+        [HutongGames.PlayMaker.Tooltip("Get the external port of the network interface. This will only be populated after some external connection has been made."), UIHint(UIHint.Variable)]
         public FsmInt externalPort;
         [HutongGames.PlayMaker.Tooltip("Event to send when there are no more children.")]
         public FsmEvent finishedEvent;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the GUID for this player, used when connecting with NAT punchthrough.")]
         public FsmString guid;
-        [HutongGames.PlayMaker.Tooltip("The player connection index."), ActionSection("Result"), UIHint(UIHint.Variable)]
+        [ActionSection("Result"), UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The player connection index.")]
         public FsmInt index;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the IP address of this player.")]
         public FsmString IpAddress;
-        [ActionSection("Set up"), HutongGames.PlayMaker.Tooltip("Event to send for looping.")]
+        [HutongGames.PlayMaker.Tooltip("Event to send for looping."), ActionSection("Set up")]
         public FsmEvent loopEvent;
         private int nextItemIndex;
-        [HutongGames.PlayMaker.Tooltip("Get the port of this player."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the port of this player.")]
         public FsmInt port;
 
         private void DoGetNextPlayerProperties()

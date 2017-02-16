@@ -11,7 +11,7 @@
         public bool everyFrame;
         [RequiredField, HutongGames.PlayMaker.Tooltip("The key to test.")]
         public KeyCode key;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store if the key is down (True) or up (False)."), RequiredField]
+        [HutongGames.PlayMaker.Tooltip("Store if the key is down (True) or up (False)."), RequiredField, UIHint(UIHint.Variable)]
         public FsmBool storeResult;
 
         private void DoGetKey()

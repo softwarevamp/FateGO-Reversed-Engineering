@@ -6,7 +6,7 @@
     [ActionCategory("FGOAction")]
     public class FGOActorWeaponEffect : FsmStateAction
     {
-        [CheckForComponent(typeof(BattleActorControl)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(BattleActorControl))]
         public FsmGameObject actorObject;
         public FsmString actorside;
         public FsmString effectname;

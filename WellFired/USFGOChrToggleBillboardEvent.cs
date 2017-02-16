@@ -2,7 +2,7 @@
 {
     using System;
 
-    [USequencerEventHideDuration, USequencerEvent("FGO/Character/Toggle Billboard"), USequencerFriendlyName("FGO Toggle Character Billboard")]
+    [USequencerFriendlyName("FGO Toggle Character Billboard"), USequencerEvent("FGO/Character/Toggle Billboard"), USequencerEventHideDuration]
     public class USFGOChrToggleBillboardEvent : USEventBase
     {
         public bool isEnabled;

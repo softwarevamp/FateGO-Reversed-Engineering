@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Transforms a Direction from a Game Object's local space to world space.")]
+    [HutongGames.PlayMaker.Tooltip("Transforms a Direction from a Game Object's local space to world space."), ActionCategory(ActionCategory.Transform)]
     public class TransformDirection : FsmStateAction
     {
         public bool everyFrame;
@@ -12,7 +12,7 @@
         public FsmOwnerDefault gameObject;
         [RequiredField]
         public FsmVector3 localDirection;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmVector3 storeResult;
 
         private void DoTransformDirection()

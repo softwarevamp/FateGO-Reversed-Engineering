@@ -16,7 +16,7 @@
         public FsmOwnerDefault gameObject;
         private PlayMakerFSM sourceFsm;
         private INamedVariable sourceVariable;
-        [HideTypeFilter, RequiredField, UIHint(UIHint.Variable)]
+        [HideTypeFilter, UIHint(UIHint.Variable), RequiredField]
         public FsmVar storeValue;
         private NamedVariable targetVariable;
 

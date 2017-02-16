@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sends an Event when the specified Mouse Button is released. Optionally store the button state in a bool variable."), ActionCategory(ActionCategory.Input)]
+    [ActionCategory(ActionCategory.Input), HutongGames.PlayMaker.Tooltip("Sends an Event when the specified Mouse Button is released. Optionally store the button state in a bool variable.")]
     public class GetMouseButtonUp : FsmStateAction
     {
         [RequiredField]

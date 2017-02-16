@@ -11,11 +11,11 @@
         public FsmString animName;
         [HutongGames.PlayMaker.Tooltip("How the animation is blended with other animations on the Game Object.")]
         public AnimationBlendMode blendMode;
-        [HutongGames.PlayMaker.Tooltip("A GameObject with an Animation Component."), RequiredField, CheckForComponent(typeof(Animation))]
+        [RequiredField, CheckForComponent(typeof(Animation)), HutongGames.PlayMaker.Tooltip("A GameObject with an Animation Component.")]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("The animation layer")]
         public FsmInt layer;
-        [HutongGames.PlayMaker.Tooltip("The speed of the animation. 1 = normal; 2 = double speed..."), HasFloatSlider(0f, 5f)]
+        [HasFloatSlider(0f, 5f), HutongGames.PlayMaker.Tooltip("The speed of the animation. 1 = normal; 2 = double speed...")]
         public FsmFloat speed;
         [HutongGames.PlayMaker.Tooltip("The behavior of the animation when it wraps.")]
         public WrapMode wrapMode;

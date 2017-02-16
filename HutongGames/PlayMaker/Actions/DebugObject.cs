@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Debug), Tooltip("Logs the value of an Object Variable in the PlayMaker Log Window.")]
+    [Tooltip("Logs the value of an Object Variable in the PlayMaker Log Window."), ActionCategory(ActionCategory.Debug)]
     public class DebugObject : FsmStateAction
     {
         [Tooltip("Prints the value of an Object variable in the PlayMaker log window."), UIHint(UIHint.Variable)]

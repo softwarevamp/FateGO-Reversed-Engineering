@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Lights), HutongGames.PlayMaker.Tooltip("Set Spot, Directional, or Point Light type.")]
+    [HutongGames.PlayMaker.Tooltip("Set Spot, Directional, or Point Light type."), ActionCategory(ActionCategory.Lights)]
     public class SetLightType : ComponentAction<Light>
     {
-        [RequiredField, CheckForComponent(typeof(Light))]
+        [CheckForComponent(typeof(Light)), RequiredField]
         public FsmOwnerDefault gameObject;
         public LightType lightType;
 

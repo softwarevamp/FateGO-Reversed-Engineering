@@ -7,13 +7,13 @@
     [ActionCategory(ActionCategory.Input), HutongGames.PlayMaker.Tooltip("Gets the value of the specified Input Axis and stores it in a Float Variable. See Unity Input Manager docs.")]
     public class GetAxis : FsmStateAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The name of the axis. Set in the Unity Input Manager.")]
+        [HutongGames.PlayMaker.Tooltip("The name of the axis. Set in the Unity Input Manager."), RequiredField]
         public FsmString axisName;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Typically this would be set to True.")]
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("Axis values are in the range -1 to 1. Use the multiplier to set a larger range.")]
         public FsmFloat multiplier;
-        [HutongGames.PlayMaker.Tooltip("Store the result in a float variable."), RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the result in a float variable."), RequiredField]
         public FsmFloat store;
 
         private void DoGetAxis()

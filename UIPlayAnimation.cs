@@ -7,7 +7,7 @@ using UnityEngine;
 public class UIPlayAnimation : MonoBehaviour
 {
     public Animator animator;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private string callWhenFinished;
     public bool clearSelection;
     public string clipName;

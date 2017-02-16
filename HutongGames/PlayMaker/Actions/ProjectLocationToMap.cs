@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Device), HutongGames.PlayMaker.Tooltip("Projects the location found with Get Location Info to a 2d map using common projections.")]
+    [HutongGames.PlayMaker.Tooltip("Projects the location found with Get Location Info to a 2d map using common projections."), ActionCategory(ActionCategory.Device)]
     public class ProjectLocationToMap : FsmStateAction
     {
         public bool everyFrame;
@@ -19,14 +19,14 @@
         public FsmFloat maxLongitude;
         [HasFloatSlider(-90f, 90f)]
         public FsmFloat minLatitude;
-        [HasFloatSlider(-180f, 180f), ActionSection("Map Region")]
+        [ActionSection("Map Region"), HasFloatSlider(-180f, 180f)]
         public FsmFloat minLongitude;
         [ActionSection("Screen Region")]
         public FsmFloat minX;
         public FsmFloat minY;
         [HutongGames.PlayMaker.Tooltip("If true all coordinates in this action are normalized (0-1); otherwise coordinates are in pixels.")]
         public FsmBool normalized;
-        [HutongGames.PlayMaker.Tooltip("Store the projected X coordinate in a Float Variable. Use this to display a marker on the map."), ActionSection("Projection"), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the projected X coordinate in a Float Variable. Use this to display a marker on the map."), ActionSection("Projection")]
         public FsmFloat projectedX;
         [HutongGames.PlayMaker.Tooltip("Store the projected Y coordinate in a Float Variable. Use this to display a marker on the map."), UIHint(UIHint.Variable)]
         public FsmFloat projectedY;

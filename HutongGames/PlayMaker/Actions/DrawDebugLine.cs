@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Debug), HutongGames.PlayMaker.Tooltip("Draws a line from a Start point to an End point. Specify the points as Game Objects or Vector3 world positions. If both are specified, position is used as a local offset from the Object's position.")]
+    [HutongGames.PlayMaker.Tooltip("Draws a line from a Start point to an End point. Specify the points as Game Objects or Vector3 world positions. If both are specified, position is used as a local offset from the Object's position."), ActionCategory(ActionCategory.Debug)]
     public class DrawDebugLine : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("The color of the line.")]

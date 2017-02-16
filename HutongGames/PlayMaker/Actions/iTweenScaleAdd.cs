@@ -21,7 +21,7 @@
         public FsmFloat speed;
         [HutongGames.PlayMaker.Tooltip("The time in seconds the animation will take to complete.")]
         public FsmFloat time;
-        [HutongGames.PlayMaker.Tooltip("A vector that will be added to the GameObjects scale."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("A vector that will be added to the GameObjects scale.")]
         public FsmVector3 vector;
 
         private void DoiTween()

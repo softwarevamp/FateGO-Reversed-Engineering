@@ -7,9 +7,9 @@
     [HutongGames.PlayMaker.Tooltip("Mute/unmute the Audio Clip played by an Audio Source component on a Game Object."), ActionCategory(ActionCategory.Audio)]
     public class AudioMute : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("The GameObject with an Audio Source component."), RequiredField, CheckForComponent(typeof(AudioSource))]
+        [CheckForComponent(typeof(AudioSource)), HutongGames.PlayMaker.Tooltip("The GameObject with an Audio Source component."), RequiredField]
         public FsmOwnerDefault gameObject;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Check to mute, uncheck to unmute.")]
+        [HutongGames.PlayMaker.Tooltip("Check to mute, uncheck to unmute."), RequiredField]
         public FsmBool mute;
 
         public override void OnEnter()

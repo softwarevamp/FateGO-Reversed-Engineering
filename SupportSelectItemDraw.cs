@@ -184,23 +184,23 @@ public class SupportSelectItemDraw : MonoBehaviour
             {
                 Color color = (this.userServantEntity.adjustAtk <= 0) ? Color.white : Color.yellow;
                 this.attackLabel.color = color;
-                int num6 = this.userServantEntity.atk + this.userServantEntity.adjustAtk;
+                int atk = this.userServantEntity.atk;
                 if (this.equipUserServantEntity != null)
                 {
-                    num6 += this.equipUserServantEntity.atk + this.equipUserServantEntity.adjustAtk;
+                    atk += this.equipUserServantEntity.atk;
                 }
-                this.attackLabel.text = string.Empty + num6;
+                this.attackLabel.text = string.Empty + atk;
             }
             if (this.hpLabel != null)
             {
                 Color color2 = (this.userServantEntity.adjustHp <= 0) ? Color.white : Color.yellow;
                 this.hpLabel.color = color2;
-                int num7 = this.userServantEntity.hp + this.userServantEntity.adjustHp;
+                int hp = this.userServantEntity.hp;
                 if (this.equipUserServantEntity != null)
                 {
-                    num7 += this.equipUserServantEntity.hp + this.equipUserServantEntity.adjustHp;
+                    hp += this.equipUserServantEntity.hp;
                 }
-                this.hpLabel.text = string.Empty + num7;
+                this.hpLabel.text = string.Empty + hp;
             }
             if (this.baseSprite != null)
             {

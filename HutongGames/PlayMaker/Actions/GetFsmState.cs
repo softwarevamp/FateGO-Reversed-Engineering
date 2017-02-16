@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Gets the name of the specified FSMs current state. Either reference the fsm component directly, or find it on a game object.")]
+    [HutongGames.PlayMaker.Tooltip("Gets the name of the specified FSMs current state. Either reference the fsm component directly, or find it on a game object."), ActionCategory(ActionCategory.StateMachine)]
     public class GetFsmState : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. E.g.,  useful if you're waiting for the state to change.")]
@@ -12,7 +12,7 @@
         private PlayMakerFSM fsm;
         [HutongGames.PlayMaker.Tooltip("Drag a PlayMakerFSM component here.")]
         public PlayMakerFSM fsmComponent;
-        [HutongGames.PlayMaker.Tooltip("Optional name of Fsm on Game Object. If left blank it will find the first PlayMakerFSM on the GameObject."), UIHint(UIHint.FsmName)]
+        [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of Fsm on Game Object. If left blank it will find the first PlayMakerFSM on the GameObject.")]
         public FsmString fsmName;
         [HutongGames.PlayMaker.Tooltip("If not specifyng the component above, specify the GameObject that owns the FSM")]
         public FsmOwnerDefault gameObject;

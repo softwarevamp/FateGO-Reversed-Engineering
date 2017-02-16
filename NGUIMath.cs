@@ -272,7 +272,7 @@ public static class NGUIMath
         return new Bounds(Vector3.zero, Vector3.zero);
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     private static void CalculateRelativeWidgetBounds(Transform content, bool considerInactive, bool isRoot, ref Matrix4x4 toLocal, ref Vector3 vMin, ref Vector3 vMax, ref bool isSet, bool considerParents)
     {
         if ((content != null) && (considerInactive || NGUITools.GetActive(content.gameObject)))
@@ -365,7 +365,7 @@ public static class NGUIMath
         }
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public static int ClampIndex(int val, int max) => 
         ((val >= 0) ? ((val >= max) ? (max - 1) : val) : 0);
 
@@ -448,14 +448,14 @@ public static class NGUIMath
         return rect2;
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public static string DecimalToHex24(int num)
     {
         num &= 0xffffff;
         return num.ToString("X6");
     }
 
-    [DebuggerHidden, DebuggerStepThrough]
+    [DebuggerStepThrough, DebuggerHidden]
     public static string DecimalToHex32(int num) => 
         num.ToString("X8");
 
@@ -730,7 +730,7 @@ public static class NGUIMath
         return str;
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public static Color IntToColor(int val)
     {
         float num = 0.003921569f;
@@ -830,7 +830,7 @@ public static class NGUIMath
         trans.localPosition = (parent == null) ? worldPos : parent.InverseTransformPoint(worldPos);
     }
 
-    [DebuggerHidden, DebuggerStepThrough]
+    [DebuggerStepThrough, DebuggerHidden]
     public static int RepeatIndex(int val, int max)
     {
         if (max < 1)
@@ -1029,11 +1029,11 @@ public static class NGUIMath
         return relativeTo?.InverseTransformPoint(worldPos);
     }
 
-    [DebuggerHidden, DebuggerStepThrough]
+    [DebuggerStepThrough, DebuggerHidden]
     public static float Wrap01(float val) => 
         (val - Mathf.FloorToInt(val));
 
-    [DebuggerHidden, DebuggerStepThrough]
+    [DebuggerStepThrough, DebuggerHidden]
     public static float WrapAngle(float angle)
     {
         while (angle > 180f)

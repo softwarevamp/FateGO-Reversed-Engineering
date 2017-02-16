@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the Texture projected by a Light."), ActionCategory(ActionCategory.Lights)]
+    [ActionCategory(ActionCategory.Lights), HutongGames.PlayMaker.Tooltip("Sets the Texture projected by a Light.")]
     public class SetLightCookie : ComponentAction<Light>
     {
         [CheckForComponent(typeof(Light)), RequiredField]

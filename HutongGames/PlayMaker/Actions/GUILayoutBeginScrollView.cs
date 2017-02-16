@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Begins a ScrollView. Use GUILayoutEndScrollView at the end of the block."), ActionCategory(ActionCategory.GUILayout)]
+    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("Begins a ScrollView. Use GUILayoutEndScrollView at the end of the block.")]
     public class GUILayoutBeginScrollView : GUILayoutAction
     {
         [HutongGames.PlayMaker.Tooltip("Named style in the active GUISkin for the background.")]

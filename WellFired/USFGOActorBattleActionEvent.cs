@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("FGO Actor Battle Action"), USequencerEvent("FGO/Character/Battle Action")]
+    [USequencerEvent("FGO/Character/Battle Action"), USequencerFriendlyName("FGO Actor Battle Action")]
     public class USFGOActorBattleActionEvent : USEventBase
     {
         public ActionType actionType;

@@ -9,14 +9,14 @@ public class UIToggle : UIWidgetContainer
 {
     public Animation activeAnimation;
     public UIWidget activeSprite;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private Animation checkAnimation;
     [SerializeField, HideInInspector]
     private UISprite checkSprite;
     public static UIToggle current;
     [SerializeField, HideInInspector]
     private GameObject eventReceiver;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private string functionName = "OnActivate";
     public int group;
     public bool instantTween;

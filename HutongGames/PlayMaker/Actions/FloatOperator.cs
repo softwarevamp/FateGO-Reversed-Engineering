@@ -4,18 +4,18 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Math), HutongGames.PlayMaker.Tooltip("Performs math operations on 2 Floats: Add, Subtract, Multiply, Divide, Min, Max.")]
+    [HutongGames.PlayMaker.Tooltip("Performs math operations on 2 Floats: Add, Subtract, Multiply, Divide, Min, Max."), ActionCategory(ActionCategory.Math)]
     public class FloatOperator : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the variables are changing.")]
         public bool everyFrame;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The first float.")]
+        [HutongGames.PlayMaker.Tooltip("The first float."), RequiredField]
         public FsmFloat float1;
         [RequiredField, HutongGames.PlayMaker.Tooltip("The second float.")]
         public FsmFloat float2;
         [HutongGames.PlayMaker.Tooltip("The math operation to perform on the floats.")]
         public Operation operation;
-        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the result of the operation in a float variable.")]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the result of the operation in a float variable."), RequiredField]
         public FsmFloat storeResult;
 
         private void DoFloatOperator()

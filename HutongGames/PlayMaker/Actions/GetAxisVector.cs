@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Input), HutongGames.PlayMaker.Tooltip("Gets a world direction Vector from 2 Input Axis. Typically used for a third person controller with Relative To set to the camera.")]
+    [HutongGames.PlayMaker.Tooltip("Gets a world direction Vector from 2 Input Axis. Typically used for a third person controller with Relative To set to the camera."), ActionCategory(ActionCategory.Input)]
     public class GetAxisVector : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("The name of the horizontal input axis. See Unity Input Manager.")]
@@ -17,7 +17,7 @@
         public FsmGameObject relativeTo;
         [HutongGames.PlayMaker.Tooltip("Store the length of the direction vector."), UIHint(UIHint.Variable)]
         public FsmFloat storeMagnitude;
-        [UIHint(UIHint.Variable), RequiredField, HutongGames.PlayMaker.Tooltip("Store the direction vector.")]
+        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the direction vector.")]
         public FsmVector3 storeVector;
         [HutongGames.PlayMaker.Tooltip("The name of the vertical input axis. See Unity Input Manager.")]
         public FsmString verticalAxis;

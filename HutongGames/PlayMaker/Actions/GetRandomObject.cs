@@ -4,12 +4,12 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Gets a Random Game Object from the scene.\nOptionally filter by Tag.")]
+    [HutongGames.PlayMaker.Tooltip("Gets a Random Game Object from the scene.\nOptionally filter by Tag."), ActionCategory(ActionCategory.GameObject)]
     public class GetRandomObject : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmGameObject storeResult;
         [UIHint(UIHint.Tag)]
         public FsmString withTag;

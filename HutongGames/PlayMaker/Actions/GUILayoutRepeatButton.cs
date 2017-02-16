@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("GUILayout Repeat Button. Sends an Event while pressed. Optionally store the button state in a Bool Variable.")]
+    [HutongGames.PlayMaker.Tooltip("GUILayout Repeat Button. Sends an Event while pressed. Optionally store the button state in a Bool Variable."), ActionCategory(ActionCategory.GUILayout)]
     public class GUILayoutRepeatButton : GUILayoutAction
     {
         public FsmTexture image;

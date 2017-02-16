@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Material), HutongGames.PlayMaker.Tooltip("Sets a Game Object's material randomly from an array of Materials.")]
+    [HutongGames.PlayMaker.Tooltip("Sets a Game Object's material randomly from an array of Materials."), ActionCategory(ActionCategory.Material)]
     public class SetRandomMaterial : ComponentAction<Renderer>
     {
         [RequiredField, CheckForComponent(typeof(Renderer))]

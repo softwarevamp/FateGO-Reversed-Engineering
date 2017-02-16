@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.AnimateVariables), HutongGames.PlayMaker.Tooltip("Animates the value of a Color Variable using an Animation Curve.")]
+    [HutongGames.PlayMaker.Tooltip("Animates the value of a Color Variable using an Animation Curve."), ActionCategory(ActionCategory.AnimateVariables)]
     public class AnimateColor : AnimateFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("Calculation lets you set a type of curve deformation that will be applied to colorVariable.a.")]

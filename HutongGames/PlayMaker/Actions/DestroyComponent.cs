@@ -4,13 +4,13 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Destroys a Component of an Object."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Destroys a Component of an Object.")]
     public class DestroyComponent : FsmStateAction
     {
         private Component aComponent;
-        [HutongGames.PlayMaker.Tooltip("The name of the Component to destroy."), UIHint(UIHint.ScriptComponent), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The name of the Component to destroy."), UIHint(UIHint.ScriptComponent)]
         public FsmString component;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the Component.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the Component."), RequiredField]
         public FsmOwnerDefault gameObject;
 
         private void DoDestroyComponent(GameObject go)

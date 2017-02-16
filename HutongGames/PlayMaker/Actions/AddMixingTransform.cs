@@ -9,7 +9,7 @@
     {
         [RequiredField, HutongGames.PlayMaker.Tooltip("The name of the animation to mix. NOTE: The animation should already be added to the Animation Component on the GameObject.")]
         public FsmString animationName;
-        [HutongGames.PlayMaker.Tooltip("The GameObject playing the animation."), CheckForComponent(typeof(Animation)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(Animation)), HutongGames.PlayMaker.Tooltip("The GameObject playing the animation.")]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("If recursive is true all children of the mix transform will also be animated.")]
         public FsmBool recursive;

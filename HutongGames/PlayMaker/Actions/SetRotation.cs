@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the Rotation of a Game Object. To leave any axis unchanged, set variable to 'None'."), ActionCategory(ActionCategory.Transform)]
+    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Sets the Rotation of a Game Object. To leave any axis unchanged, set variable to 'None'.")]
     public class SetRotation : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]

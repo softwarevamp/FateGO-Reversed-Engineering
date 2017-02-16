@@ -13,7 +13,7 @@
         public FsmInt max;
         [RequiredField]
         public FsmInt min;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmInt storeResult;
 
         public override void OnEnter()

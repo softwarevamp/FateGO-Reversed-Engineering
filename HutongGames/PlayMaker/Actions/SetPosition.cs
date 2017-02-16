@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the Position of a Game Object. To leave any axis unchanged, set variable to 'None'."), ActionCategory(ActionCategory.Transform)]
+    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Sets the Position of a Game Object. To leave any axis unchanged, set variable to 'None'.")]
     public class SetPosition : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
@@ -15,7 +15,7 @@
         public bool lateUpdate;
         [HutongGames.PlayMaker.Tooltip("Use local or world space.")]
         public Space space;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Use a stored Vector3 position, and/or set individual axis below.")]
+        [HutongGames.PlayMaker.Tooltip("Use a stored Vector3 position, and/or set individual axis below."), UIHint(UIHint.Variable)]
         public FsmVector3 vector;
         public FsmFloat x;
         public FsmFloat y;

@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.RenderSettings), HutongGames.PlayMaker.Tooltip("Sets the size of light halos.")]
+    [HutongGames.PlayMaker.Tooltip("Sets the size of light halos."), ActionCategory(ActionCategory.RenderSettings)]
     public class SetHaloStrength : FsmStateAction
     {
         public bool everyFrame;

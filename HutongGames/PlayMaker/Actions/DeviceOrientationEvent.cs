@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Device), HutongGames.PlayMaker.Tooltip("Sends an Event based on the Orientation of the mobile device.")]
+    [HutongGames.PlayMaker.Tooltip("Sends an Event based on the Orientation of the mobile device."), ActionCategory(ActionCategory.Device)]
     public class DeviceOrientationEvent : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if you want to wait for the orientation to be true.")]

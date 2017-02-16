@@ -11,7 +11,7 @@
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("Perform the rotation in FixedUpdate. This is useful when working with rigid bodies and physics.")]
         public bool fixedUpdate;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The game object to rotate.")]
+        [HutongGames.PlayMaker.Tooltip("The game object to rotate."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Perform the rotation in LateUpdate. This is useful if you want to override the rotation of objects that are animated or otherwise rotated in Update.")]
         public bool lateUpdate;
@@ -19,7 +19,7 @@
         public bool perSecond;
         [HutongGames.PlayMaker.Tooltip("Rotate in local or world space.")]
         public Space space;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("A rotation vector. NOTE: You can override individual axis below.")]
+        [HutongGames.PlayMaker.Tooltip("A rotation vector. NOTE: You can override individual axis below."), UIHint(UIHint.Variable)]
         public FsmVector3 vector;
         [HutongGames.PlayMaker.Tooltip("Rotation around x axis.")]
         public FsmFloat xAngle;

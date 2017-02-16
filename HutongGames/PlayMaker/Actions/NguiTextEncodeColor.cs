@@ -4,13 +4,13 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Encode a color into a string for label coloring tags"), ActionCategory("NGUI Tools")]
+    [ActionCategory("NGUI Tools"), HutongGames.PlayMaker.Tooltip("Encode a color into a string for label coloring tags")]
     public class NguiTextEncodeColor : FsmStateAction
     {
         private Color _lastColor;
-        [HutongGames.PlayMaker.Tooltip("The Color"), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The Color")]
         public FsmColor color;
-        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The string representation  result of that color")]
+        [UIHint(UIHint.Variable), RequiredField, HutongGames.PlayMaker.Tooltip("The string representation  result of that color")]
         public FsmString colorString;
         public bool everyFrame;
 

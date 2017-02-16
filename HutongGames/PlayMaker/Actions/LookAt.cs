@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Rotates a Game Object so its forward vector points at a Target. The Target can be specified as a GameObject or a world Position. If you specify both, then Position specifies a local offset from the target object's Position."), ActionCategory(ActionCategory.Transform)]
+    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Rotates a Game Object so its forward vector points at a Target. The Target can be specified as a GameObject or a world Position. If you specify both, then Position specifies a local offset from the target object's Position.")]
     public class LookAt : FsmStateAction
     {
         [Title("Draw Debug Line"), HutongGames.PlayMaker.Tooltip("Draw a debug line from the GameObject to the Target.")]
@@ -13,7 +13,7 @@
         public FsmColor debugLineColor;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame = true;
-        [HutongGames.PlayMaker.Tooltip("The GameObject to rotate."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to rotate.")]
         public FsmOwnerDefault gameObject;
         private GameObject go;
         private GameObject goTarget;

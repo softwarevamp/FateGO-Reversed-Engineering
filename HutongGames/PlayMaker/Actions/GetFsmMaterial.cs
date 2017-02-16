@@ -4,18 +4,18 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Get the value of a Material Variable from another FSM.")]
+    [HutongGames.PlayMaker.Tooltip("Get the value of a Material Variable from another FSM."), ActionCategory(ActionCategory.StateMachine)]
     public class GetFsmMaterial : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;
         protected PlayMakerFSM fsm;
-        [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object")]
+        [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM."), RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmMaterial storeValue;
         [RequiredField, UIHint(UIHint.FsmMaterial)]
         public FsmString variableName;

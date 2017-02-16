@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Network), HutongGames.PlayMaker.Tooltip("Get the current network time (seconds).")]
+    [HutongGames.PlayMaker.Tooltip("Get the current network time (seconds)."), ActionCategory(ActionCategory.Network)]
     public class NetworkGetTime : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("The network time."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The network time.")]
         public FsmFloat time;
 
         public override void OnEnter()

@@ -10,7 +10,7 @@
         public bool everyFrame;
         [RequiredField]
         public FsmGameObject gameObject;
-        [ObjectType(typeof(Transform)), UIHint(UIHint.Variable), RequiredField]
+        [UIHint(UIHint.Variable), RequiredField, ObjectType(typeof(Transform))]
         public FsmObject storeTransform;
 
         private void DoGetGameObjectName()

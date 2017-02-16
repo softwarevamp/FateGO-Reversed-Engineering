@@ -8,7 +8,7 @@
     {
         public bool everyFrame;
         public FsmFloat floatValue;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmInt intVariable;
 
         public override void OnEnter()

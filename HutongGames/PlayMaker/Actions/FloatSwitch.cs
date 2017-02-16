@@ -3,12 +3,12 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Logic), Tooltip("Sends an Event based on the value of a Float Variable. The float could represent distance, angle to a target, health left... The array sets up float ranges that correspond to Events.")]
+    [Tooltip("Sends an Event based on the value of a Float Variable. The float could represent distance, angle to a target, health left... The array sets up float ranges that correspond to Events."), ActionCategory(ActionCategory.Logic)]
     public class FloatSwitch : FsmStateAction
     {
         [Tooltip("Repeat every frame. Useful if the variable is changing.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), Tooltip("The float variable to test."), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable), Tooltip("The float variable to test.")]
         public FsmFloat floatVariable;
         [CompoundArray("Float Switches", "Less Than", "Send Event")]
         public FsmFloat[] lessThan;

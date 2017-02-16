@@ -12,12 +12,12 @@
         private PlayMakerFSM fsm;
         [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
-        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM.")]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
         [HutongGames.PlayMaker.Tooltip("Set the value of the variable.")]
         public FsmTexture setValue;
-        [HutongGames.PlayMaker.Tooltip("The name of the FSM variable."), UIHint(UIHint.FsmTexture), RequiredField]
+        [UIHint(UIHint.FsmTexture), RequiredField, HutongGames.PlayMaker.Tooltip("The name of the FSM variable.")]
         public FsmString variableName;
 
         private void DoSetFsmBool()

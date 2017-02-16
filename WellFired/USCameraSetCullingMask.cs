@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEventHideDuration, USequencerFriendlyName("Set Culling Mask"), USequencerEvent("Camera/Set Culling Mask"), ExecuteInEditMode]
+    [USequencerEvent("Camera/Set Culling Mask"), USequencerFriendlyName("Set Culling Mask"), ExecuteInEditMode, USequencerEventHideDuration]
     public class USCameraSetCullingMask : USEventBase
     {
         private Camera cameraToAffect;

@@ -4,15 +4,15 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Plays the Audio Clip set with Set Audio Clip or in the Audio Source inspector on a Game Object. Optionally plays a one shot Audio Clip."), ActionCategory(ActionCategory.Audio)]
+    [ActionCategory(ActionCategory.Audio), HutongGames.PlayMaker.Tooltip("Plays the Audio Clip set with Set Audio Clip or in the Audio Source inspector on a Game Object. Optionally plays a one shot Audio Clip.")]
     public class AudioPlay : FsmStateAction
     {
         private AudioSource audio;
         [HutongGames.PlayMaker.Tooltip("Event to send when the AudioClip finishes playing.")]
         public FsmEvent finishedEvent;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject with an AudioSource component."), CheckForComponent(typeof(AudioSource))]
+        [CheckForComponent(typeof(AudioSource)), HutongGames.PlayMaker.Tooltip("The GameObject with an AudioSource component."), RequiredField]
         public FsmOwnerDefault gameObject;
-        [ObjectType(typeof(AudioClip)), HutongGames.PlayMaker.Tooltip("Optionally play a 'one shot' AudioClip. NOTE: Volume cannot be adjusted while playing a 'one shot' AudioClip.")]
+        [HutongGames.PlayMaker.Tooltip("Optionally play a 'one shot' AudioClip. NOTE: Volume cannot be adjusted while playing a 'one shot' AudioClip."), ObjectType(typeof(AudioClip))]
         public FsmObject oneShotClip;
         [HasFloatSlider(0f, 1f), HutongGames.PlayMaker.Tooltip("Set the volume.")]
         public FsmFloat volume;

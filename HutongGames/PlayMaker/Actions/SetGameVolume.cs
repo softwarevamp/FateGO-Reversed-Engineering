@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the global sound volume."), ActionCategory(ActionCategory.Audio)]
+    [ActionCategory(ActionCategory.Audio), HutongGames.PlayMaker.Tooltip("Sets the global sound volume.")]
     public class SetGameVolume : FsmStateAction
     {
         public bool everyFrame;

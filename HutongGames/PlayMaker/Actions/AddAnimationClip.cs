@@ -9,7 +9,7 @@
     {
         [HutongGames.PlayMaker.Tooltip("Add an extra looping frame that matches the first frame.")]
         public FsmBool addLoopFrame;
-        [ObjectType(typeof(AnimationClip)), HutongGames.PlayMaker.Tooltip("The animation clip to add. NOTE: Make sure the clip is compatible with the object's hierarchy."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The animation clip to add. NOTE: Make sure the clip is compatible with the object's hierarchy."), ObjectType(typeof(AnimationClip))]
         public FsmObject animationClip;
         [RequiredField, HutongGames.PlayMaker.Tooltip("Name the animation. Used by other actions to reference this animation.")]
         public FsmString animationName;

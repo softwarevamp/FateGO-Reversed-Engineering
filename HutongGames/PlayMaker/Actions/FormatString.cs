@@ -11,7 +11,7 @@
         [RequiredField, Tooltip("E.g. Hello {0} and {1}\nWith 2 variables that replace {0} and {1}\nSee C# string.Format docs.")]
         public FsmString format;
         private object[] objectArray;
-        [UIHint(UIHint.Variable), RequiredField, Tooltip("Store the formatted result in a string variable.")]
+        [UIHint(UIHint.Variable), Tooltip("Store the formatted result in a string variable."), RequiredField]
         public FsmString storeResult;
         [Tooltip("Variables to use for each formatting item.")]
         public FsmVar[] variables;

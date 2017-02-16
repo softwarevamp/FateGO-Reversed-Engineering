@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Blends an Animation towards a Target Weight over a specified Time.\nOptionally sends an Event when finished."), ActionCategory(ActionCategory.Animation)]
+    [ActionCategory(ActionCategory.Animation), HutongGames.PlayMaker.Tooltip("Blends an Animation towards a Target Weight over a specified Time.\nOptionally sends an Event when finished.")]
     public class BlendAnimation : FsmStateAction
     {
         [UIHint(UIHint.Animation), HutongGames.PlayMaker.Tooltip("The name of the animation to blend."), RequiredField]
@@ -12,11 +12,11 @@
         private DelayedEvent delayedFinishEvent;
         [HutongGames.PlayMaker.Tooltip("Event to send when the blend has finished.")]
         public FsmEvent finishEvent;
-        [RequiredField, CheckForComponent(typeof(Animation)), HutongGames.PlayMaker.Tooltip("The GameObject to animate.")]
+        [CheckForComponent(typeof(Animation)), RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to animate.")]
         public FsmOwnerDefault gameObject;
-        [HutongGames.PlayMaker.Tooltip("Target weight to blend to."), RequiredField, HasFloatSlider(0f, 1f)]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Target weight to blend to."), HasFloatSlider(0f, 1f)]
         public FsmFloat targetWeight;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("How long should the blend take."), HasFloatSlider(0f, 5f)]
+        [HutongGames.PlayMaker.Tooltip("How long should the blend take."), HasFloatSlider(0f, 5f), RequiredField]
         public FsmFloat time;
 
         private void DoBlendAnimation(GameObject go)

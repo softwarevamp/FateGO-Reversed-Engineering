@@ -4,13 +4,13 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory("Mesh"), HutongGames.PlayMaker.Tooltip("Gets the number of vertices in a GameObject's mesh. Useful in conjunction with GetVertexPosition.")]
+    [HutongGames.PlayMaker.Tooltip("Gets the number of vertices in a GameObject's mesh. Useful in conjunction with GetVertexPosition."), ActionCategory("Mesh")]
     public class GetVertexCount : FsmStateAction
     {
         public bool everyFrame;
-        [CheckForComponent(typeof(MeshFilter)), HutongGames.PlayMaker.Tooltip("The GameObject to check."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to check."), CheckForComponent(typeof(MeshFilter))]
         public FsmOwnerDefault gameObject;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the vertex count in a variable."), RequiredField]
+        [HutongGames.PlayMaker.Tooltip("Store the vertex count in a variable."), UIHint(UIHint.Variable), RequiredField]
         public FsmInt storeCount;
 
         private void DoGetVertexCount()

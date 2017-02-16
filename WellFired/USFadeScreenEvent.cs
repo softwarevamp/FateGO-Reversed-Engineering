@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("Fade Screen"), USequencerEvent("Fullscreen/Fade Screen"), USequencerEventHideDuration]
+    [USequencerEvent("Fullscreen/Fade Screen"), USequencerEventHideDuration, USequencerFriendlyName("Fade Screen")]
     public class USFadeScreenEvent : USEventBase
     {
         private float currentCurveSampleTime;

@@ -4,14 +4,14 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Performs a Hit Test on a Game Object with a GUITexture or GUIText component."), ActionCategory(ActionCategory.GUIElement)]
+    [ActionCategory(ActionCategory.GUIElement), HutongGames.PlayMaker.Tooltip("Performs a Hit Test on a Game Object with a GUITexture or GUIText component.")]
     public class GUIElementHitTest : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Specify camera or use MainCamera as default.")]
         public Camera camera;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if you want to wait for the hit test to return true.")]
         public FsmBool everyFrame;
-        [CheckForComponent(typeof(GUIElement)), HutongGames.PlayMaker.Tooltip("The GameObject that has a GUITexture or GUIText component."), RequiredField]
+        [HutongGames.PlayMaker.Tooltip("The GameObject that has a GUITexture or GUIText component."), RequiredField, CheckForComponent(typeof(GUIElement))]
         public FsmOwnerDefault gameObject;
         private GameObject gameObjectCached;
         private GUIElement guiElement;
@@ -25,7 +25,7 @@
         public FsmFloat screenX;
         [HutongGames.PlayMaker.Tooltip("Specify screen Y coordinate.")]
         public FsmFloat screenY;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the result of the Hit Test in a bool variable (true/false).")]
+        [HutongGames.PlayMaker.Tooltip("Store the result of the Hit Test in a bool variable (true/false)."), UIHint(UIHint.Variable)]
         public FsmBool storeResult;
 
         private void DoHitTest()

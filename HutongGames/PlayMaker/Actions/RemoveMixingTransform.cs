@@ -9,9 +9,9 @@
     {
         [HutongGames.PlayMaker.Tooltip("The name of the animation."), RequiredField]
         public FsmString animationName;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject playing the animation."), CheckForComponent(typeof(Animation))]
+        [RequiredField, CheckForComponent(typeof(Animation)), HutongGames.PlayMaker.Tooltip("The GameObject playing the animation.")]
         public FsmOwnerDefault gameObject;
-        [HutongGames.PlayMaker.Tooltip("The mixing transform to remove. E.g., root/upper_body/left_shoulder"), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The mixing transform to remove. E.g., root/upper_body/left_shoulder")]
         public FsmString transfrom;
 
         private void DoRemoveMixingTransform()

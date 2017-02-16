@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Perform a raycast into the scene using screen coordinates and stores the results. Use Ray Distance to set how close the camera must be to pick the object. NOTE: Uses the MainCamera!"), ActionCategory(ActionCategory.Input)]
+    [ActionCategory(ActionCategory.Input), HutongGames.PlayMaker.Tooltip("Perform a raycast into the scene using screen coordinates and stores the results. Use Ray Distance to set how close the camera must be to pick the object. NOTE: Uses the MainCamera!")]
     public class ScreenPick : FsmStateAction
     {
         public bool everyFrame;

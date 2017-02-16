@@ -50,7 +50,7 @@ public class BetterList<T>
         return false;
     }
 
-    [DebuggerHidden, DebuggerHidden, DebuggerStepThrough]
+    [DebuggerHidden, DebuggerStepThrough, DebuggerHidden]
     public IEnumerator<T> GetEnumerator() => 
         new <GetEnumerator>c__Iterator40<T> { <>f__this = (BetterList<T>) this };
 
@@ -144,7 +144,7 @@ public class BetterList<T>
         }
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public void Sort(CompareFunc<T> comparer)
     {
         int num = 0;

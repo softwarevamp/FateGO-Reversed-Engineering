@@ -11,7 +11,7 @@
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("Event to send if the GameObject does not have children.")]
         public FsmEvent falseEvent;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to test.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject to test."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Store the result in a bool variable."), UIHint(UIHint.Variable)]
         public FsmBool storeResult;

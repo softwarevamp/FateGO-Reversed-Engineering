@@ -15,7 +15,7 @@
         [HutongGames.PlayMaker.Tooltip("Ignore TimeScale")]
         public bool realTime;
         private float startTime;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmVector3 storeResult;
         [RequiredField]
         public FsmFloat time;

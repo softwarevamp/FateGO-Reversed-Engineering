@@ -4,14 +4,14 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Gets the Speed of a Game Object and stores it in a Float Variable. NOTE: The Game Object must have a rigid body.")]
+    [HutongGames.PlayMaker.Tooltip("Gets the Speed of a Game Object and stores it in a Float Variable. NOTE: The Game Object must have a rigid body."), ActionCategory(ActionCategory.Physics)]
     public class GetSpeed : ComponentAction<Rigidbody>
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject with a Rigidbody."), CheckForComponent(typeof(Rigidbody))]
+        [CheckForComponent(typeof(Rigidbody)), HutongGames.PlayMaker.Tooltip("The GameObject with a Rigidbody."), RequiredField]
         public FsmOwnerDefault gameObject;
-        [UIHint(UIHint.Variable), RequiredField, HutongGames.PlayMaker.Tooltip("Store the speed in a float variable.")]
+        [HutongGames.PlayMaker.Tooltip("Store the speed in a float variable."), UIHint(UIHint.Variable), RequiredField]
         public FsmFloat storeResult;
 
         private void DoGetSpeed()

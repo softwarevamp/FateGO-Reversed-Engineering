@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("Close a group started with GUILayout Begin ScrollView.")]
+    [HutongGames.PlayMaker.Tooltip("Close a group started with GUILayout Begin ScrollView."), ActionCategory(ActionCategory.GUILayout)]
     public class GUILayoutEndScrollView : FsmStateAction
     {
         public override void OnGUI()

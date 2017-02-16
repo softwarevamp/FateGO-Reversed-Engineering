@@ -137,6 +137,10 @@ public class BSGameSdk : MonoBehaviour
         callSdkApiObject("UoLogout", new object[0]);
     }
 
+    public static void xcodeLog(string str)
+    {
+    }
+
     public static bool YYBCheckIsLogin()
     {
         bool flag = callSdkApiObjectWithCallBack("CheckIsLogin", new object[0]);

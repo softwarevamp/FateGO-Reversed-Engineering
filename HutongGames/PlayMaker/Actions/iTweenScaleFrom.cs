@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory("iTween"), HutongGames.PlayMaker.Tooltip("Instantly changes a GameObject's scale then returns it to it's starting scale over time.")]
+    [HutongGames.PlayMaker.Tooltip("Instantly changes a GameObject's scale then returns it to it's starting scale over time."), ActionCategory("iTween")]
     public class iTweenScaleFrom : iTweenFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("The time in seconds the animation will wait before beginning.")]

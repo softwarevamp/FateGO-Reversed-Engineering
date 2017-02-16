@@ -7,7 +7,7 @@
     public class GetRectFields : FsmStateAction
     {
         public bool everyFrame;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmRect rectVariable;
         [UIHint(UIHint.Variable)]
         public FsmFloat storeHeight;

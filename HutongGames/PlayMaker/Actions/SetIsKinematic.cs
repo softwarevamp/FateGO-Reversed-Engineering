@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Controls whether physics affects the Game Object.")]
+    [HutongGames.PlayMaker.Tooltip("Controls whether physics affects the Game Object."), ActionCategory(ActionCategory.Physics)]
     public class SetIsKinematic : ComponentAction<Rigidbody>
     {
         [CheckForComponent(typeof(Rigidbody)), RequiredField]

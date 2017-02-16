@@ -3,10 +3,10 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Debug), Tooltip("Logs the value of a Bool Variable in the PlayMaker Log Window.")]
+    [Tooltip("Logs the value of a Bool Variable in the PlayMaker Log Window."), ActionCategory(ActionCategory.Debug)]
     public class DebugBool : FsmStateAction
     {
-        [Tooltip("Prints the value of a Bool variable in the PlayMaker log window."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), Tooltip("Prints the value of a Bool variable in the PlayMaker log window.")]
         public FsmBool boolVariable;
         [Tooltip("Info, Warning, or Error.")]
         public LogLevel logLevel;

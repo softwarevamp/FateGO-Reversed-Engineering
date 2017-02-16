@@ -4,16 +4,16 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sends Events based on the comparison of 2 Floats."), ActionCategory(ActionCategory.Logic)]
+    [ActionCategory(ActionCategory.Logic), HutongGames.PlayMaker.Tooltip("Sends Events based on the comparison of 2 Floats.")]
     public class FloatCompare : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Event sent if Float 1 equals Float 2 (within Tolerance)")]
         public FsmEvent equal;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the variables are changing and you're waiting for a particular result.")]
         public bool everyFrame;
-        [HutongGames.PlayMaker.Tooltip("The first float variable."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The first float variable.")]
         public FsmFloat float1;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The second float variable.")]
+        [HutongGames.PlayMaker.Tooltip("The second float variable."), RequiredField]
         public FsmFloat float2;
         [HutongGames.PlayMaker.Tooltip("Event sent if Float 1 is greater than Float 2")]
         public FsmEvent greaterThan;

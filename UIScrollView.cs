@@ -36,7 +36,7 @@ public class UIScrollView : MonoBehaviour
     public OnDragNotification onDragStarted;
     public OnDragNotification onMomentumMove;
     public OnDragNotification onStoppedMoving;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private Vector2 relativePositionOnReset = Vector2.zero;
     public bool restrictWithinPanel = true;
     [HideInInspector, SerializeField]

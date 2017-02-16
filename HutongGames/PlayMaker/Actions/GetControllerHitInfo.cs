@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Character), Tooltip("Gets info on the last Character Controller collision and store in variables.")]
+    [Tooltip("Gets info on the last Character Controller collision and store in variables."), ActionCategory(ActionCategory.Character)]
     public class GetControllerHitInfo : FsmStateAction
     {
         [UIHint(UIHint.Variable)]

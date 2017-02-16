@@ -13,7 +13,7 @@
         public FsmString key;
         [HutongGames.PlayMaker.Tooltip("Event to send if key exists.")]
         public FsmEvent trueEvent;
-        [Title("Store Result"), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), Title("Store Result")]
         public FsmBool variable;
 
         public override void OnEnter()

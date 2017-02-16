@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Material), HutongGames.PlayMaker.Tooltip("Sets the visibility of a GameObject. Note: this action sets the GameObject Renderer's enabled state.")]
+    [HutongGames.PlayMaker.Tooltip("Sets the visibility of a GameObject. Note: this action sets the GameObject Renderer's enabled state."), ActionCategory(ActionCategory.Material)]
     public class SetVisibility : ComponentAction<Renderer>
     {
         [RequiredField, CheckForComponent(typeof(Renderer))]

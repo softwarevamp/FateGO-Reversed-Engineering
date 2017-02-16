@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[RequireComponent(typeof(UIWidget)), AddComponentMenu("NGUI/Examples/Envelop Content")]
+[AddComponentMenu("NGUI/Examples/Envelop Content"), RequireComponent(typeof(UIWidget))]
 public class EnvelopContent : MonoBehaviour
 {
     private bool mStarted;

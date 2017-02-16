@@ -1354,7 +1354,7 @@ public class BattleData : MonoBehaviour
     public void useMasterSkill(BattleSkillInfoData skillInfo)
     {
         SkillLvEntity entity = SingletonMonoBehaviour<DataManager>.Instance.getMasterData<SkillLvMaster>(DataNameKind.Kind.SKILL_LEVEL).getEntityFromId<SkillLvEntity>(skillInfo.skillId, skillInfo.skilllv);
-        skillInfo.chargeTurn = 0;
+        skillInfo.chargeTurn = entity.chargeTurn;
     }
 
     public bool AddAttack

@@ -4,12 +4,12 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Gets the Mass of a Game Object's Rigid Body.")]
+    [HutongGames.PlayMaker.Tooltip("Gets the Mass of a Game Object's Rigid Body."), ActionCategory(ActionCategory.Physics)]
     public class GetMass : ComponentAction<Rigidbody>
     {
-        [CheckForComponent(typeof(Rigidbody)), HutongGames.PlayMaker.Tooltip("The GameObject that owns the Rigidbody"), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the Rigidbody"), CheckForComponent(typeof(Rigidbody))]
         public FsmOwnerDefault gameObject;
-        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the mass in a float variable.")]
+        [HutongGames.PlayMaker.Tooltip("Store the mass in a float variable."), UIHint(UIHint.Variable), RequiredField]
         public FsmFloat storeResult;
 
         private void DoGetMass()

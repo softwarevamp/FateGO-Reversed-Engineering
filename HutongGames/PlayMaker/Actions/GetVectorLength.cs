@@ -3,10 +3,10 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Vector3), Tooltip("Get Vector3 Length.")]
+    [Tooltip("Get Vector3 Length."), ActionCategory(ActionCategory.Vector3)]
     public class GetVectorLength : FsmStateAction
     {
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmFloat storeLength;
         public FsmVector3 vector3;
 

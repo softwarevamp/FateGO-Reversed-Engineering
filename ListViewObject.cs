@@ -264,7 +264,7 @@ public class ListViewObject : MonoBehaviour
 
     public void SetTransform(Vector3 position)
     {
-        base.transform.position = position;
+        base.transform.localPosition = position;
         this.basePosition = position;
     }
 

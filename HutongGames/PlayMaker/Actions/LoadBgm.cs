@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Loads the Game System BGM data."), ActionCategory(ActionCategory.Audio)]
+    [ActionCategory(ActionCategory.Audio), HutongGames.PlayMaker.Tooltip("Loads the Game System BGM data.")]
     public class LoadBgm : FsmStateAction
     {
         [ObjectType(typeof(AudioClip)), HutongGames.PlayMaker.Tooltip("Set the bgm name string.")]

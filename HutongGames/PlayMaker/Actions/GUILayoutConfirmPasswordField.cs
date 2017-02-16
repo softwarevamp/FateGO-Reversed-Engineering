@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("GUILayout Password Field. Optionally send an event if the text has been edited."), ActionCategory(ActionCategory.GUILayout)]
+    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("GUILayout Password Field. Optionally send an event if the text has been edited.")]
     public class GUILayoutConfirmPasswordField : GUILayoutAction
     {
         public FsmEvent changedEvent;

@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Vector3), HutongGames.PlayMaker.Tooltip("Adds a value to Vector3 Variable.")]
+    [HutongGames.PlayMaker.Tooltip("Adds a value to Vector3 Variable."), ActionCategory(ActionCategory.Vector3)]
     public class Vector3Add : FsmStateAction
     {
         [RequiredField]

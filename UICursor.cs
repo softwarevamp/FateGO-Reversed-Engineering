@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[RequireComponent(typeof(UISprite)), AddComponentMenu("NGUI/Examples/UI Cursor")]
+[AddComponentMenu("NGUI/Examples/UI Cursor"), RequireComponent(typeof(UISprite))]
 public class UICursor : MonoBehaviour
 {
     public static UICursor instance;

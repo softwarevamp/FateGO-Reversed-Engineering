@@ -5,11 +5,11 @@
     using System.Collections;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Set the Tag on all children of a GameObject. Optionally filter by component.")]
+    [HutongGames.PlayMaker.Tooltip("Set the Tag on all children of a GameObject. Optionally filter by component."), ActionCategory(ActionCategory.GameObject)]
     public class SetTagsOnChildren : FsmStateAction
     {
         private System.Type componentFilter;
-        [UIHint(UIHint.ScriptComponent), HutongGames.PlayMaker.Tooltip("Only set the Tag on children with this component.")]
+        [HutongGames.PlayMaker.Tooltip("Only set the Tag on children with this component."), UIHint(UIHint.ScriptComponent)]
         public FsmString filterByComponent;
         [RequiredField, HutongGames.PlayMaker.Tooltip("GameObject Parent")]
         public FsmOwnerDefault gameObject;

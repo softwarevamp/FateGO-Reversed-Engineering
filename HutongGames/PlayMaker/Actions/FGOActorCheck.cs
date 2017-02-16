@@ -7,7 +7,7 @@
     [ActionCategory("FGOAction")]
     public class FGOActorCheck : FsmStateAction
     {
-        [RequiredField, CheckForComponent(typeof(BattleActorControl))]
+        [CheckForComponent(typeof(BattleActorControl)), RequiredField]
         public FsmGameObject actorObject;
         public CHECK check;
         public FsmEvent FalseEvent;

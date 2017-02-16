@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.GameLogic), Tooltip("Tutorial Progress Flag System Check")]
+    [Tooltip("Tutorial Progress Flag System Check"), ActionCategory(ActionCategory.GameLogic)]
     public class TutorialCheckProgressFlag : FsmStateAction
     {
         [Tooltip("compare tutorial progress flag data int.")]

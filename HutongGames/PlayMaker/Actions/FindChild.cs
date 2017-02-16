@@ -4,14 +4,14 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Finds the Child of a GameObject by Name.\nNote, you can specify a path to the child, e.g., LeftShoulder/Arm/Hand/Finger. If you need to specify a tag, use GetChild."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Finds the Child of a GameObject by Name.\nNote, you can specify a path to the child, e.g., LeftShoulder/Arm/Hand/Finger. If you need to specify a tag, use GetChild.")]
     public class FindChild : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("The name of the child. Note, you can specify a path to the child, e.g., LeftShoulder/Arm/Hand/Finger"), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The name of the child. Note, you can specify a path to the child, e.g., LeftShoulder/Arm/Hand/Finger")]
         public FsmString childName;
         [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to search.")]
         public FsmOwnerDefault gameObject;
-        [HutongGames.PlayMaker.Tooltip("Store the child in a GameObject variable."), UIHint(UIHint.Variable), RequiredField]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the child in a GameObject variable."), RequiredField]
         public FsmGameObject storeResult;
 
         private void DoFindChild()

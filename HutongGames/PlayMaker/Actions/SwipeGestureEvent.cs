@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Device), HutongGames.PlayMaker.Tooltip("Sends an event when a swipe is detected.")]
+    [HutongGames.PlayMaker.Tooltip("Sends an event when a swipe is detected."), ActionCategory(ActionCategory.Device)]
     public class SwipeGestureEvent : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("How far a touch has to travel to be considered a swipe. Uses normalized distance (e.g. 1 = 1 screen diagonal distance). Should generally be a very small number.")]

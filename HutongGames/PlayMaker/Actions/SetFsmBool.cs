@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Set the value of a Bool Variable in another FSM.")]
+    [HutongGames.PlayMaker.Tooltip("Set the value of a Bool Variable in another FSM."), ActionCategory(ActionCategory.StateMachine)]
     public class SetFsmBool : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the value is changing.")]
@@ -12,12 +12,12 @@
         private PlayMakerFSM fsm;
         [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object")]
         public FsmString fsmName;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM."), RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
-        [HutongGames.PlayMaker.Tooltip("Set the value of the variable."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Set the value of the variable.")]
         public FsmBool setValue;
-        [HutongGames.PlayMaker.Tooltip("The name of the FSM variable."), RequiredField, UIHint(UIHint.FsmBool)]
+        [RequiredField, UIHint(UIHint.FsmBool), HutongGames.PlayMaker.Tooltip("The name of the FSM variable.")]
         public FsmString variableName;
 
         private void DoSetFsmBool()

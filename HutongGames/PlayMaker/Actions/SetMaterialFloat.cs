@@ -9,7 +9,7 @@
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the value is animated.")]
         public bool everyFrame;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Set the parameter value.")]
+        [HutongGames.PlayMaker.Tooltip("Set the parameter value."), RequiredField]
         public FsmFloat floatValue;
         [CheckForComponent(typeof(Renderer)), HutongGames.PlayMaker.Tooltip("The GameObject that the material is applied to.")]
         public FsmOwnerDefault gameObject;
@@ -17,7 +17,7 @@
         public FsmMaterial material;
         [HutongGames.PlayMaker.Tooltip("GameObjects can have multiple materials. Specify an index to target a specific material.")]
         public FsmInt materialIndex;
-        [HutongGames.PlayMaker.Tooltip("A named float parameter in the shader."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("A named float parameter in the shader.")]
         public FsmString namedFloat;
 
         private void DoSetMaterialFloat()

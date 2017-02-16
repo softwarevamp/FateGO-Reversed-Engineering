@@ -9,11 +9,11 @@
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the mesh is animated.")]
         public bool everyFrame;
-        [CheckForComponent(typeof(MeshFilter)), HutongGames.PlayMaker.Tooltip("The GameObject to check."), RequiredField]
+        [HutongGames.PlayMaker.Tooltip("The GameObject to check."), RequiredField, CheckForComponent(typeof(MeshFilter))]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Coordinate system to use.")]
         public Space space;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the vertex position in a variable."), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the vertex position in a variable.")]
         public FsmVector3 storePosition;
         [HutongGames.PlayMaker.Tooltip("The index of the vertex."), RequiredField]
         public FsmInt vertexIndex;

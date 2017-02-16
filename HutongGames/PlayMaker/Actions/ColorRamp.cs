@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Samples a Color on a continuous Colors gradient."), ActionCategory(ActionCategory.Color)]
+    [ActionCategory(ActionCategory.Color), HutongGames.PlayMaker.Tooltip("Samples a Color on a continuous Colors gradient.")]
     public class ColorRamp : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("Array of colors to defining the gradient."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Array of colors to defining the gradient.")]
         public FsmColor[] colors;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame while the state is active.")]
         public bool everyFrame;

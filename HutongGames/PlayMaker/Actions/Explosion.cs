@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Applies an explosion Force to all Game Objects with a Rigid Body inside a Radius."), ActionCategory(ActionCategory.Physics)]
+    [ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Applies an explosion Force to all Game Objects with a Rigid Body inside a Radius.")]
     public class Explosion : FsmStateAction
     {
         [RequiredField, HutongGames.PlayMaker.Tooltip("The world position of the center of the explosion.")]
@@ -19,7 +19,7 @@
         public FsmBool invertMask;
         [UIHint(UIHint.Layer)]
         public FsmInt layer;
-        [UIHint(UIHint.Layer), HutongGames.PlayMaker.Tooltip("Layers to effect.")]
+        [HutongGames.PlayMaker.Tooltip("Layers to effect."), UIHint(UIHint.Layer)]
         public FsmInt[] layerMask;
         [HutongGames.PlayMaker.Tooltip("The radius of the explosion. Force falls of linearly with distance."), RequiredField]
         public FsmFloat radius;

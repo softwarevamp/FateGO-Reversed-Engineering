@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Plays an Audio Clip at a position defined by a Game Object or Vector3. If a position is defined, it takes priority over the game object. This action doesn't require an Audio Source component, but offers less control than Audio actions."), ActionCategory(ActionCategory.Audio)]
+    [ActionCategory(ActionCategory.Audio), HutongGames.PlayMaker.Tooltip("Plays an Audio Clip at a position defined by a Game Object or Vector3. If a position is defined, it takes priority over the game object. This action doesn't require an Audio Source component, but offers less control than Audio actions.")]
     public class PlaySound : FsmStateAction
     {
-        [ObjectType(typeof(AudioClip)), Title("Audio Clip"), RequiredField]
+        [RequiredField, Title("Audio Clip"), ObjectType(typeof(AudioClip))]
         public FsmObject clip;
         public FsmOwnerDefault gameObject;
         public FsmVector3 position;

@@ -4,13 +4,13 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Multiplies a Float by Time.deltaTime to use in frame-rate independent operations. E.g., 10 becomes 10 units per second."), ActionCategory(ActionCategory.Time)]
+    [ActionCategory(ActionCategory.Time), HutongGames.PlayMaker.Tooltip("Multiplies a Float by Time.deltaTime to use in frame-rate independent operations. E.g., 10 becomes 10 units per second.")]
     public class PerSecond : FsmStateAction
     {
         public bool everyFrame;
         [RequiredField]
         public FsmFloat floatValue;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmFloat storeResult;
 
         private void DoPerSecond()

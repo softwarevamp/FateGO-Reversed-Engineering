@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("Fullscreen/Print Text"), USequencerFriendlyName("Print Text")]
+    [USequencerFriendlyName("Print Text"), USequencerEvent("Fullscreen/Print Text")]
     public class USPrintTextEvent : USEventBase
     {
         private string currentText = string.Empty;

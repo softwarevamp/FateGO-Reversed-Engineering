@@ -7,7 +7,7 @@
     [HutongGames.PlayMaker.Tooltip("Gets the Width of the Screen in pixels."), ActionCategory(ActionCategory.Application)]
     public class GetScreenWidth : FsmStateAction
     {
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmFloat storeScreenWidth;
 
         public override void OnEnter()

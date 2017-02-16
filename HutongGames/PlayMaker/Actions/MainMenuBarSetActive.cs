@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.InputDevice), Tooltip("Main Menu Bar set active state")]
+    [Tooltip("Main Menu Bar set active state"), ActionCategory(ActionCategory.InputDevice)]
     public class MainMenuBarSetActive : FsmStateAction
     {
         [Tooltip("Set active type.")]

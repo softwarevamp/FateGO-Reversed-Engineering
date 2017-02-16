@@ -11,7 +11,7 @@
         public FsmString objectName;
         [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the result in a GameObject variable.")]
         public FsmGameObject store;
-        [HutongGames.PlayMaker.Tooltip("Find a GameObject with this tag. If Object Name is specified then both name and Tag must match."), UIHint(UIHint.Tag)]
+        [UIHint(UIHint.Tag), HutongGames.PlayMaker.Tooltip("Find a GameObject with this tag. If Object Name is specified then both name and Tag must match.")]
         public FsmString withTag;
 
         public override string ErrorCheck()

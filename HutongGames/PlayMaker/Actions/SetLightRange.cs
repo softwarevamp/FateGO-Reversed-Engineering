@@ -4,11 +4,11 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Lights), HutongGames.PlayMaker.Tooltip("Sets the Range of a Light.")]
+    [HutongGames.PlayMaker.Tooltip("Sets the Range of a Light."), ActionCategory(ActionCategory.Lights)]
     public class SetLightRange : ComponentAction<Light>
     {
         public bool everyFrame;
-        [RequiredField, CheckForComponent(typeof(Light))]
+        [CheckForComponent(typeof(Light)), RequiredField]
         public FsmOwnerDefault gameObject;
         public FsmFloat lightRange;
 

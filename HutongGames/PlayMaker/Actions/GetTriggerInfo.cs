@@ -3,12 +3,12 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Gets info on the last Trigger event and store in variables."), ActionCategory(ActionCategory.Physics)]
+    [ActionCategory(ActionCategory.Physics), Tooltip("Gets info on the last Trigger event and store in variables.")]
     public class GetTriggerInfo : FsmStateAction
     {
         [UIHint(UIHint.Variable)]
         public FsmGameObject gameObjectHit;
-        [UIHint(UIHint.Variable), Tooltip("Useful for triggering different effects. Audio, particles...")]
+        [Tooltip("Useful for triggering different effects. Audio, particles..."), UIHint(UIHint.Variable)]
         public FsmString physicsMaterialName;
 
         public override void OnEnter()

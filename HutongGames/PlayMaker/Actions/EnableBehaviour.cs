@@ -12,9 +12,9 @@
         [HutongGames.PlayMaker.Tooltip("Optionally drag a component directly into this field (behavior name will be ignored).")]
         public Component component;
         private Behaviour componentTarget;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Set to True to enable, False to disable.")]
+        [HutongGames.PlayMaker.Tooltip("Set to True to enable, False to disable."), RequiredField]
         public FsmBool enable;
-        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the Behaviour."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the Behaviour.")]
         public FsmOwnerDefault gameObject;
         public FsmBool resetOnExit;
 

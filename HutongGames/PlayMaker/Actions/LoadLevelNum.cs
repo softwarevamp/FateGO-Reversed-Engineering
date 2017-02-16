@@ -11,7 +11,7 @@
         public bool additive;
         [HutongGames.PlayMaker.Tooltip("Keep this GameObject in the new level. NOTE: The GameObject and components is disabled then enabled on load; uncheck Reset On Disable to keep the active state.")]
         public FsmBool dontDestroyOnLoad;
-        [HutongGames.PlayMaker.Tooltip("The level index in File->Build Settings"), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The level index in File->Build Settings")]
         public FsmInt levelIndex;
         [HutongGames.PlayMaker.Tooltip("Event to send after the level is loaded.")]
         public FsmEvent loadedEvent;

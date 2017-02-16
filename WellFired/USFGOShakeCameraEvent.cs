@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("FGO Shake Camera"), USequencerEvent("FGO/Camera/Shake Camera")]
+    [USequencerEvent("FGO/Camera/Shake Camera"), USequencerFriendlyName("FGO Shake Camera")]
     public class USFGOShakeCameraEvent : USEventBase
     {
         private int frameCount;

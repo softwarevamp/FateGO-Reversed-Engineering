@@ -4,15 +4,15 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Logic), HutongGames.PlayMaker.Tooltip("Tests if a Game Object is visible.")]
+    [HutongGames.PlayMaker.Tooltip("Tests if a Game Object is visible."), ActionCategory(ActionCategory.Logic)]
     public class GameObjectIsVisible : ComponentAction<Renderer>
     {
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("Event to send if the GameObject is NOT visible.")]
         public FsmEvent falseEvent;
-        [RequiredField, CheckForComponent(typeof(Renderer)), HutongGames.PlayMaker.Tooltip("The GameObject to test.")]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to test."), CheckForComponent(typeof(Renderer))]
         public FsmOwnerDefault gameObject;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the result in a bool variable.")]
+        [HutongGames.PlayMaker.Tooltip("Store the result in a bool variable."), UIHint(UIHint.Variable)]
         public FsmBool storeResult;
         [HutongGames.PlayMaker.Tooltip("Event to send if the GameObject is visible.")]
         public FsmEvent trueEvent;

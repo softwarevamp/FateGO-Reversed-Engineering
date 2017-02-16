@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Tests if a Character Controller on a Game Object was touching the ground during the last move."), ActionCategory(ActionCategory.Character)]
+    [ActionCategory(ActionCategory.Character), HutongGames.PlayMaker.Tooltip("Tests if a Character Controller on a Game Object was touching the ground during the last move.")]
     public class ControllerIsGrounded : FsmStateAction
     {
         private CharacterController controller;
@@ -12,10 +12,10 @@
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("Event to send if not touching the ground.")]
         public FsmEvent falseEvent;
-        [CheckForComponent(typeof(CharacterController)), RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to check.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject to check."), RequiredField, CheckForComponent(typeof(CharacterController))]
         public FsmOwnerDefault gameObject;
         private GameObject previousGo;
-        [HutongGames.PlayMaker.Tooltip("Sore the result in a bool variable."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Sore the result in a bool variable.")]
         public FsmBool storeResult;
         [HutongGames.PlayMaker.Tooltip("Event to send if touching the ground.")]
         public FsmEvent trueEvent;

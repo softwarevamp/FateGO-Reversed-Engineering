@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEventHideDuration, USequencerEvent("Signal/Send Message"), USequencerFriendlyName("Send Message")]
+    [USequencerEvent("Signal/Send Message"), USequencerEventHideDuration, USequencerFriendlyName("Send Message")]
     public class USSendMessageEvent : USEventBase
     {
         public string action = "OnSignal";

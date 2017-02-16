@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("GUILayout Box.")]
+    [HutongGames.PlayMaker.Tooltip("GUILayout Box."), ActionCategory(ActionCategory.GUILayout)]
     public class GUILayoutBox : GUILayoutAction
     {
         [HutongGames.PlayMaker.Tooltip("Image to display in the Box.")]

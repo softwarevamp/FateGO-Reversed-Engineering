@@ -16,7 +16,7 @@
         private GameObject goLastFrame;
         [RequiredField, UIHint(UIHint.Variable)]
         public FsmColor storeValue;
-        [RequiredField, UIHint(UIHint.FsmColor)]
+        [UIHint(UIHint.FsmColor), RequiredField]
         public FsmString variableName;
 
         private void DoGetFsmColor()

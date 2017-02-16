@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Inserts a space in the current layout group."), ActionCategory(ActionCategory.GUILayout)]
+    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("Inserts a space in the current layout group.")]
     public class GUILayoutSpace : FsmStateAction
     {
         public FsmFloat space;

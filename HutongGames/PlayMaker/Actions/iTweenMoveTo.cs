@@ -5,7 +5,7 @@
     using System.Collections;
     using UnityEngine;
 
-    [ActionCategory("iTween"), HutongGames.PlayMaker.Tooltip("Changes a GameObject's position over time to a supplied destination.")]
+    [HutongGames.PlayMaker.Tooltip("Changes a GameObject's position over time to a supplied destination."), ActionCategory("iTween")]
     public class iTweenMoveTo : iTweenFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("Restricts rotation to the supplied axis only.")]
@@ -30,7 +30,7 @@
         public iTween.LoopType loopType;
         [ActionSection("Path"), HutongGames.PlayMaker.Tooltip("Whether to automatically generate a curve from the GameObject's current position to the beginning of the path. True by default.")]
         public FsmBool moveToPath;
-        [HutongGames.PlayMaker.Tooltip("Whether or not the GameObject will orient to its direction of travel. False by default."), ActionSection("LookAt")]
+        [ActionSection("LookAt"), HutongGames.PlayMaker.Tooltip("Whether or not the GameObject will orient to its direction of travel. False by default.")]
         public FsmBool orientToPath;
         [HutongGames.PlayMaker.Tooltip("Reverse the path so object moves from End to Start node.")]
         public FsmBool reverse;

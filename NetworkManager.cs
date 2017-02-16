@@ -60,7 +60,7 @@ public class NetworkManager : SingletonMonoBehaviour<NetworkManager>
     protected string mAndroidProjectId = string.Empty;
     [HideInInspector, SerializeField]
     protected string mCv = string.Empty;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected string mIosApplicationId = string.Empty;
     [SerializeField, HideInInspector]
     protected string mMk = string.Empty;

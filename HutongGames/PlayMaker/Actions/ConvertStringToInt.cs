@@ -8,9 +8,9 @@
     {
         [Tooltip("Repeat every frame. Useful if the String variable is changing.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), Tooltip("Store the result in an Int variable."), RequiredField]
+        [Tooltip("Store the result in an Int variable."), UIHint(UIHint.Variable), RequiredField]
         public FsmInt intVariable;
-        [RequiredField, Tooltip("The String variable to convert to an integer."), UIHint(UIHint.Variable)]
+        [Tooltip("The String variable to convert to an integer."), UIHint(UIHint.Variable), RequiredField]
         public FsmString stringVariable;
 
         private void DoConvertStringToInt()

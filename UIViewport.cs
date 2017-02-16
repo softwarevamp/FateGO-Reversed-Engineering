@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[AddComponentMenu("NGUI/UI/Viewport Camera"), ExecuteInEditMode, RequireComponent(typeof(Camera))]
+[RequireComponent(typeof(Camera)), AddComponentMenu("NGUI/UI/Viewport Camera"), ExecuteInEditMode]
 public class UIViewport : MonoBehaviour
 {
     public Transform bottomRight;

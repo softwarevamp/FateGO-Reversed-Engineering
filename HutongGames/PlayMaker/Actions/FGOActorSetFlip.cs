@@ -7,7 +7,7 @@
     [ActionCategory("FGOAction")]
     public class FGOActorSetFlip : FsmStateAction
     {
-        [CheckForComponent(typeof(BattleActorControl)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(BattleActorControl))]
         public FsmGameObject actorObject;
         public FsmBool isDirLeft;
 

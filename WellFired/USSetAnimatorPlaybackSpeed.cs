@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("Set Playback Speed"), USequencerEvent("Animation (Mecanim)/Animator/Set Playback Speed"), USequencerEventHideDuration]
+    [USequencerEvent("Animation (Mecanim)/Animator/Set Playback Speed"), USequencerEventHideDuration, USequencerFriendlyName("Set Playback Speed")]
     public class USSetAnimatorPlaybackSpeed : USEventBase
     {
         public float playbackSpeed = 1f;

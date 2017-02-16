@@ -4,16 +4,16 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.AnimateVariables), HutongGames.PlayMaker.Tooltip("Animates the value of a Float Variable using an Animation Curve.")]
+    [HutongGames.PlayMaker.Tooltip("Animates the value of a Float Variable using an Animation Curve."), ActionCategory(ActionCategory.AnimateVariables)]
     public class AnimateFloat : FsmStateAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The animation curve to use.")]
+        [HutongGames.PlayMaker.Tooltip("The animation curve to use."), RequiredField]
         public FsmAnimationCurve animCurve;
         private float currentTime;
         private float endTime;
         [HutongGames.PlayMaker.Tooltip("Optionally send an Event when the animation finishes.")]
         public FsmEvent finishEvent;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The float variable to set."), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The float variable to set.")]
         public FsmFloat floatVariable;
         private bool looping;
         [HutongGames.PlayMaker.Tooltip("Ignore TimeScale. Useful if the game is paused.")]

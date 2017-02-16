@@ -11,12 +11,12 @@
     {
         [CompilerGenerated]
         private static Dictionary<string, int> <>f__switch$map3B;
-        [RequiredField, UIHint(UIHint.Behaviour), HutongGames.PlayMaker.Tooltip("The Behaviour that contains the method to start as a coroutine.")]
+        [UIHint(UIHint.Behaviour), HutongGames.PlayMaker.Tooltip("The Behaviour that contains the method to start as a coroutine."), RequiredField]
         public FsmString behaviour;
         private MonoBehaviour component;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The name of the coroutine method."), UIHint(UIHint.Coroutine)]
+        [HutongGames.PlayMaker.Tooltip("The name of the coroutine method."), RequiredField, UIHint(UIHint.Coroutine)]
         public FunctionCall functionCall;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The game object that owns the Behaviour.")]
+        [HutongGames.PlayMaker.Tooltip("The game object that owns the Behaviour."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Stop the coroutine when the state is exited.")]
         public bool stopOnExit;

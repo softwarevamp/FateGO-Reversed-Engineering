@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.UnityObject), HutongGames.PlayMaker.Tooltip("Gets a Component attached to a GameObject and stores it in an Object variable. NOTE: Set the Object variable's Object Type to get a component of that type. E.g., set Object Type to UnityEngine.AudioListener to get the AudioListener component on the camera.")]
+    [HutongGames.PlayMaker.Tooltip("Gets a Component attached to a GameObject and stores it in an Object variable. NOTE: Set the Object variable's Object Type to get a component of that type. E.g., set Object Type to UnityEngine.AudioListener to get the AudioListener component on the camera."), ActionCategory(ActionCategory.UnityObject)]
     public class GetComponent : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]

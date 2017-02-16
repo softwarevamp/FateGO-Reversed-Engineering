@@ -4,19 +4,19 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Get the value of a Vector2 Variable from another FSM.")]
+    [HutongGames.PlayMaker.Tooltip("Get the value of a Vector2 Variable from another FSM."), ActionCategory(ActionCategory.StateMachine)]
     public class GetFsmVector2 : FsmStateAction
     {
         public bool everyFrame;
         private PlayMakerFSM fsm;
-        [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object")]
+        [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
         [RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
         [RequiredField, UIHint(UIHint.Variable)]
         public FsmVector2 storeValue;
-        [RequiredField, UIHint(UIHint.FsmVector2)]
+        [UIHint(UIHint.FsmVector2), RequiredField]
         public FsmString variableName;
 
         private void DoGetFsmVector2()

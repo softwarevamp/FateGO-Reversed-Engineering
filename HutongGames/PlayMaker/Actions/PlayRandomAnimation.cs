@@ -8,13 +8,13 @@
     public class PlayRandomAnimation : ComponentAction<Animation>
     {
         private AnimationState anim;
-        [CompoundArray("Animations", "Animation", "Weight"), UIHint(UIHint.Animation)]
+        [UIHint(UIHint.Animation), CompoundArray("Animations", "Animation", "Weight")]
         public FsmString[] animations;
-        [HutongGames.PlayMaker.Tooltip("Time taken to blend to this animation."), HasFloatSlider(0f, 5f)]
+        [HasFloatSlider(0f, 5f), HutongGames.PlayMaker.Tooltip("Time taken to blend to this animation.")]
         public FsmFloat blendTime;
         [HutongGames.PlayMaker.Tooltip("Event to send when the animation is finished playing. NOTE: Not sent with Loop or PingPong wrap modes!")]
         public FsmEvent finishEvent;
-        [CheckForComponent(typeof(Animation)), RequiredField, HutongGames.PlayMaker.Tooltip("Game Object to play the animation on.")]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Game Object to play the animation on."), CheckForComponent(typeof(Animation))]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Event to send when the animation loops. If you want to send this event to another FSM use Set Event Target. NOTE: This event is only sent with Loop and PingPong wrap modes.")]
         public FsmEvent loopEvent;

@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.GameLogic), Tooltip("Manager Config System Check")]
+    [Tooltip("Manager Config System Check"), ActionCategory(ActionCategory.GameLogic)]
     public class ManagerConfigCheck : FsmStateAction
     {
         [RequiredField]

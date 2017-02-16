@@ -10,7 +10,7 @@ public class BMFont
     private Dictionary<int, BMGlyph> mDict = new Dictionary<int, BMGlyph>();
     [HideInInspector, SerializeField]
     private int mHeight;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private List<BMGlyph> mSaved = new List<BMGlyph>();
     [HideInInspector, SerializeField]
     private int mSize = 0x10;

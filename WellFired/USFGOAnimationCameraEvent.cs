@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("FGO Set Animation Camera"), USequencerEvent("FGO/Set Animation Camera")]
+    [USequencerEvent("FGO/Set Animation Camera"), USequencerFriendlyName("FGO Set Animation Camera")]
     public class USFGOAnimationCameraEvent : USEventBase
     {
         private AnimationClip animationClip;

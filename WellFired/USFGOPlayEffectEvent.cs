@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("FGO/Play Effect"), USequencerFriendlyName("FGO Play Effect"), USequencerEventHideDuration]
+    [USequencerFriendlyName("FGO Play Effect"), USequencerEventHideDuration, USequencerEvent("FGO/Play Effect")]
     public class USFGOPlayEffectEvent : USEventBase
     {
         private Animation[] animations;

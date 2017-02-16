@@ -8,7 +8,7 @@
     {
         [CompoundArray("Colors", "Color", "Weight")]
         public FsmColor[] colors;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmColor storeColor;
         [HasFloatSlider(0f, 1f)]
         public FsmFloat[] weights;

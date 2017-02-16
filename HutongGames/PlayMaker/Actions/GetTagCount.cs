@@ -7,7 +7,7 @@
     [HutongGames.PlayMaker.Tooltip("Gets the number of Game Objects in the scene with the specified Tag."), ActionCategory(ActionCategory.GameObject)]
     public class GetTagCount : FsmStateAction
     {
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmInt storeResult;
         [UIHint(UIHint.Tag)]
         public FsmString tag;

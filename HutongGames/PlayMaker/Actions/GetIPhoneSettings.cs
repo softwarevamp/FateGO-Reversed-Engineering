@@ -6,11 +6,11 @@
     [Tooltip("Get various iPhone settings."), ActionCategory(ActionCategory.Device)]
     public class GetIPhoneSettings : FsmStateAction
     {
-        [UIHint(UIHint.Variable), Tooltip("The generation of the device (Read Only).")]
+        [Tooltip("The generation of the device (Read Only)."), UIHint(UIHint.Variable)]
         public FsmString getGeneration;
-        [Tooltip("The model of the device (Read Only)."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), Tooltip("The model of the device (Read Only).")]
         public FsmString getModel;
-        [Tooltip("The user defined name of the device (Read Only)."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), Tooltip("The user defined name of the device (Read Only).")]
         public FsmString getName;
         [Tooltip("Allows device to fall into 'sleep' state with screen being dim if no touches occurred. Default value is true."), UIHint(UIHint.Variable)]
         public FsmBool getScreenCanDarken;

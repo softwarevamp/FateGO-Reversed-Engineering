@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Vector3), Tooltip("Normalizes a Vector3 Variable.")]
+    [Tooltip("Normalizes a Vector3 Variable."), ActionCategory(ActionCategory.Vector3)]
     public class Vector3Normalize : FsmStateAction
     {
         public bool everyFrame;

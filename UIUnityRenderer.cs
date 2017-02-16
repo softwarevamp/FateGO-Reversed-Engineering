@@ -7,7 +7,7 @@ public class UIUnityRenderer : UIWidget
     private bool createMat;
     [SerializeField, HideInInspector]
     private Material[] mMats;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private Renderer mRenderer;
     [SerializeField, HideInInspector]
     private int renderQueue = -1;

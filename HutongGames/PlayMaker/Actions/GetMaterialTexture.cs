@@ -4,18 +4,18 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Get a texture from a material on a GameObject"), ActionCategory(ActionCategory.Material)]
+    [ActionCategory(ActionCategory.Material), HutongGames.PlayMaker.Tooltip("Get a texture from a material on a GameObject")]
     public class GetMaterialTexture : ComponentAction<Renderer>
     {
-        [CheckForComponent(typeof(Renderer)), RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject the Material is applied to.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject the Material is applied to."), CheckForComponent(typeof(Renderer)), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Get the shared version of the texture.")]
         public bool getFromSharedMaterial;
         [HutongGames.PlayMaker.Tooltip("The index of the Material in the Materials array.")]
         public FsmInt materialIndex;
-        [HutongGames.PlayMaker.Tooltip("The texture to get. See Unity Shader docs for names."), UIHint(UIHint.NamedTexture)]
+        [UIHint(UIHint.NamedTexture), HutongGames.PlayMaker.Tooltip("The texture to get. See Unity Shader docs for names.")]
         public FsmString namedTexture;
-        [Title("StoreTexture"), HutongGames.PlayMaker.Tooltip("Store the texture in a variable."), RequiredField, UIHint(UIHint.Variable)]
+        [HutongGames.PlayMaker.Tooltip("Store the texture in a variable."), RequiredField, UIHint(UIHint.Variable), Title("StoreTexture")]
         public FsmTexture storedTexture;
 
         private void DoGetMaterialTexture()

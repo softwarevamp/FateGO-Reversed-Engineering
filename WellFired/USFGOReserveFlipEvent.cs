@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("FGO/Reserve Flip"), USequencerEventHideDuration, USequencerFriendlyName("FGO Reserve Flip")]
+    [USequencerEventHideDuration, USequencerFriendlyName("FGO Reserve Flip"), USequencerEvent("FGO/Reserve Flip")]
     public class USFGOReserveFlipEvent : USEventBase
     {
         public Vector2 EnemyOffset;

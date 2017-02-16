@@ -3,14 +3,14 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Gets the Right n characters from a String."), ActionCategory(ActionCategory.String)]
+    [ActionCategory(ActionCategory.String), Tooltip("Gets the Right n characters from a String.")]
     public class GetStringRight : FsmStateAction
     {
         public FsmInt charCount;
         public bool everyFrame;
         [RequiredField, UIHint(UIHint.Variable)]
         public FsmString storeResult;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmString stringVariable;
 
         private void DoGetStringRight()

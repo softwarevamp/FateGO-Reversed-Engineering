@@ -8,7 +8,7 @@
     {
         public bool everyFrame;
         public FsmString replace;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmString storeResult;
         [RequiredField, UIHint(UIHint.Variable)]
         public FsmString stringVariable;

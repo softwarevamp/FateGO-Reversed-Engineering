@@ -20,7 +20,7 @@
         public Space space;
         [HutongGames.PlayMaker.Tooltip("The time in seconds the animation will take to complete.")]
         public FsmFloat time;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("A vector shake range.")]
+        [HutongGames.PlayMaker.Tooltip("A vector shake range."), RequiredField]
         public FsmVector3 vector;
 
         private void DoiTween()

@@ -16,7 +16,7 @@ public class BoxGachaResultEffectComponent : BaseMonoBehaviour
     private static AssetData effectAssetData;
     [SerializeField]
     protected CommonMessageManager messageManager;
-    [Range(0.1f, 1f), SerializeField]
+    [SerializeField, Range(0.1f, 1f)]
     private float openResultWindowTime = 0.1f;
     private int[] rareIdxList;
     private int[] resultIdList;

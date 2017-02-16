@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Sends a log message to the PlayMaker Log Window."), ActionCategory(ActionCategory.Debug)]
+    [ActionCategory(ActionCategory.Debug), Tooltip("Sends a log message to the PlayMaker Log Window.")]
     public class DebugLog : FsmStateAction
     {
         [Tooltip("Info, Warning, or Error.")]

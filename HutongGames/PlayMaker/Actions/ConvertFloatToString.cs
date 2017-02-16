@@ -8,7 +8,7 @@
     {
         [Tooltip("Repeat every frame. Useful if the float variable is changing.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), RequiredField, Tooltip("The float variable to convert.")]
+        [RequiredField, UIHint(UIHint.Variable), Tooltip("The float variable to convert.")]
         public FsmFloat floatVariable;
         [Tooltip("Optional Format, allows for leading zeroes. E.g., 0000")]
         public FsmString format;

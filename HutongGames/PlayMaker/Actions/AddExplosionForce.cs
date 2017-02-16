@@ -7,15 +7,15 @@
     [ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Applies a force to a Game Object that simulates explosion effects. The explosion force will fall off linearly with distance. Hint: Use the Explosion Action instead to apply an explosion force to all objects in a blast radius.")]
     public class AddExplosionForce : ComponentAction<Rigidbody>
     {
-        [HutongGames.PlayMaker.Tooltip("The center of the explosion. Hint: this is often the position returned from a GetCollisionInfo action."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The center of the explosion. Hint: this is often the position returned from a GetCollisionInfo action.")]
         public FsmVector3 center;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame while the state is active.")]
         public bool everyFrame;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The strength of the explosion.")]
+        [HutongGames.PlayMaker.Tooltip("The strength of the explosion."), RequiredField]
         public FsmFloat force;
         [HutongGames.PlayMaker.Tooltip("The type of force to apply. See Unity Physics docs.")]
         public ForceMode forceMode;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to add the explosion force to."), CheckForComponent(typeof(Rigidbody))]
+        [RequiredField, CheckForComponent(typeof(Rigidbody)), HutongGames.PlayMaker.Tooltip("The GameObject to add the explosion force to.")]
         public FsmOwnerDefault gameObject;
         [RequiredField, HutongGames.PlayMaker.Tooltip("The radius of the explosion. Force falls off linearly with distance.")]
         public FsmFloat radius;

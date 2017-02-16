@@ -14,13 +14,13 @@
         public FsmEvent finishEvent;
         [HutongGames.PlayMaker.Tooltip("If the angle to the target is less than this, send the Finish Event below. Measured in degrees.")]
         public FsmFloat finishTolerance;
-        [HutongGames.PlayMaker.Tooltip("The GameObject to rotate to face a target."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to rotate to face a target.")]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Force the game object to remain vertical. Useful for characters.")]
         public FsmBool keepVertical;
         private Quaternion lastRotation;
         private GameObject previousGo;
-        [HutongGames.PlayMaker.Tooltip("How fast the look at moves."), HasFloatSlider(0.5f, 15f)]
+        [HasFloatSlider(0.5f, 15f), HutongGames.PlayMaker.Tooltip("How fast the look at moves.")]
         public FsmFloat speed;
         [HutongGames.PlayMaker.Tooltip("A target GameObject.")]
         public FsmGameObject targetObject;

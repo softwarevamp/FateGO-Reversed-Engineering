@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("Animation (Legacy)/Blend Animation No Scrub"), USequencerFriendlyName("Blend Animation No Scrub (Legacy)"), USequencerEventHideDuration]
+    [USequencerFriendlyName("Blend Animation No Scrub (Legacy)"), USequencerEvent("Animation (Legacy)/Blend Animation No Scrub"), USequencerEventHideDuration]
     public class USBlendAnimNoScrubEvent : USEventBase
     {
         public AnimationClip blendedAnimation;

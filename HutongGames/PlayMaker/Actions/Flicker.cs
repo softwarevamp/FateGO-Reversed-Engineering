@@ -7,11 +7,11 @@
     [ActionCategory(ActionCategory.Effects), HutongGames.PlayMaker.Tooltip("Randomly flickers a Game Object on/off.")]
     public class Flicker : ComponentAction<Renderer>
     {
-        [HutongGames.PlayMaker.Tooltip("Amount of time flicker is On (0-1). E.g. Use 0.95 for an occasional flicker."), HasFloatSlider(0f, 1f)]
+        [HasFloatSlider(0f, 1f), HutongGames.PlayMaker.Tooltip("Amount of time flicker is On (0-1). E.g. Use 0.95 for an occasional flicker.")]
         public FsmFloat amountOn;
         [HutongGames.PlayMaker.Tooltip("The frequency of the flicker in seconds."), HasFloatSlider(0f, 1f)]
         public FsmFloat frequency;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to flicker.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject to flicker."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Ignore time scale. Useful if flickering UI when the game is paused.")]
         public bool realTime;

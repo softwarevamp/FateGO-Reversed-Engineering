@@ -6,7 +6,7 @@
     [Tooltip("AdStore Event Call."), ActionCategory("Ad")]
     public class AdStoreEvent : FsmStateAction
     {
-        [Tooltip("Set AdStore Action Key."), RequiredField]
+        [RequiredField, Tooltip("Set AdStore Action Key.")]
         public FsmString actionKey;
 
         public override void OnEnter()

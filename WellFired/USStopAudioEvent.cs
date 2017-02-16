@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEventHideDuration, USequencerEvent("Audio/Stop Audio"), USequencerFriendlyName("Stop Audio")]
+    [USequencerFriendlyName("Stop Audio"), USequencerEventHideDuration, USequencerEvent("Audio/Stop Audio")]
     public class USStopAudioEvent : USEventBase
     {
         public override void FireEvent()

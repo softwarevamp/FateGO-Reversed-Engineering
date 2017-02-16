@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.StateMachine), Tooltip("Sets how subsequent events sent in this state are handled.")]
+    [Tooltip("Sets how subsequent events sent in this state are handled."), ActionCategory(ActionCategory.StateMachine)]
     public class FsmEventOptions : FsmStateAction
     {
         public FsmBool broadcastToAll;

@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("Animation (Mecanim)/Animator/Set Value/Integer"), USequencerFriendlyName("Set Mecanim Integer"), USequencerEventHideDuration]
+    [USequencerFriendlyName("Set Mecanim Integer"), USequencerEvent("Animation (Mecanim)/Animator/Set Value/Integer"), USequencerEventHideDuration]
     public class USSetAnimatorInteger : USEventBase
     {
         private int hash;

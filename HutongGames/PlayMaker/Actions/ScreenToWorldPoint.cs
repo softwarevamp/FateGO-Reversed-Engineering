@@ -11,7 +11,7 @@
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("If true, X/Y coordinates are considered normalized (0-1), otherwise they are expected to be in pixels")]
         public FsmBool normalized;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Screen position as a vector.")]
+        [HutongGames.PlayMaker.Tooltip("Screen position as a vector."), UIHint(UIHint.Variable)]
         public FsmVector3 screenVector;
         [HutongGames.PlayMaker.Tooltip("Screen X position in pixels or normalized. See Normalized.")]
         public FsmFloat screenX;
@@ -19,9 +19,9 @@
         public FsmFloat screenY;
         [HutongGames.PlayMaker.Tooltip("Distance into the screen in world units.")]
         public FsmFloat screenZ;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the world position in a vector3 variable.")]
+        [HutongGames.PlayMaker.Tooltip("Store the world position in a vector3 variable."), UIHint(UIHint.Variable)]
         public FsmVector3 storeWorldVector;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the world X position in a float variable.")]
+        [HutongGames.PlayMaker.Tooltip("Store the world X position in a float variable."), UIHint(UIHint.Variable)]
         public FsmFloat storeWorldX;
         [HutongGames.PlayMaker.Tooltip("Store the world Y position in a float variable."), UIHint(UIHint.Variable)]
         public FsmFloat storeWorldY;

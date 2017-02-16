@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("Load Level"), USequencerEventHideDuration, USequencerEvent("Application/Load Level")]
+    [USequencerEventHideDuration, USequencerFriendlyName("Load Level"), USequencerEvent("Application/Load Level")]
     public class USLoadLevelEvent : USEventBase
     {
         public bool fireInEditor;

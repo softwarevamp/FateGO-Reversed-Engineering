@@ -7,7 +7,7 @@
     [ActionCategory(ActionCategory.Device), HutongGames.PlayMaker.Tooltip("Sends events when a GUI Texture or GUI Text is touched. Optionally filter by a fingerID.")]
     public class TouchGUIEvent : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("Repeate every frame."), ActionSection("")]
+        [ActionSection(""), HutongGames.PlayMaker.Tooltip("Repeate every frame.")]
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("Only detect touches that match this fingerID, or set to None.")]
         public FsmInt fingerId;
@@ -22,7 +22,7 @@
         public FsmEvent notTouching;
         [HutongGames.PlayMaker.Tooltip("How to measure the offset.")]
         public OffsetOptions relativeTo;
-        [ActionSection("Store Results"), UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the fingerId of the touch.")]
+        [UIHint(UIHint.Variable), ActionSection("Store Results"), HutongGames.PlayMaker.Tooltip("Store the fingerId of the touch.")]
         public FsmInt storeFingerId;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the screen position where the GUI element was touched.")]
         public FsmVector3 storeHitPoint;

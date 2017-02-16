@@ -2,7 +2,7 @@
 {
     using System;
 
-    [USequencerEventHideDuration, USequencerEvent("Debug/Log Message"), USequencerFriendlyName("Debug Message")]
+    [USequencerFriendlyName("Debug Message"), USequencerEvent("Debug/Log Message"), USequencerEventHideDuration]
     public class USMessageEvent : USEventBase
     {
         public string message = "Default Message";

@@ -4,20 +4,20 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Adds a force to a Game Object. Use Vector3 variable and/or Float variables for each axis.")]
+    [HutongGames.PlayMaker.Tooltip("Adds a force to a Game Object. Use Vector3 variable and/or Float variables for each axis."), ActionCategory(ActionCategory.Physics)]
     public class AddForce : ComponentAction<Rigidbody>
     {
-        [HutongGames.PlayMaker.Tooltip("Optionally apply the force at a position on the object. This will also add some torque. The position is often returned from MousePick or GetCollisionInfo actions."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Optionally apply the force at a position on the object. This will also add some torque. The position is often returned from MousePick or GetCollisionInfo actions.")]
         public FsmVector3 atPosition;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame while the state is active.")]
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("The type of force to apply. See Unity Physics docs.")]
         public ForceMode forceMode;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to apply the force to."), CheckForComponent(typeof(Rigidbody))]
+        [CheckForComponent(typeof(Rigidbody)), HutongGames.PlayMaker.Tooltip("The GameObject to apply the force to."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Apply the force in world or local space.")]
         public Space space;
-        [HutongGames.PlayMaker.Tooltip("A Vector3 force to add. Optionally override any axis with the X, Y, Z parameters."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("A Vector3 force to add. Optionally override any axis with the X, Y, Z parameters.")]
         public FsmVector3 vector;
         [HutongGames.PlayMaker.Tooltip("Force along the X axis. To leave unchanged, set to 'None'.")]
         public FsmFloat x;

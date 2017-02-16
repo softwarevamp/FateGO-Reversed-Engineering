@@ -13,7 +13,7 @@
         public FsmString seAssetName;
         [Tooltip("Set the se object name string.")]
         public FsmString seObjectName;
-        [HasFloatSlider(0f, 1f), Tooltip("Set the volume.")]
+        [Tooltip("Set the volume."), HasFloatSlider(0f, 1f)]
         public FsmFloat volume = 1f;
 
         protected void EndPlaySe()

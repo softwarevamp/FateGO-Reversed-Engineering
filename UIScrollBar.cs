@@ -1,14 +1,14 @@
 ﻿using System;
 using UnityEngine;
 
-[ExecuteInEditMode, AddComponentMenu("NGUI/Interaction/NGUI Scroll Bar")]
+[AddComponentMenu("NGUI/Interaction/NGUI Scroll Bar"), ExecuteInEditMode]
 public class UIScrollBar : UISlider
 {
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private Direction mDir = Direction.Upgraded;
     [HideInInspector, SerializeField]
     private float mScroll;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected float mSize = 1f;
 
     public override void ForceUpdate()

@@ -10,18 +10,18 @@
         private float currentTime;
         [HutongGames.PlayMaker.Tooltip("Event to send when the interpolation is finished.")]
         public FsmEvent finishEvent;
-        [HutongGames.PlayMaker.Tooltip("Interpolate from this value."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Interpolate from this value.")]
         public FsmFloat fromFloat;
         [HutongGames.PlayMaker.Tooltip("Interpolation mode: Linear or EaseInOut.")]
         public InterpolationType mode;
         [HutongGames.PlayMaker.Tooltip("Ignore TimeScale. Useful if the game is paused (Time scaled to 0).")]
         public bool realTime;
         private float startTime;
-        [HutongGames.PlayMaker.Tooltip("Store the current value in a float variable."), UIHint(UIHint.Variable), RequiredField]
+        [UIHint(UIHint.Variable), RequiredField, HutongGames.PlayMaker.Tooltip("Store the current value in a float variable.")]
         public FsmFloat storeResult;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Interpolate over this amount of time in seconds.")]
+        [HutongGames.PlayMaker.Tooltip("Interpolate over this amount of time in seconds."), RequiredField]
         public FsmFloat time;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Interpolate to this value.")]
+        [HutongGames.PlayMaker.Tooltip("Interpolate to this value."), RequiredField]
         public FsmFloat toFloat;
 
         public override void OnEnter()

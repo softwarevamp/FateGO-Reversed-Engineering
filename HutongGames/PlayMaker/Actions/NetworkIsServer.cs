@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Network), HutongGames.PlayMaker.Tooltip("Test if your peer type is server.")]
+    [HutongGames.PlayMaker.Tooltip("Test if your peer type is server."), ActionCategory(ActionCategory.Network)]
     public class NetworkIsServer : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Event to send if not running as server.")]

@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Select a Random Vector3 from a Vector3 array."), ActionCategory(ActionCategory.Vector3)]
+    [ActionCategory(ActionCategory.Vector3), Tooltip("Select a Random Vector3 from a Vector3 array.")]
     public class SelectRandomVector3 : FsmStateAction
     {
         [UIHint(UIHint.Variable), RequiredField]

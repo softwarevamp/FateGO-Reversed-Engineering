@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Sets Random Rotation for a Game Object. Uncheck an axis to keep its current value.")]
+    [HutongGames.PlayMaker.Tooltip("Sets Random Rotation for a Game Object. Uncheck an axis to keep its current value."), ActionCategory(ActionCategory.Transform)]
     public class SetRandomRotation : FsmStateAction
     {
         [RequiredField]

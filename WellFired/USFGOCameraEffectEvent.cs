@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("FGO Toggle Camera Effect"), USequencerEventHideDuration, USequencerEvent("FGO/Camera/Toggle Camera Effect")]
+    [USequencerEventHideDuration, USequencerEvent("FGO/Camera/Toggle Camera Effect"), USequencerFriendlyName("FGO Toggle Camera Effect")]
     public class USFGOCameraEffectEvent : USEventBase
     {
         public CameraEffectType effectType;

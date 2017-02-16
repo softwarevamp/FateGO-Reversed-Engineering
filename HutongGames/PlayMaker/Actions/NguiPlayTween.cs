@@ -27,7 +27,7 @@
         public FsmInt tweenGroup;
         [HutongGames.PlayMaker.Tooltip("Event to trigger when the tween finishes.")]
         public FsmEvent tweeningFinishedEvent;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject on which there is one or more NGUI tween."), CheckForComponent(typeof(UITweener))]
+        [RequiredField, CheckForComponent(typeof(UITweener)), HutongGames.PlayMaker.Tooltip("The GameObject on which there is one or more NGUI tween.")]
         public FsmOwnerDefault tweenTarget;
 
         public override void OnEnter()

@@ -8,11 +8,11 @@
     public class AddScript : FsmStateAction
     {
         private Component addedComponent;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to add the script to.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject to add the script to."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Remove the script from the GameObject when this State is exited.")]
         public FsmBool removeOnExit;
-        [UIHint(UIHint.ScriptComponent), RequiredField, HutongGames.PlayMaker.Tooltip("The Script to add to the GameObject.")]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The Script to add to the GameObject."), UIHint(UIHint.ScriptComponent)]
         public FsmString script;
 
         private void DoAddComponent(GameObject go)

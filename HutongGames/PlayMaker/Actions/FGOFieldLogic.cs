@@ -7,7 +7,7 @@
     [ActionCategory("FGOAction")]
     public class FGOFieldLogic : FsmStateAction
     {
-        [RequiredField, CheckForComponent(typeof(BattleFieldMotionComponent))]
+        [CheckForComponent(typeof(BattleFieldMotionComponent)), RequiredField]
         public FsmOwnerDefault gameObject;
         public PROC proc;
         public FsmEvent sendEvent;

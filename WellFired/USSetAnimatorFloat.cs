@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("Set Mecanim Float"), USequencerEvent("Animation (Mecanim)/Animator/Set Value/Float"), USequencerEventHideDuration]
+    [USequencerEvent("Animation (Mecanim)/Animator/Set Value/Float"), USequencerEventHideDuration, USequencerFriendlyName("Set Mecanim Float")]
     public class USSetAnimatorFloat : USEventBase
     {
         private int hash;

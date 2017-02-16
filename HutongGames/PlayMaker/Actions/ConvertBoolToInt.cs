@@ -6,13 +6,13 @@
     [ActionCategory(ActionCategory.Convert), Tooltip("Converts a Bool value to an Integer value.")]
     public class ConvertBoolToInt : FsmStateAction
     {
-        [UIHint(UIHint.Variable), RequiredField, Tooltip("The Bool variable to test.")]
+        [UIHint(UIHint.Variable), Tooltip("The Bool variable to test."), RequiredField]
         public FsmBool boolVariable;
         [Tooltip("Repeat every frame. Useful if the Bool variable is changing.")]
         public bool everyFrame;
         [Tooltip("Integer value if Bool variable is false.")]
         public FsmInt falseValue;
-        [RequiredField, Tooltip("The Integer variable to set based on the Bool variable value."), UIHint(UIHint.Variable)]
+        [RequiredField, UIHint(UIHint.Variable), Tooltip("The Integer variable to set based on the Bool variable value.")]
         public FsmInt intVariable;
         [Tooltip("Integer value if Bool variable is false.")]
         public FsmInt trueValue;

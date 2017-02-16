@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.ScriptControl), HutongGames.PlayMaker.Tooltip("Invokes a Method in a Behaviour attached to a Game Object. See Unity InvokeMethod docs.")]
+    [HutongGames.PlayMaker.Tooltip("Invokes a Method in a Behaviour attached to a Game Object. See Unity InvokeMethod docs."), ActionCategory(ActionCategory.ScriptControl)]
     public class InvokeMethod : FsmStateAction
     {
         [RequiredField, UIHint(UIHint.Script)]

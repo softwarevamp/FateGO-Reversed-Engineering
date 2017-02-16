@@ -9,7 +9,7 @@
     {
         public BattleResultComponent.resultData.ResultDispFlagEnum check;
         public FsmEvent FalseEvent;
-        [RequiredField, CheckForComponent(typeof(BattleResultComponent))]
+        [CheckForComponent(typeof(BattleResultComponent)), RequiredField]
         public FsmGameObject performanceObject;
         public FsmEvent TrueEvent;
 

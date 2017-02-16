@@ -7,11 +7,11 @@
     [HutongGames.PlayMaker.Tooltip("Get a material at index on a gameObject and store it in a variable"), ActionCategory(ActionCategory.Material)]
     public class GetMaterial : ComponentAction<Renderer>
     {
-        [HutongGames.PlayMaker.Tooltip("The GameObject the Material is applied to."), RequiredField, CheckForComponent(typeof(Renderer))]
+        [HutongGames.PlayMaker.Tooltip("The GameObject the Material is applied to."), CheckForComponent(typeof(Renderer)), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Get the shared material of this object. NOTE: Modifying the shared material will change the appearance of all objects using this material, and change material settings that are stored in the project too.")]
         public bool getSharedMaterial;
-        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the material in a variable.")]
+        [HutongGames.PlayMaker.Tooltip("Store the material in a variable."), UIHint(UIHint.Variable), RequiredField]
         public FsmMaterial material;
         [HutongGames.PlayMaker.Tooltip("The index of the Material in the Materials array.")]
         public FsmInt materialIndex;

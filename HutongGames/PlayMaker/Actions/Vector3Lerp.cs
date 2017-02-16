@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Vector3), HutongGames.PlayMaker.Tooltip("Linearly interpolates between 2 vectors.")]
+    [HutongGames.PlayMaker.Tooltip("Linearly interpolates between 2 vectors."), ActionCategory(ActionCategory.Vector3)]
     public class Vector3Lerp : FsmStateAction
     {
         [RequiredField, HutongGames.PlayMaker.Tooltip("Interpolate between From Vector and ToVector by this amount. Value is clamped to 0-1 range. 0 = From Vector; 1 = To Vector; 0.5 = half way between.")]
@@ -15,7 +15,7 @@
         public FsmVector3 fromVector;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the result in this vector variable."), RequiredField]
         public FsmVector3 storeResult;
-        [HutongGames.PlayMaker.Tooltip("Second Vector."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Second Vector.")]
         public FsmVector3 toVector;
 
         private void DoVector3Lerp()

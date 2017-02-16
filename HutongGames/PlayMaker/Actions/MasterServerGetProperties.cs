@@ -17,7 +17,7 @@
         public FsmEvent isNotDedicatedServerEvent;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The connection port of the master server.")]
         public FsmInt port;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The minimum update rate for master server host information update. Default is 60 seconds")]
+        [HutongGames.PlayMaker.Tooltip("The minimum update rate for master server host information update. Default is 60 seconds"), UIHint(UIHint.Variable)]
         public FsmInt updateRate;
 
         private void GetMasterServerProperties()

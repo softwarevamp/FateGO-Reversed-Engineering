@@ -4,13 +4,13 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Transforms a Direction from world space to a Game Object's local space. The opposite of TransformDirection.")]
+    [HutongGames.PlayMaker.Tooltip("Transforms a Direction from world space to a Game Object's local space. The opposite of TransformDirection."), ActionCategory(ActionCategory.Transform)]
     public class InverseTransformDirection : FsmStateAction
     {
         public bool everyFrame;
         [RequiredField]
         public FsmOwnerDefault gameObject;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmVector3 storeResult;
         [RequiredField]
         public FsmVector3 worldDirection;

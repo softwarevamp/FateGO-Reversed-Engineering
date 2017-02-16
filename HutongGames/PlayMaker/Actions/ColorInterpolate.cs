@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Interpolate through an array of Colors over a specified amount of Time."), ActionCategory(ActionCategory.Color)]
+    [ActionCategory(ActionCategory.Color), HutongGames.PlayMaker.Tooltip("Interpolate through an array of Colors over a specified amount of Time.")]
     public class ColorInterpolate : FsmStateAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Array of colors to interpolate through.")]
+        [HutongGames.PlayMaker.Tooltip("Array of colors to interpolate through."), RequiredField]
         public FsmColor[] colors;
         private float currentTime;
         [HutongGames.PlayMaker.Tooltip("Event to send when the interpolation finishes.")]

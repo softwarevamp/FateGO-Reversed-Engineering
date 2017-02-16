@@ -4,12 +4,12 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Gets the Angle between a GameObject's forward axis and a Target. The Target can be defined as a GameObject or a world Position. If you specify both, then the Position will be used as a local offset from the Target Object's position.")]
+    [HutongGames.PlayMaker.Tooltip("Gets the Angle between a GameObject's forward axis and a Target. The Target can be defined as a GameObject or a world Position. If you specify both, then the Position will be used as a local offset from the Target Object's position."), ActionCategory(ActionCategory.Transform)]
     public class GetAngleToTarget : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The game object whose forward axis we measure from. If the target is dead ahead the angle will be 0.")]
+        [HutongGames.PlayMaker.Tooltip("The game object whose forward axis we measure from. If the target is dead ahead the angle will be 0."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Ignore height differences when calculating the angle.")]
         public FsmBool ignoreHeight;

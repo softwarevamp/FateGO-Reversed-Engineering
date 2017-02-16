@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory("PlayerPrefs"), HutongGames.PlayMaker.Tooltip("Returns the value corresponding to key in the preference file if it exists.")]
+    [HutongGames.PlayMaker.Tooltip("Returns the value corresponding to key in the preference file if it exists."), ActionCategory("PlayerPrefs")]
     public class PlayerPrefsGetString : FsmStateAction
     {
         [CompoundArray("Count", "Key", "Variable"), HutongGames.PlayMaker.Tooltip("Case sensitive key.")]

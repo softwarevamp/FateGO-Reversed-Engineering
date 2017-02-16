@@ -4,19 +4,19 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.StateMachine), Obsolete("This action is obsolete; use Send Event with Event Target instead."), HutongGames.PlayMaker.Tooltip("Sends an Event to another Fsm after an optional delay. Specify an Fsm Name or use the first Fsm on the object.")]
+    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Sends an Event to another Fsm after an optional delay. Specify an Fsm Name or use the first Fsm on the object."), Obsolete("This action is obsolete; use Send Event with Event Target instead.")]
     public class SendEventToFsm : FsmStateAction
     {
         [HasFloatSlider(0f, 10f)]
         public FsmFloat delay;
         private DelayedEvent delayedEvent;
-        [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of Fsm on Game Object")]
+        [HutongGames.PlayMaker.Tooltip("Optional name of Fsm on Game Object"), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
         [RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject go;
         private bool requireReceiver;
-        [UIHint(UIHint.FsmEvent), RequiredField]
+        [RequiredField, UIHint(UIHint.FsmEvent)]
         public FsmString sendEvent;
 
         public override void OnEnter()

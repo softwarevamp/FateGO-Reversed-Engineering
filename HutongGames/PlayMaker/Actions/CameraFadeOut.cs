@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Camera), HutongGames.PlayMaker.Tooltip("Fade to a fullscreen Color. NOTE: Uses OnGUI so requires a PlayMakerGUI component in the scene.")]
+    [HutongGames.PlayMaker.Tooltip("Fade to a fullscreen Color. NOTE: Uses OnGUI so requires a PlayMakerGUI component in the scene."), ActionCategory(ActionCategory.Camera)]
     public class CameraFadeOut : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("Color to fade to. E.g., Fade to black."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Color to fade to. E.g., Fade to black.")]
         public FsmColor color;
         private Color colorLerp;
         private float currentTime;

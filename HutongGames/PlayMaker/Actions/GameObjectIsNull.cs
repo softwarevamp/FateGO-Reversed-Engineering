@@ -3,12 +3,12 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Logic), Tooltip("Tests if a GameObject Variable has a null value. E.g., If the FindGameObject action failed to find an object.")]
+    [Tooltip("Tests if a GameObject Variable has a null value. E.g., If the FindGameObject action failed to find an object."), ActionCategory(ActionCategory.Logic)]
     public class GameObjectIsNull : FsmStateAction
     {
         [Tooltip("Repeat every frame.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), Tooltip("The GameObject variable to test."), RequiredField]
+        [Tooltip("The GameObject variable to test."), RequiredField, UIHint(UIHint.Variable)]
         public FsmGameObject gameObject;
         [Tooltip("Event to send if the GamObject is NOT null.")]
         public FsmEvent isNotNull;

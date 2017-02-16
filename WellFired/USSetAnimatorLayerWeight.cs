@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("Set Layer Weight"), USequencerEventHideDuration, USequencerEvent("Animation (Mecanim)/Animator/Set Layer Weight")]
+    [USequencerFriendlyName("Set Layer Weight"), USequencerEvent("Animation (Mecanim)/Animator/Set Layer Weight"), USequencerEventHideDuration]
     public class USSetAnimatorLayerWeight : USEventBase
     {
         public int layerIndex = -1;

@@ -9,9 +9,9 @@
     {
         [UIHint(UIHint.Variable)]
         public FsmGameObject childInstance;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to add")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject to add"), RequiredField]
         public FsmGameObject childReference;
-        [HutongGames.PlayMaker.Tooltip("The Parent"), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The Parent")]
         public FsmOwnerDefault parent;
 
         public override void OnEnter()

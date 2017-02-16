@@ -10,7 +10,7 @@
         public FsmString[] compareTo;
         public bool everyFrame;
         public FsmEvent[] sendEvent;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmString stringVariable;
 
         private void DoStringSwitch()

@@ -2,7 +2,7 @@
 {
     using System;
 
-    [USequencerFriendlyName("FGO Play BGM"), USequencerEvent("FGO/Play BGM"), USequencerEventHideDuration]
+    [USequencerFriendlyName("FGO Play BGM"), USequencerEventHideDuration, USequencerEvent("FGO/Play BGM")]
     public class USFGOPlayBgmEvent : USEventBase
     {
         public string bgmName;

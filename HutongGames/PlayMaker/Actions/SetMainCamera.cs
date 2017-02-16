@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the main camera."), ActionCategory(ActionCategory.Camera)]
+    [ActionCategory(ActionCategory.Camera), HutongGames.PlayMaker.Tooltip("Sets the main camera.")]
     public class SetMainCamera : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("The GameObject to set as the main camera (should have a Camera component)."), RequiredField, CheckForComponent(typeof(Camera))]
+        [RequiredField, CheckForComponent(typeof(Camera)), HutongGames.PlayMaker.Tooltip("The GameObject to set as the main camera (should have a Camera component).")]
         public FsmGameObject gameObject;
 
         public override void OnEnter()

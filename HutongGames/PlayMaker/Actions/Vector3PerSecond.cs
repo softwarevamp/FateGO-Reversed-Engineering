@@ -4,11 +4,11 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Vector3), HutongGames.PlayMaker.Tooltip("Multiplies a Vector3 variable by Time.deltaTime. Useful for frame rate independent motion.")]
+    [HutongGames.PlayMaker.Tooltip("Multiplies a Vector3 variable by Time.deltaTime. Useful for frame rate independent motion."), ActionCategory(ActionCategory.Vector3)]
     public class Vector3PerSecond : FsmStateAction
     {
         public bool everyFrame;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmVector3 vector3Variable;
 
         public override void OnEnter()

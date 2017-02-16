@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-[AddComponentMenu("NGUI/UI/NGUI ExMeshRenderer"), ExecuteInEditMode]
+[ExecuteInEditMode, AddComponentMenu("NGUI/UI/NGUI ExMeshRenderer")]
 public class ExUIMeshRenderer : UITweenRenderer
 {
     protected AssetData assetData;

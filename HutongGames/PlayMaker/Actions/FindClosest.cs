@@ -17,9 +17,9 @@
         public FsmBool mustBeVisible;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the distance to the closest object.")]
         public FsmFloat storeDistance;
-        [HutongGames.PlayMaker.Tooltip("Store the closest object."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the closest object.")]
         public FsmGameObject storeObject;
-        [UIHint(UIHint.Tag), RequiredField, HutongGames.PlayMaker.Tooltip("Only consider objects with this Tag. NOTE: It's generally a lot quicker to find objects with a Tag!")]
+        [UIHint(UIHint.Tag), HutongGames.PlayMaker.Tooltip("Only consider objects with this Tag. NOTE: It's generally a lot quicker to find objects with a Tag!"), RequiredField]
         public FsmString withTag;
 
         private void DoFindClosest()

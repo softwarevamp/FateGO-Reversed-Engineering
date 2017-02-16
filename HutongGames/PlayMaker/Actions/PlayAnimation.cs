@@ -4,17 +4,17 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Plays an Animation on a Game Object. You can add named animation clips to the object in the Unity editor, or with the Add Animation Clip action."), ActionCategory(ActionCategory.Animation)]
+    [ActionCategory(ActionCategory.Animation), HutongGames.PlayMaker.Tooltip("Plays an Animation on a Game Object. You can add named animation clips to the object in the Unity editor, or with the Add Animation Clip action.")]
     public class PlayAnimation : ComponentAction<Animation>
     {
         private AnimationState anim;
-        [UIHint(UIHint.Animation), HutongGames.PlayMaker.Tooltip("The name of the animation to play.")]
+        [HutongGames.PlayMaker.Tooltip("The name of the animation to play."), UIHint(UIHint.Animation)]
         public FsmString animName;
-        [HutongGames.PlayMaker.Tooltip("Time taken to blend to this animation."), HasFloatSlider(0f, 5f)]
+        [HasFloatSlider(0f, 5f), HutongGames.PlayMaker.Tooltip("Time taken to blend to this animation.")]
         public FsmFloat blendTime;
         [HutongGames.PlayMaker.Tooltip("Event to send when the animation is finished playing. NOTE: Not sent with Loop or PingPong wrap modes!")]
         public FsmEvent finishEvent;
-        [CheckForComponent(typeof(Animation)), HutongGames.PlayMaker.Tooltip("Game Object to play the animation on."), RequiredField]
+        [HutongGames.PlayMaker.Tooltip("Game Object to play the animation on."), CheckForComponent(typeof(Animation)), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Event to send when the animation loops. If you want to send this event to another FSM use Set Event Target. NOTE: This event is only sent with Loop and PingPong wrap modes.")]
         public FsmEvent loopEvent;

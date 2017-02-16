@@ -8,7 +8,7 @@
     public class GetMouseY : FsmStateAction
     {
         public bool normalize;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmFloat storeResult;
 
         private void DoGetMouseY()

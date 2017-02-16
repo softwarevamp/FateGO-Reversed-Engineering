@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.GameObject), Tooltip("Selects a Random Game Object from an array of Game Objects.")]
+    [Tooltip("Selects a Random Game Object from an array of Game Objects."), ActionCategory(ActionCategory.GameObject)]
     public class SelectRandomGameObject : FsmStateAction
     {
         [CompoundArray("Game Objects", "Game Object", "Weight")]

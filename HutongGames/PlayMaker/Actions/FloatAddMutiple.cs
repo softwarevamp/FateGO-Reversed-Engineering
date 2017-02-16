@@ -6,11 +6,11 @@
     [ActionCategory(ActionCategory.Math), Tooltip("Adds multipe float variables to float variable.")]
     public class FloatAddMutiple : FsmStateAction
     {
-        [RequiredField, Tooltip("Add to this variable."), UIHint(UIHint.Variable)]
+        [Tooltip("Add to this variable."), RequiredField, UIHint(UIHint.Variable)]
         public FsmFloat addTo;
         [Tooltip("Repeat every frame while the state is active.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), Tooltip("The float variables to add.")]
+        [Tooltip("The float variables to add."), UIHint(UIHint.Variable)]
         public FsmFloat[] floatVariables;
 
         private void DoFloatAdd()

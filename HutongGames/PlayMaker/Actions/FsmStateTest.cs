@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Logic), HutongGames.PlayMaker.Tooltip("Tests if an FSM is in the specified State.")]
+    [HutongGames.PlayMaker.Tooltip("Tests if an FSM is in the specified State."), ActionCategory(ActionCategory.Logic)]
     public class FsmStateTest : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if you're waiting for a particular state.")]
@@ -12,12 +12,12 @@
         [HutongGames.PlayMaker.Tooltip("Event to send if the FSM is NOT in the specified state.")]
         public FsmEvent falseEvent;
         private PlayMakerFSM fsm;
-        [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of Fsm on Game Object. Useful if there is more than one FSM on the GameObject.")]
+        [HutongGames.PlayMaker.Tooltip("Optional name of Fsm on Game Object. Useful if there is more than one FSM on the GameObject."), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
         [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM."), RequiredField]
         public FsmGameObject gameObject;
         private GameObject previousGo;
-        [HutongGames.PlayMaker.Tooltip("Check to see if the FSM is in this state."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Check to see if the FSM is in this state.")]
         public FsmString stateName;
         [HutongGames.PlayMaker.Tooltip("Store the result of this test in a bool variable. Useful if other actions depend on this test."), UIHint(UIHint.Variable)]
         public FsmBool storeResult;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[AddComponentMenu("NGUI/Internal/Draw Call"), ExecuteInEditMode]
+[ExecuteInEditMode, AddComponentMenu("NGUI/Internal/Draw Call")]
 public class UIDrawCall : MonoBehaviour
 {
     [NonSerialized, HideInInspector]

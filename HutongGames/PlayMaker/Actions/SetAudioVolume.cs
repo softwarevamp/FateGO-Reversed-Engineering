@@ -4,11 +4,11 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Audio), HutongGames.PlayMaker.Tooltip("Sets the Volume of the Audio Clip played by the AudioSource component on a Game Object.")]
+    [HutongGames.PlayMaker.Tooltip("Sets the Volume of the Audio Clip played by the AudioSource component on a Game Object."), ActionCategory(ActionCategory.Audio)]
     public class SetAudioVolume : ComponentAction<AudioSource>
     {
         public bool everyFrame;
-        [RequiredField, CheckForComponent(typeof(AudioSource))]
+        [CheckForComponent(typeof(AudioSource)), RequiredField]
         public FsmOwnerDefault gameObject;
         [HasFloatSlider(0f, 1f)]
         public FsmFloat volume;

@@ -9,7 +9,7 @@
         [CompoundArray("Int Switches", "Compare Int", "Send Event")]
         public FsmInt[] compareTo;
         public bool everyFrame;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmInt intVariable;
         public FsmEvent[] sendEvent;
 

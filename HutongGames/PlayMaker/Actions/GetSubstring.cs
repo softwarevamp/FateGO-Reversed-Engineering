@@ -11,7 +11,7 @@
         public FsmInt length;
         [RequiredField]
         public FsmInt startIndex;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmString storeResult;
         [UIHint(UIHint.Variable), RequiredField]
         public FsmString stringVariable;

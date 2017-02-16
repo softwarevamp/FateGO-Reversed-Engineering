@@ -930,13 +930,13 @@ public class SvtEqCombineListViewManager : ListViewManager
                 for (int m = 0; m < this.selectedMtSvtList.Count; m++)
                 {
                     SvtEqCombineListViewItem item = this.selectedMtSvtList[m];
-                    for (int n = 0; n < list3.Count; n++)
+                    for (int n = 0; n < collection.Length; n++)
                     {
                         UserServantEntity entity4 = collection[n];
                         if (item.UserSvtEntity.id == entity4.id)
                         {
                             list4.Add(item.UserSvtEntity);
-                            list3.Remove(item.UserSvtEntity);
+                            list3.Remove(collection[n]);
                         }
                     }
                 }

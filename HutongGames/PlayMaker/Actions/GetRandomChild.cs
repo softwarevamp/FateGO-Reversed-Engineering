@@ -4,12 +4,12 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Gets a Random Child of a Game Object."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Gets a Random Child of a Game Object.")]
     public class GetRandomChild : FsmStateAction
     {
         [RequiredField]
         public FsmOwnerDefault gameObject;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmGameObject storeResult;
 
         private void DoGetRandomChild()

@@ -7,7 +7,7 @@
     [ActionCategory("FGOAction")]
     public class FGOBattleCameraEx : FsmStateAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("actor game object. require: ResourceFolder == ACTORE_EFFECT"), CheckForComponent(typeof(BattleActorControl))]
+        [HutongGames.PlayMaker.Tooltip("actor game object. require: ResourceFolder == ACTORE_EFFECT"), CheckForComponent(typeof(BattleActorControl)), RequiredField]
         public FsmGameObject actorGameObject;
         [RequiredField]
         public FsmGameObject cameraObject;

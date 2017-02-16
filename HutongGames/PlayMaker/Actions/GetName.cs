@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Gets the name of a Game Object and stores it in a String Variable.")]
+    [HutongGames.PlayMaker.Tooltip("Gets the name of a Game Object and stores it in a String Variable."), ActionCategory(ActionCategory.GameObject)]
     public class GetName : FsmStateAction
     {
         public bool everyFrame;

@@ -4,11 +4,11 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the Velocity of a Game Object. To leave any axis unchanged, set variable to 'None'. NOTE: Game object must have a rigidbody."), ActionCategory(ActionCategory.Physics)]
+    [ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Sets the Velocity of a Game Object. To leave any axis unchanged, set variable to 'None'. NOTE: Game object must have a rigidbody.")]
     public class SetVelocity : ComponentAction<Rigidbody>
     {
         public bool everyFrame;
-        [RequiredField, CheckForComponent(typeof(Rigidbody))]
+        [CheckForComponent(typeof(Rigidbody)), RequiredField]
         public FsmOwnerDefault gameObject;
         public Space space;
         [UIHint(UIHint.Variable)]

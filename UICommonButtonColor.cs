@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[AddComponentMenu("FGO/Common/UICommonButtonColor"), ExecuteInEditMode]
+[ExecuteInEditMode, AddComponentMenu("FGO/Common/UICommonButtonColor")]
 public class UICommonButtonColor : UIWidgetContainer
 {
     public static readonly Color disabledColor = new Color(0.5f, 0.5f, 0.5f, 1f);

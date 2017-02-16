@@ -21,7 +21,7 @@ public class UIDragObject : MonoBehaviour
     [SerializeField]
     protected Vector3 scale = new Vector3(1f, 1f, 0f);
     public Vector3 scrollMomentum = Vector3.zero;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private float scrollWheelFactor;
     public Transform target;
 

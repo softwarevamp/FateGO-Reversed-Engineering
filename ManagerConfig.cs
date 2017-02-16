@@ -6,7 +6,7 @@ public class ManagerConfig
     public static readonly string AndroidPackageName = "jp.co.fatedomaindummy.FGO.Sample";
     public static readonly string AndroidProjectID = "1";
     public static readonly string AppBuildDate = "20151023_1";
-    public static readonly string AppVer = "1.14.0";
+    public static readonly string AppVer = "1.14.1";
     public static readonly string DebugDataServerAddress = "http://data.fatedomaindummy.com/Debug1";
     public static readonly string DebugGameServerAddress = "debug1.fatedomaindummy.net";
     public static readonly bool DebugNetworkSecurity;

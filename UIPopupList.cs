@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[ExecuteInEditMode, AddComponentMenu("NGUI/Interaction/Popup List")]
+[AddComponentMenu("NGUI/Interaction/Popup List"), ExecuteInEditMode]
 public class UIPopupList : UIWidgetContainer
 {
     public NGUIText.Alignment alignment = NGUIText.Alignment.Left;
@@ -15,13 +15,13 @@ public class UIPopupList : UIWidgetContainer
     public string backgroundSprite;
     public UIFont bitmapFont;
     public static UIPopupList current;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private GameObject eventReceiver;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private UIFont font;
     public int fontSize = 0x10;
     public FontStyle fontStyle;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private string functionName = "OnSelectionChange";
     public Color highlightColor = new Color(0.8823529f, 0.7843137f, 0.5882353f, 1f);
     public string highlightSprite;
@@ -31,18 +31,18 @@ public class UIPopupList : UIWidgetContainer
     public List<string> items = new List<string>();
     [SerializeField, HideInInspector]
     private UISprite mBackground;
-    [HideInInspector, SerializeField]
-    private float mBgBorder;
     [SerializeField, HideInInspector]
-    private GameObject mChild;
+    private float mBgBorder;
     [HideInInspector, SerializeField]
+    private GameObject mChild;
+    [SerializeField, HideInInspector]
     private UISprite mHighlight;
     [HideInInspector, SerializeField]
     private UILabel mHighlightedLabel;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private List<UILabel> mLabelList = new List<UILabel>();
     private LegacyEvent mLegacyEvent;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private UIPanel mPanel;
     [SerializeField, HideInInspector]
     private string mSelectedItem;

@@ -11,7 +11,7 @@
         [HutongGames.PlayMaker.Tooltip("The player reference is cached, that is if the connections list changes, the player reference remains.")]
         public bool cachePlayerReference = true;
         public bool everyFrame;
-        [ActionSection("Result"), RequiredField, HutongGames.PlayMaker.Tooltip("Get the last ping time to the given player in milliseconds."), UIHint(UIHint.Variable)]
+        [RequiredField, ActionSection("Result"), HutongGames.PlayMaker.Tooltip("Get the last ping time to the given player in milliseconds."), UIHint(UIHint.Variable)]
         public FsmInt lastPing;
         [HutongGames.PlayMaker.Tooltip("Event to send if the player is found (pings back).")]
         public FsmEvent PlayerFoundEvent;

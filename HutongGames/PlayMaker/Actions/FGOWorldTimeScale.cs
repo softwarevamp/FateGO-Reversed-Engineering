@@ -7,7 +7,7 @@
     [ActionCategory("FGOAction")]
     public class FGOWorldTimeScale : FsmStateAction
     {
-        [CheckForComponent(typeof(BattlePerformance)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(BattlePerformance))]
         public FsmGameObject performanceObject;
         public FsmFloat timescale;
 

@@ -9,9 +9,9 @@
     {
         [RequiredField, HutongGames.PlayMaker.Tooltip("The number of allowed incoming connections/number of players allowed in the game.")]
         public FsmInt connections;
-        [HutongGames.PlayMaker.Tooltip("Event to send in case of an error creating the server."), ActionSection("Errors")]
+        [ActionSection("Errors"), HutongGames.PlayMaker.Tooltip("Event to send in case of an error creating the server.")]
         public FsmEvent errorEvent;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the error string in a variable.")]
+        [HutongGames.PlayMaker.Tooltip("Store the error string in a variable."), UIHint(UIHint.Variable)]
         public FsmString errorString;
         [HutongGames.PlayMaker.Tooltip("Sets the password for the server. This must be matched in the NetworkConnect action.")]
         public FsmString incomingPassword;

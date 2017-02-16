@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Audio), HutongGames.PlayMaker.Tooltip("Sets the Audio Clip played by the AudioSource component on a Game Object.")]
+    [HutongGames.PlayMaker.Tooltip("Sets the Audio Clip played by the AudioSource component on a Game Object."), ActionCategory(ActionCategory.Audio)]
     public class SetAudioClip : ComponentAction<AudioSource>
     {
-        [HutongGames.PlayMaker.Tooltip("The AudioClip to set."), ObjectType(typeof(AudioClip))]
+        [ObjectType(typeof(AudioClip)), HutongGames.PlayMaker.Tooltip("The AudioClip to set.")]
         public FsmObject audioClip;
         [CheckForComponent(typeof(AudioSource)), HutongGames.PlayMaker.Tooltip("The GameObject with the AudioSource component."), RequiredField]
         public FsmOwnerDefault gameObject;

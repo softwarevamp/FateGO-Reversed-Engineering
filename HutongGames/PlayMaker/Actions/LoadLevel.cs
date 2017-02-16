@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Loads a Level by Name. NOTE: Before you can load a level, you have to add it to the list of levels defined in File->Build Settings..."), ActionCategory(ActionCategory.Level)]
+    [ActionCategory(ActionCategory.Level), HutongGames.PlayMaker.Tooltip("Loads a Level by Name. NOTE: Before you can load a level, you have to add it to the list of levels defined in File->Build Settings...")]
     public class LoadLevel : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Load the level additively, keeping the current scene.")]

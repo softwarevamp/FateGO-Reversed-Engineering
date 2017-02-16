@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using UnityEngine;
 
-    [USequencerFriendlyName("FGO Attach Object To Parent"), USequencerEvent("FGO/Effect/Attach To Parent"), USequencerEventHideDuration]
+    [USequencerEvent("FGO/Effect/Attach To Parent"), USequencerEventHideDuration, USequencerFriendlyName("FGO Attach Object To Parent")]
     public class USFGOAttachToParentEvent : USEventBase
     {
         private GameObject dummyNode;

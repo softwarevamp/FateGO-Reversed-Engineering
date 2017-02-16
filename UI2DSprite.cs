@@ -6,7 +6,7 @@ public class UI2DSprite : UIBasicSprite
 {
     [HideInInspector, SerializeField]
     private Vector4 mBorder = Vector4.zero;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private bool mFixedAspect;
     [HideInInspector, SerializeField]
     private Material mMat;
@@ -14,9 +14,9 @@ public class UI2DSprite : UIBasicSprite
     private float mPixelSize = 1f;
     [NonSerialized]
     private int mPMA = -1;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private Shader mShader;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private UnityEngine.Sprite mSprite;
     public UnityEngine.Sprite nextSprite;
 

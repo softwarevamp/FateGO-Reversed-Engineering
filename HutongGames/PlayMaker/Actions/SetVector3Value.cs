@@ -3,13 +3,13 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Vector3), Tooltip("Sets the value of a Vector3 Variable.")]
+    [Tooltip("Sets the value of a Vector3 Variable."), ActionCategory(ActionCategory.Vector3)]
     public class SetVector3Value : FsmStateAction
     {
         public bool everyFrame;
         [RequiredField]
         public FsmVector3 vector3Value;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmVector3 vector3Variable;
 
         public override void OnEnter()

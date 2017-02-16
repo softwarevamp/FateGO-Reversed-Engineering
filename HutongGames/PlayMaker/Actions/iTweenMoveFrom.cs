@@ -26,7 +26,7 @@
         public FsmFloat lookTime;
         [HutongGames.PlayMaker.Tooltip("The type of loop to apply once the animation has completed.")]
         public iTween.LoopType loopType;
-        [HutongGames.PlayMaker.Tooltip("Whether or not the GameObject will orient to its direction of travel. False by default."), ActionSection("LookAt")]
+        [ActionSection("LookAt"), HutongGames.PlayMaker.Tooltip("Whether or not the GameObject will orient to its direction of travel. False by default.")]
         public FsmBool orientToPath;
         [HutongGames.PlayMaker.Tooltip("Whether to animate in local or world space.")]
         public Space space;

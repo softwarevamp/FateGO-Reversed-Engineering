@@ -7,7 +7,7 @@
     [HutongGames.PlayMaker.Tooltip("Sets the value of the preference identified by key."), ActionCategory("PlayerPrefs")]
     public class PlayerPrefsSetInt : FsmStateAction
     {
-        [CompoundArray("Count", "Key", "Value"), HutongGames.PlayMaker.Tooltip("Case sensitive key.")]
+        [HutongGames.PlayMaker.Tooltip("Case sensitive key."), CompoundArray("Count", "Key", "Value")]
         public FsmString[] keys;
         public FsmInt[] values;
 

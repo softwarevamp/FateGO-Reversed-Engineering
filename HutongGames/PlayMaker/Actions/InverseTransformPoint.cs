@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Transforms position from world space to a Game Object's local space. The opposite of TransformPoint.")]
+    [HutongGames.PlayMaker.Tooltip("Transforms position from world space to a Game Object's local space. The opposite of TransformPoint."), ActionCategory(ActionCategory.Transform)]
     public class InverseTransformPoint : FsmStateAction
     {
         public bool everyFrame;

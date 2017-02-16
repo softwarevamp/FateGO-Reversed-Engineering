@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Creates an FSM from a saved FSM Template.")]
+    [HutongGames.PlayMaker.Tooltip("Creates an FSM from a saved FSM Template."), ActionCategory(ActionCategory.StateMachine)]
     public class RunFSM : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Event to send when the FSM has finished (usually because it ran a Finish FSM action).")]

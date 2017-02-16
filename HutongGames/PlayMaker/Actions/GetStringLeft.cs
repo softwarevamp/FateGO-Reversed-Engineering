@@ -3,12 +3,12 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Gets the Left n characters from a String Variable."), ActionCategory(ActionCategory.String)]
+    [ActionCategory(ActionCategory.String), Tooltip("Gets the Left n characters from a String Variable.")]
     public class GetStringLeft : FsmStateAction
     {
         public FsmInt charCount;
         public bool everyFrame;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmString storeResult;
         [UIHint(UIHint.Variable), RequiredField]
         public FsmString stringVariable;

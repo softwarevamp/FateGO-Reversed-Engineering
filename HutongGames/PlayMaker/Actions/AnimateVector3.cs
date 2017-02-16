@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.AnimateVariables), HutongGames.PlayMaker.Tooltip("Animates the value of a Vector3 Variable using an Animation Curve.")]
+    [HutongGames.PlayMaker.Tooltip("Animates the value of a Vector3 Variable using an Animation Curve."), ActionCategory(ActionCategory.AnimateVariables)]
     public class AnimateVector3 : AnimateFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("Calculation lets you set a type of curve deformation that will be applied to vectorVariable.x.")]

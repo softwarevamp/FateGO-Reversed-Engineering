@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Network), HutongGames.PlayMaker.Tooltip("Disconnect from the server.")]
+    [HutongGames.PlayMaker.Tooltip("Disconnect from the server."), ActionCategory(ActionCategory.Network)]
     public class NetworkDisconnect : FsmStateAction
     {
         public override void OnEnter()

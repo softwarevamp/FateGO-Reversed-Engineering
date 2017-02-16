@@ -8,9 +8,9 @@
     public class ConvertFloatToInt : FsmStateAction
     {
         public bool everyFrame;
-        [HutongGames.PlayMaker.Tooltip("The Float variable to convert to an integer."), RequiredField, UIHint(UIHint.Variable)]
+        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The Float variable to convert to an integer.")]
         public FsmFloat floatVariable;
-        [UIHint(UIHint.Variable), RequiredField, HutongGames.PlayMaker.Tooltip("Store the result in an Integer variable.")]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the result in an Integer variable."), RequiredField]
         public FsmInt intVariable;
         public FloatRounding rounding;
 

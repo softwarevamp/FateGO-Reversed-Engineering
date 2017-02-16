@@ -4,11 +4,11 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the strength of the shadows cast by a Light."), ActionCategory(ActionCategory.Lights)]
+    [ActionCategory(ActionCategory.Lights), HutongGames.PlayMaker.Tooltip("Sets the strength of the shadows cast by a Light.")]
     public class SetShadowStrength : ComponentAction<Light>
     {
         public bool everyFrame;
-        [RequiredField, CheckForComponent(typeof(Light))]
+        [CheckForComponent(typeof(Light)), RequiredField]
         public FsmOwnerDefault gameObject;
         public FsmFloat shadowStrength;
 

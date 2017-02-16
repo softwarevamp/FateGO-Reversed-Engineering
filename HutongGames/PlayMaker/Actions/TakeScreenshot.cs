@@ -5,7 +5,7 @@
     using System.IO;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Application), HutongGames.PlayMaker.Tooltip("Saves a Screenshot to the users MyPictures folder. TIP: Can be useful for automated testing and debugging.")]
+    [HutongGames.PlayMaker.Tooltip("Saves a Screenshot to the users MyPictures folder. TIP: Can be useful for automated testing and debugging."), ActionCategory(ActionCategory.Application)]
     public class TakeScreenshot : FsmStateAction
     {
         public bool autoNumber;

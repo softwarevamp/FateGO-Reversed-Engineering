@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Gets the number of Touches."), ActionCategory(ActionCategory.Device)]
+    [ActionCategory(ActionCategory.Device), HutongGames.PlayMaker.Tooltip("Gets the number of Touches.")]
     public class GetTouchCount : FsmStateAction
     {
         public bool everyFrame;

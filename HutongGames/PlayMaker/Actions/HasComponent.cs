@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Checks if an Object has a Component. Optionally remove the Component on exiting the state."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Checks if an Object has a Component. Optionally remove the Component on exiting the state.")]
     public class HasComponent : FsmStateAction
     {
         private Component aComponent;

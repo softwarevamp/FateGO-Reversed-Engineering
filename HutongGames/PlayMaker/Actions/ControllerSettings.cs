@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Character), HutongGames.PlayMaker.Tooltip("Modify various character controller settings.\n'None' leaves the setting unchanged.")]
+    [HutongGames.PlayMaker.Tooltip("Modify various character controller settings.\n'None' leaves the setting unchanged."), ActionCategory(ActionCategory.Character)]
     public class ControllerSettings : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("The center of the character's capsule relative to the transform's position")]
@@ -14,7 +14,7 @@
         public FsmBool detectCollisions;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame while the state is active.")]
         public bool everyFrame;
-        [CheckForComponent(typeof(CharacterController)), RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the CharacterController.")]
+        [CheckForComponent(typeof(CharacterController)), HutongGames.PlayMaker.Tooltip("The GameObject that owns the CharacterController."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("The height of the character's capsule.")]
         public FsmFloat height;

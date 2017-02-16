@@ -9,7 +9,7 @@
     {
         [UIHint(UIHint.Animation)]
         public FsmString animName;
-        [RequiredField, CheckForComponent(typeof(Animation))]
+        [CheckForComponent(typeof(Animation)), RequiredField]
         public FsmOwnerDefault gameObject;
 
         private void DoRewindAnimation()

@@ -3,13 +3,13 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Gets a Game Object's Tag and stores it in a String Variable."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), Tooltip("Gets a Game Object's Tag and stores it in a String Variable.")]
     public class GetTag : FsmStateAction
     {
         public bool everyFrame;
         [RequiredField]
         public FsmGameObject gameObject;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmString storeResult;
 
         private void DoGetTag()

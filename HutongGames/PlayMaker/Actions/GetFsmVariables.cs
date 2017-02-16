@@ -4,17 +4,17 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Get the values of multiple variables in another FSM and store in variables of the same name in this FSM.")]
+    [HutongGames.PlayMaker.Tooltip("Get the values of multiple variables in another FSM and store in variables of the same name in this FSM."), ActionCategory(ActionCategory.StateMachine)]
     public class GetFsmVariables : FsmStateAction
     {
         private GameObject cachedGO;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;
-        [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
+        [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object")]
         public FsmString fsmName;
         [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM"), RequiredField]
         public FsmOwnerDefault gameObject;
-        [RequiredField, HideTypeFilter, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HideTypeFilter, RequiredField]
         public FsmVar[] getVariables;
         private PlayMakerFSM sourceFsm;
         private INamedVariable[] sourceVariables;

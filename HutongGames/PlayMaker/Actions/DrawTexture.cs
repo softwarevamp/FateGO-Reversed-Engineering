@@ -20,9 +20,9 @@
         private Rect rect;
         [HutongGames.PlayMaker.Tooltip("How to scale the image when the aspect ratio of it doesn't fit the aspect ratio to be drawn within.")]
         public ScaleMode scaleMode;
-        [Title("Position"), UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Rectangle on the screen to draw the texture within. Alternatively, set or override individual properties below.")]
+        [HutongGames.PlayMaker.Tooltip("Rectangle on the screen to draw the texture within. Alternatively, set or override individual properties below."), Title("Position"), UIHint(UIHint.Variable)]
         public FsmRect screenRect;
-        [HutongGames.PlayMaker.Tooltip("Texture to draw."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Texture to draw.")]
         public FsmTexture texture;
         [HutongGames.PlayMaker.Tooltip("Top screen coordinate.")]
         public FsmFloat top;

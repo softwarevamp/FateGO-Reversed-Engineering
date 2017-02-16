@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Input), HutongGames.PlayMaker.Tooltip("Rotates a GameObject based on mouse movement. Minimum and Maximum values can be used to constrain the rotation.")]
+    [HutongGames.PlayMaker.Tooltip("Rotates a GameObject based on mouse movement. Minimum and Maximum values can be used to constrain the rotation."), ActionCategory(ActionCategory.Input)]
     public class MouseLook : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("The axes to rotate around.")]
@@ -13,13 +13,13 @@
         public bool everyFrame;
         [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to rotate.")]
         public FsmOwnerDefault gameObject;
-        [HutongGames.PlayMaker.Tooltip("Clamp rotation around X axis. Set to None for no clamping."), HasFloatSlider(-360f, 360f)]
-        public FsmFloat maximumX;
-        [HutongGames.PlayMaker.Tooltip("Clamp rotation around Y axis. Set to None for no clamping."), HasFloatSlider(-360f, 360f)]
-        public FsmFloat maximumY;
         [HasFloatSlider(-360f, 360f), HutongGames.PlayMaker.Tooltip("Clamp rotation around X axis. Set to None for no clamping.")]
+        public FsmFloat maximumX;
+        [HasFloatSlider(-360f, 360f), HutongGames.PlayMaker.Tooltip("Clamp rotation around Y axis. Set to None for no clamping.")]
+        public FsmFloat maximumY;
+        [HutongGames.PlayMaker.Tooltip("Clamp rotation around X axis. Set to None for no clamping."), HasFloatSlider(-360f, 360f)]
         public FsmFloat minimumX;
-        [HutongGames.PlayMaker.Tooltip("Clamp rotation around Y axis. Set to None for no clamping."), HasFloatSlider(-360f, 360f)]
+        [HasFloatSlider(-360f, 360f), HutongGames.PlayMaker.Tooltip("Clamp rotation around Y axis. Set to None for no clamping.")]
         public FsmFloat minimumY;
         private float rotationX;
         private float rotationY;

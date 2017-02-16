@@ -16,7 +16,7 @@
         [HutongGames.PlayMaker.Tooltip("Calculation lets you set a type of curve deformation that will be applied to otherwise linear move between fromValue.Red and toValue.Rec.")]
         public CurveFsmAction.Calculation calculationR;
         private Color clr;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmColor colorVariable;
         [RequiredField]
         public FsmAnimationCurve curveA;

@@ -9,7 +9,7 @@
     {
         [RequiredField, HutongGames.PlayMaker.Tooltip("The index of the child to find.")]
         public FsmInt childIndex;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to search.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject to search."), RequiredField]
         public FsmOwnerDefault gameObject;
         [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the child in a GameObject variable.")]
         public FsmGameObject store;

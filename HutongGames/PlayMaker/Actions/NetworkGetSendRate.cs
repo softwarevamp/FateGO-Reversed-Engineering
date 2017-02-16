@@ -4,10 +4,10 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Network), HutongGames.PlayMaker.Tooltip("Store the current send rate for all NetworkViews")]
+    [HutongGames.PlayMaker.Tooltip("Store the current send rate for all NetworkViews"), ActionCategory(ActionCategory.Network)]
     public class NetworkGetSendRate : FsmStateAction
     {
-        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the current send rate for NetworkViews")]
+        [HutongGames.PlayMaker.Tooltip("Store the current send rate for NetworkViews"), UIHint(UIHint.Variable), RequiredField]
         public FsmFloat sendRate;
 
         private void DoGetSendRate()

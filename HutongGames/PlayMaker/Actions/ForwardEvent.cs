@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.StateMachine), Tooltip("Forward an event recieved by this FSM to another target.")]
+    [Tooltip("Forward an event recieved by this FSM to another target."), ActionCategory(ActionCategory.StateMachine)]
     public class ForwardEvent : FsmStateAction
     {
         [Tooltip("Should this action eat the events or pass them on.")]

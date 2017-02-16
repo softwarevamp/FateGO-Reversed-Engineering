@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEventHideDuration, USequencerEvent("Audio/Fade Audio"), USequencerFriendlyName("Fade Audio")]
+    [USequencerFriendlyName("Fade Audio"), USequencerEvent("Audio/Fade Audio"), USequencerEventHideDuration]
     public class USFadeAudioEvent : USEventBase
     {
         public AnimationCurve fadeCurve;

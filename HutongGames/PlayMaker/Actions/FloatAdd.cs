@@ -11,7 +11,7 @@
         public FsmFloat add;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame while the state is active.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), RequiredField, HutongGames.PlayMaker.Tooltip("The Float variable to add to.")]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The Float variable to add to."), RequiredField]
         public FsmFloat floatVariable;
         [HutongGames.PlayMaker.Tooltip("Used with Every Frame. Adds the value over one second to make the operation frame rate independent.")]
         public bool perSecond;

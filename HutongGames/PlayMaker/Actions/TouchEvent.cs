@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Device), HutongGames.PlayMaker.Tooltip("Sends events based on Touch Phases. Optionally filter by a fingerID.")]
+    [HutongGames.PlayMaker.Tooltip("Sends events based on Touch Phases. Optionally filter by a fingerID."), ActionCategory(ActionCategory.Device)]
     public class TouchEvent : FsmStateAction
     {
         public FsmInt fingerId;

@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Animates the value of a Vector3 Variable FROM-TO with assistance of Deformation Curves."), ActionCategory(ActionCategory.AnimateVariables)]
+    [ActionCategory(ActionCategory.AnimateVariables), HutongGames.PlayMaker.Tooltip("Animates the value of a Vector3 Variable FROM-TO with assistance of Deformation Curves.")]
     public class CurveVector3 : CurveFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("Calculation lets you set a type of curve deformation that will be applied to otherwise linear move between fromValue.x and toValue.x.")]

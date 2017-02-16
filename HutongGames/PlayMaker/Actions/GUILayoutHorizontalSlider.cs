@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("A Horizontal Slider linked to a Float Variable.")]
+    [HutongGames.PlayMaker.Tooltip("A Horizontal Slider linked to a Float Variable."), ActionCategory(ActionCategory.GUILayout)]
     public class GUILayoutHorizontalSlider : GUILayoutAction
     {
         public FsmEvent changedEvent;

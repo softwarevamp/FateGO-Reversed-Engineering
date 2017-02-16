@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sends an Event when a Button is released."), ActionCategory(ActionCategory.Input)]
+    [ActionCategory(ActionCategory.Input), HutongGames.PlayMaker.Tooltip("Sends an Event when a Button is released.")]
     public class GetButtonUp : FsmStateAction
     {
         [RequiredField, HutongGames.PlayMaker.Tooltip("The name of the button. Set in the Unity Input Manager.")]

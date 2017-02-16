@@ -11,7 +11,7 @@
         public FsmString comment;
         [RequiredField, HutongGames.PlayMaker.Tooltip("The game name.")]
         public FsmString gameName;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The unique game type name.")]
+        [HutongGames.PlayMaker.Tooltip("The unique game type name."), RequiredField]
         public FsmString gameTypeName;
 
         private void DoMasterServerRegisterHost()

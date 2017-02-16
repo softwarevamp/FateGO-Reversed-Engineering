@@ -11,7 +11,7 @@
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("The type of force to apply. See Unity Physics docs.")]
         public ForceMode forceMode;
-        [CheckForComponent(typeof(Rigidbody)), RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to add torque to.")]
+        [CheckForComponent(typeof(Rigidbody)), HutongGames.PlayMaker.Tooltip("The GameObject to add torque to."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Apply the force in world or local space.")]
         public Space space;

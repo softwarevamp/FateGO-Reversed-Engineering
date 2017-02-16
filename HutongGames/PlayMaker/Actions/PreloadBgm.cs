@@ -7,7 +7,7 @@
     [HutongGames.PlayMaker.Tooltip("Preloads the Game System BGM data."), ActionCategory(ActionCategory.Audio)]
     public class PreloadBgm : FsmStateAction
     {
-        [HutongGames.PlayMaker.Tooltip("Set the bgm name string."), ObjectType(typeof(AudioClip))]
+        [ObjectType(typeof(AudioClip)), HutongGames.PlayMaker.Tooltip("Set the bgm name string.")]
         public FsmString bgmName;
         [HutongGames.PlayMaker.Tooltip("Event to send when the bgm finishes preloading.")]
         public FsmEvent finishedEvent;

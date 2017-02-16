@@ -7,7 +7,7 @@
     [ActionCategory("FGOAction")]
     public class FGOActorLogic : FsmStateAction
     {
-        [CheckForComponent(typeof(BattleActorControl)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(BattleActorControl))]
         public FsmGameObject actorObject;
         public LOGIC logic;
 

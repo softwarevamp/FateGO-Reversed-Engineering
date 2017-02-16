@@ -7,9 +7,9 @@
     [ActionCategory(ActionCategory.Animation), HutongGames.PlayMaker.Tooltip("Stops all playing Animations on a Game Object. Optionally, specify a single Animation to Stop.")]
     public class StopAnimation : ComponentAction<Animation>
     {
-        [HutongGames.PlayMaker.Tooltip("Leave empty to stop all playing animations."), UIHint(UIHint.Animation)]
+        [UIHint(UIHint.Animation), HutongGames.PlayMaker.Tooltip("Leave empty to stop all playing animations.")]
         public FsmString animName;
-        [CheckForComponent(typeof(Animation)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(Animation))]
         public FsmOwnerDefault gameObject;
 
         private void DoStopAnimation()

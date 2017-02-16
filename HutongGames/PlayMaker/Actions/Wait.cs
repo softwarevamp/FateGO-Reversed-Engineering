@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Time), HutongGames.PlayMaker.Tooltip("Delays a State from finishing by the specified time. NOTE: Other actions continue, but FINISHED can't happen before Time.")]
+    [HutongGames.PlayMaker.Tooltip("Delays a State from finishing by the specified time. NOTE: Other actions continue, but FINISHED can't happen before Time."), ActionCategory(ActionCategory.Time)]
     public class Wait : FsmStateAction
     {
         public FsmEvent finishEvent;

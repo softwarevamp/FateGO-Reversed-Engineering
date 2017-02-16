@@ -22,7 +22,7 @@ public static class ActionExtensions
         }
     }
 
-    [DebuggerHidden, DebuggerStepThrough]
+    [DebuggerStepThrough, DebuggerHidden]
     public static void Call<T1, T2>(this Action<T1, T2> action, T1 arg1, T2 arg2)
     {
         if (action != null)
@@ -31,7 +31,7 @@ public static class ActionExtensions
         }
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public static void Call<T1, T2, T3>(this Action<T1, T2, T3> action, T1 arg1, T2 arg2, T3 arg3)
     {
         if (action != null)

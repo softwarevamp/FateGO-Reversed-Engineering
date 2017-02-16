@@ -48,7 +48,7 @@ public class UIInput : MonoBehaviour
     protected int mSelectionStart;
     [NonSerialized]
     protected int mSelectMe = -1;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected string mValue;
     private static bool mWaitForKeyboard;
     public List<EventDelegate> onChange = new List<EventDelegate>();

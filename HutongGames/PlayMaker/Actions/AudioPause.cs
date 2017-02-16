@@ -7,7 +7,7 @@
     [ActionCategory(ActionCategory.Audio), HutongGames.PlayMaker.Tooltip("Pauses playing the Audio Clip played by an Audio Source component on a Game Object.")]
     public class AudioPause : FsmStateAction
     {
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject with an Audio Source component."), CheckForComponent(typeof(AudioSource))]
+        [CheckForComponent(typeof(AudioSource)), HutongGames.PlayMaker.Tooltip("The GameObject with an Audio Source component."), RequiredField]
         public FsmOwnerDefault gameObject;
 
         public override void OnEnter()

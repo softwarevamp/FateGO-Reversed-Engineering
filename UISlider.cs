@@ -1,16 +1,16 @@
 ﻿using System;
 using UnityEngine;
 
-[ExecuteInEditMode, AddComponentMenu("NGUI/Interaction/NGUI Slider")]
+[AddComponentMenu("NGUI/Interaction/NGUI Slider"), ExecuteInEditMode]
 public class UISlider : UIProgressBar
 {
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private Direction direction = Direction.Upgraded;
     [SerializeField, HideInInspector]
     private Transform foreground;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected bool mInverted;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private float rawValue = 1f;
 
     protected void OnDragBackground(GameObject go, Vector2 delta)

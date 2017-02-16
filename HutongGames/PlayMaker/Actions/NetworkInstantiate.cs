@@ -17,7 +17,7 @@
         public FsmVector3 rotation;
         [HutongGames.PlayMaker.Tooltip("Optional Spawn Point.")]
         public FsmGameObject spawnPoint;
-        [HutongGames.PlayMaker.Tooltip("Optionally store the created object."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Optionally store the created object.")]
         public FsmGameObject storeObject;
 
         public override void OnEnter()

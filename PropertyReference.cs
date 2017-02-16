@@ -24,7 +24,7 @@ public class PropertyReference
         this.mName = fieldName;
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     private bool Cache()
     {
         if ((this.mTarget != null) && !string.IsNullOrEmpty(this.mName))
@@ -190,7 +190,7 @@ public class PropertyReference
         this.mProperty = null;
     }
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public bool Set(object value)
     {
         if (((this.mProperty == null) && (this.mField == null)) && this.isValid)

@@ -7,12 +7,12 @@ using UnityEngine;
 public class UIProgressBar : UIWidgetContainer
 {
     public static UIProgressBar current;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     protected UIWidget mBG;
     protected Camera mCam;
-    [SerializeField, HideInInspector]
-    protected UIWidget mFG;
     [HideInInspector, SerializeField]
+    protected UIWidget mFG;
+    [SerializeField, HideInInspector]
     protected FillDirection mFill;
     protected bool mIsDirty;
     protected float mOffset;

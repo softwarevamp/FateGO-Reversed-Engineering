@@ -5,7 +5,7 @@
     using System.Collections;
     using UnityEngine;
 
-    [ActionCategory("iTween"), HutongGames.PlayMaker.Tooltip("Translates a GameObject's position over time.")]
+    [HutongGames.PlayMaker.Tooltip("Translates a GameObject's position over time."), ActionCategory("iTween")]
     public class iTweenMoveAdd : iTweenFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("Restricts rotation to the supplied axis only. Just put there strinc like 'x' or 'xz'")]
@@ -26,14 +26,14 @@
         public FsmFloat lookTime;
         [HutongGames.PlayMaker.Tooltip("For the type of loop to apply once the animation has completed.")]
         public iTween.LoopType loopType;
-        [ActionSection("LookAt"), HutongGames.PlayMaker.Tooltip("For whether or not the GameObject will orient to its direction of travel. False by default.")]
+        [HutongGames.PlayMaker.Tooltip("For whether or not the GameObject will orient to its direction of travel. False by default."), ActionSection("LookAt")]
         public FsmBool orientToPath;
         public Space space;
         [HutongGames.PlayMaker.Tooltip("Can be used instead of time to allow animation based on speed. When you define speed the time variable is ignored.")]
         public FsmFloat speed;
         [HutongGames.PlayMaker.Tooltip("For the time in seconds the animation will take to complete.")]
         public FsmFloat time;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("A vector that will be added to a GameObjects position.")]
+        [HutongGames.PlayMaker.Tooltip("A vector that will be added to a GameObjects position."), RequiredField]
         public FsmVector3 vector;
 
         private void DoiTween()

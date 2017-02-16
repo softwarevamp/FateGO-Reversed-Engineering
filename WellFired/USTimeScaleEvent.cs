@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("Time/Time Scale"), USequencerFriendlyName("Time Scale"), USequencerEventHideDuration]
+    [USequencerEventHideDuration, USequencerFriendlyName("Time Scale"), USequencerEvent("Time/Time Scale")]
     public class USTimeScaleEvent : USEventBase
     {
         private float currentCurveSampleTime;

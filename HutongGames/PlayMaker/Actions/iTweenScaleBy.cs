@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory("iTween"), HutongGames.PlayMaker.Tooltip("Multiplies a GameObject's scale over time.")]
+    [HutongGames.PlayMaker.Tooltip("Multiplies a GameObject's scale over time."), ActionCategory("iTween")]
     public class iTweenScaleBy : iTweenFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("The time in seconds the animation will wait before beginning.")]
@@ -21,7 +21,7 @@
         public FsmFloat speed;
         [HutongGames.PlayMaker.Tooltip("The time in seconds the animation will take to complete.")]
         public FsmFloat time;
-        [HutongGames.PlayMaker.Tooltip("A vector that will multiply current GameObjects scale."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("A vector that will multiply current GameObjects scale.")]
         public FsmVector3 vector;
 
         private void DoiTween()

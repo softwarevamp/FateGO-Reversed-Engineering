@@ -4,15 +4,15 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Action version of Unity's Smooth Follow script."), ActionCategory(ActionCategory.Transform)]
+    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Action version of Unity's Smooth Follow script.")]
     public class SmoothFollowAction : FsmStateAction
     {
         private GameObject cachedObect;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The distance in the x-z plane to the target.")]
+        [HutongGames.PlayMaker.Tooltip("The distance in the x-z plane to the target."), RequiredField]
         public FsmFloat distance;
         [HutongGames.PlayMaker.Tooltip("The game object to control. E.g. The camera."), RequiredField]
         public FsmOwnerDefault gameObject;
-        [HutongGames.PlayMaker.Tooltip("The height we want the camera to be above the target"), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The height we want the camera to be above the target")]
         public FsmFloat height;
         [HutongGames.PlayMaker.Tooltip("How much to dampen height movement."), RequiredField]
         public FsmFloat heightDamping;

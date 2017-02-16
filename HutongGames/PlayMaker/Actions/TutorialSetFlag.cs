@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.GameLogic), Tooltip("Tutorial Flag System Set Action")]
+    [Tooltip("Tutorial Flag System Set Action"), ActionCategory(ActionCategory.GameLogic)]
     public class TutorialSetFlag : FsmStateAction
     {
         [Tooltip("Set tutorial flag name string.")]

@@ -8,7 +8,7 @@
     public class SetTextureScale : ComponentAction<Renderer>
     {
         public bool everyFrame;
-        [CheckForComponent(typeof(Renderer)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(Renderer))]
         public FsmOwnerDefault gameObject;
         public FsmInt materialIndex;
         [UIHint(UIHint.NamedColor)]

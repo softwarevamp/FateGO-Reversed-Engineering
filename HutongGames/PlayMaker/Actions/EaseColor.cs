@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Easing Animation - Color"), ActionCategory(ActionCategory.AnimateVariables)]
+    [ActionCategory(ActionCategory.AnimateVariables), HutongGames.PlayMaker.Tooltip("Easing Animation - Color")]
     public class EaseColor : EaseFsmAction
     {
         [UIHint(UIHint.Variable)]

@@ -4,22 +4,22 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Gets the Collision Flags from a Character Controller on a Game Object. Collision flags give you a broad overview of where the character collided with any other object."), ActionCategory(ActionCategory.Character)]
+    [ActionCategory(ActionCategory.Character), HutongGames.PlayMaker.Tooltip("Gets the Collision Flags from a Character Controller on a Game Object. Collision flags give you a broad overview of where the character collided with any other object.")]
     public class GetControllerCollisionFlags : FsmStateAction
     {
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("True if the Character Controller capsule was hit from above.")]
+        [HutongGames.PlayMaker.Tooltip("True if the Character Controller capsule was hit from above."), UIHint(UIHint.Variable)]
         public FsmBool above;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("True if the Character Controller capsule was hit from below.")]
         public FsmBool below;
         private CharacterController controller;
-        [RequiredField, CheckForComponent(typeof(CharacterController)), HutongGames.PlayMaker.Tooltip("The GameObject with a Character Controller component.")]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject with a Character Controller component."), CheckForComponent(typeof(CharacterController))]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("True if the Character Controller capsule is on the ground"), UIHint(UIHint.Variable)]
         public FsmBool isGrounded;
-        [HutongGames.PlayMaker.Tooltip("True if no collisions in last move."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("True if no collisions in last move.")]
         public FsmBool none;
         private GameObject previousGo;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("True if the Character Controller capsule was hit on the sides.")]
+        [HutongGames.PlayMaker.Tooltip("True if the Character Controller capsule was hit on the sides."), UIHint(UIHint.Variable)]
         public FsmBool sides;
 
         public override void OnUpdate()

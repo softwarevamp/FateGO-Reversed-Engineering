@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode, RequireComponent(typeof(UIToggle)), AddComponentMenu("NGUI/Interaction/Toggled Components")]
+[AddComponentMenu("NGUI/Interaction/Toggled Components"), RequireComponent(typeof(UIToggle)), ExecuteInEditMode]
 public class UIToggledComponents : MonoBehaviour
 {
     public List<MonoBehaviour> activate;
     public List<MonoBehaviour> deactivate;
-    [SerializeField, HideInInspector]
-    private bool inverse;
     [HideInInspector, SerializeField]
+    private bool inverse;
+    [SerializeField, HideInInspector]
     private MonoBehaviour target;
 
     private void Awake()

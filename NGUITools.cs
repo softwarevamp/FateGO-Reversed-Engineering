@@ -584,7 +584,7 @@ public static class NGUITools
     public static T FindInParents<T>(Transform trans) where T: Component => 
         trans?.GetComponentInParent<T>();
 
-    [DebuggerStepThrough, DebuggerHidden]
+    [DebuggerHidden, DebuggerStepThrough]
     public static bool GetActive(Behaviour mb) => 
         (((mb != null) && mb.enabled) && mb.gameObject.activeInHierarchy);
 

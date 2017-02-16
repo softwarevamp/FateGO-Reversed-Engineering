@@ -12,11 +12,11 @@
         public FsmFloat angle;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame")]
         public bool everyFrame;
-        [RequiredField, CheckForComponent(typeof(UIJoystick)), HutongGames.PlayMaker.Tooltip("The GameObject featuring the UIJoystick component.")]
+        [HutongGames.PlayMaker.Tooltip("The GameObject featuring the UIJoystick component."), RequiredField, CheckForComponent(typeof(UIJoystick))]
         public FsmOwnerDefault gameObject;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The Horyzontal and Vertical Input values")]
         public FsmVector2 input;
-        [HutongGames.PlayMaker.Tooltip("The pad input plus the  angle in the z value of the vector3. Use this for network synching, saves bandwidth"), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The pad input plus the  angle in the z value of the vector3. Use this for network synching, saves bandwidth")]
         public FsmVector3 inputAndAngle;
 
         private void doGetPadInputs()

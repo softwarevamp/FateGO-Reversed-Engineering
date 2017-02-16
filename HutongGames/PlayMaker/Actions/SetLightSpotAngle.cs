@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the Spot Angle of a Light."), ActionCategory(ActionCategory.Lights)]
+    [ActionCategory(ActionCategory.Lights), HutongGames.PlayMaker.Tooltip("Sets the Spot Angle of a Light.")]
     public class SetLightSpotAngle : ComponentAction<Light>
     {
         public bool everyFrame;

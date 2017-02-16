@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("Rotate"), USequencerEvent("Transform/Rotate Object")]
+    [USequencerEvent("Transform/Rotate Object"), USequencerFriendlyName("Rotate")]
     public class USRotateObjectEvent : USEventBase
     {
         private Quaternion previousRotation = Quaternion.identity;

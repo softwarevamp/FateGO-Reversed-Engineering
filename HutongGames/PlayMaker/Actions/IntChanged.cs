@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Logic), Tooltip("Tests if the value of an integer variable changed. Use this to send an event on change, or store a bool that can be used in other operations.")]
+    [Tooltip("Tests if the value of an integer variable changed. Use this to send an event on change, or store a bool that can be used in other operations."), ActionCategory(ActionCategory.Logic)]
     public class IntChanged : FsmStateAction
     {
         public FsmEvent changedEvent;

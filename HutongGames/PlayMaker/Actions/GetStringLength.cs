@@ -9,7 +9,7 @@
         public bool everyFrame;
         [UIHint(UIHint.Variable), RequiredField]
         public FsmInt storeResult;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmString stringVariable;
 
         private void DoGetStringLength()

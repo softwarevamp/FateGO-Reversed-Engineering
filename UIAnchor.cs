@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-[ExecuteInEditMode, AddComponentMenu("NGUI/UI/Anchor")]
+[AddComponentMenu("NGUI/UI/Anchor"), ExecuteInEditMode]
 public class UIAnchor : MonoBehaviour
 {
     public GameObject container;

@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Set the value of a Float Variable in another FSM."), ActionCategory(ActionCategory.StateMachine)]
+    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Set the value of a Float Variable in another FSM.")]
     public class SetFsmFloat : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the value is changing.")]
@@ -15,9 +15,9 @@
         [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM.")]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Set the value of the variable.")]
+        [HutongGames.PlayMaker.Tooltip("Set the value of the variable."), RequiredField]
         public FsmFloat setValue;
-        [UIHint(UIHint.FsmFloat), HutongGames.PlayMaker.Tooltip("The name of the FSM variable."), RequiredField]
+        [HutongGames.PlayMaker.Tooltip("The name of the FSM variable."), UIHint(UIHint.FsmFloat), RequiredField]
         public FsmString variableName;
 
         private void DoSetFsmFloat()

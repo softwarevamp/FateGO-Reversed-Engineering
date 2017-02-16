@@ -9,7 +9,7 @@
         public bool everyFrame;
         [RequiredField]
         public FsmFloat floatValue;
-        [UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable)]
         public FsmFloat floatVariable;
 
         public override void OnEnter()

@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.AnimateVariables), Tooltip("Easing Animation - Float")]
+    [Tooltip("Easing Animation - Float"), ActionCategory(ActionCategory.AnimateVariables)]
     public class EaseFloat : EaseFsmAction
     {
         private bool finishInNextStep;

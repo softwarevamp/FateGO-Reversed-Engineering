@@ -2,7 +2,7 @@
 {
     using System;
 
-    [USequencerFriendlyName("FGO Init Noble Phantasm"), USequencerEvent("FGO/old/Init Noble Phantasm")]
+    [USequencerEvent("FGO/old/Init Noble Phantasm"), USequencerFriendlyName("FGO Init Noble Phantasm")]
     public class USFGOInitNoblePhantasm : USEventBase
     {
         public override void FireEvent()

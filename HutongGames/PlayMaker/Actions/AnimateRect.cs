@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Animates the value of a Rect Variable using an Animation Curve."), ActionCategory("AnimateVariables")]
+    [ActionCategory("AnimateVariables"), HutongGames.PlayMaker.Tooltip("Animates the value of a Rect Variable using an Animation Curve.")]
     public class AnimateRect : AnimateFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("Calculation lets you set a type of curve deformation that will be applied to rectVariable.height.")]

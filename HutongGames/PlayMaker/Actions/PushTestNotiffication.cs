@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Push the Test Notiffication data."), ActionCategory(ActionCategory.Device)]
+    [ActionCategory(ActionCategory.Device), Tooltip("Push the Test Notiffication data.")]
     public class PushTestNotiffication : FsmStateAction
     {
         protected void EndPlaySe()

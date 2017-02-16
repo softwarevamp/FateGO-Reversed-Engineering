@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GUI), HutongGames.PlayMaker.Tooltip("GUI Box.")]
+    [HutongGames.PlayMaker.Tooltip("GUI Box."), ActionCategory(ActionCategory.GUI)]
     public class GUIBox : GUIContentAction
     {
         public override void OnGUI()

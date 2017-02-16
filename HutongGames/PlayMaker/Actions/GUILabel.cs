@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.GUI), HutongGames.PlayMaker.Tooltip("GUI Label.")]
+    [HutongGames.PlayMaker.Tooltip("GUI Label."), ActionCategory(ActionCategory.GUI)]
     public class GUILabel : GUIContentAction
     {
         public override void OnGUI()

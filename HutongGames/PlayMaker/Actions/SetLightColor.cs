@@ -4,11 +4,11 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the Color of a Light."), ActionCategory(ActionCategory.Lights)]
+    [ActionCategory(ActionCategory.Lights), HutongGames.PlayMaker.Tooltip("Sets the Color of a Light.")]
     public class SetLightColor : ComponentAction<Light>
     {
         public bool everyFrame;
-        [CheckForComponent(typeof(Light)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(Light))]
         public FsmOwnerDefault gameObject;
         [RequiredField]
         public FsmColor lightColor;

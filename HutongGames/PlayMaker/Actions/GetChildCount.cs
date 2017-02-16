@@ -4,12 +4,12 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Gets the number of children that a GameObject has."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Gets the number of children that a GameObject has.")]
     public class GetChildCount : FsmStateAction
     {
         [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject to test.")]
         public FsmOwnerDefault gameObject;
-        [HutongGames.PlayMaker.Tooltip("Store the number of children in an int variable."), UIHint(UIHint.Variable), RequiredField]
+        [UIHint(UIHint.Variable), RequiredField, HutongGames.PlayMaker.Tooltip("Store the number of children in an int variable.")]
         public FsmInt storeResult;
 
         private void DoGetChildCount()

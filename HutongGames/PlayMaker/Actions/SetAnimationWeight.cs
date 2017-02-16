@@ -10,7 +10,7 @@
         [UIHint(UIHint.Animation), RequiredField]
         public FsmString animName;
         public bool everyFrame;
-        [RequiredField, CheckForComponent(typeof(Animation))]
+        [CheckForComponent(typeof(Animation)), RequiredField]
         public FsmOwnerDefault gameObject;
         public FsmFloat weight = 1f;
 

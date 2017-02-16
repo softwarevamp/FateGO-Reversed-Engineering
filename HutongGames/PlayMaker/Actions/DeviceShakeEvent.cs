@@ -9,7 +9,7 @@
     {
         [RequiredField, HutongGames.PlayMaker.Tooltip("Event to send when Shake Threshold is exceded.")]
         public FsmEvent sendEvent;
-        [HutongGames.PlayMaker.Tooltip("Amount of acceleration required to trigger the event. Higher numbers require a harder shake."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("Amount of acceleration required to trigger the event. Higher numbers require a harder shake.")]
         public FsmFloat shakeThreshold;
 
         public override void OnUpdate()

@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.StateMachine), HutongGames.PlayMaker.Tooltip("Set the value of a Quaternion Variable in another FSM.")]
+    [HutongGames.PlayMaker.Tooltip("Set the value of a Quaternion Variable in another FSM."), ActionCategory(ActionCategory.StateMachine)]
     public class SetFsmQuaternion : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the value is changing.")]
@@ -12,7 +12,7 @@
         private PlayMakerFSM fsm;
         [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
         public FsmString fsmName;
-        [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM.")]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
         [HutongGames.PlayMaker.Tooltip("Set the value of the variable."), RequiredField]

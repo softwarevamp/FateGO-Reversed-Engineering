@@ -7,7 +7,7 @@
     [ActionCategory("FGOAction")]
     public class FGOActorMotion : FsmStateAction
     {
-        [CheckForComponent(typeof(BattleActorControl)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(BattleActorControl))]
         public FsmGameObject actorObject;
         public MOTION motion;
         public float moveTime = 0.3f;

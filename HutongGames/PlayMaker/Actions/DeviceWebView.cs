@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Device), Tooltip("Open a web view on a handheld device.")]
+    [Tooltip("Open a web view on a handheld device."), ActionCategory(ActionCategory.Device)]
     public class DeviceWebView : FsmStateAction
     {
         [RequiredField]

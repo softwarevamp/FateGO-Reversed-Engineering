@@ -7,7 +7,7 @@
     [HutongGames.PlayMaker.Tooltip("Transforms 2d input into a 3d world space vector. E.g., can be used to transform input from a touch joystick to a movement vector."), ActionCategory(ActionCategory.Input)]
     public class TransformInputToWorldSpace : FsmStateAction
     {
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The horizontal input.")]
+        [HutongGames.PlayMaker.Tooltip("The horizontal input."), UIHint(UIHint.Variable)]
         public FsmFloat horizontalInput;
         [HutongGames.PlayMaker.Tooltip("The world plane to map the 2d input onto."), RequiredField]
         public AxisPlane mapToPlane;
@@ -15,9 +15,9 @@
         public FsmFloat multiplier;
         [HutongGames.PlayMaker.Tooltip("Make the result relative to a GameObject, typically the main camera.")]
         public FsmGameObject relativeTo;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the length of the direction vector.")]
+        [HutongGames.PlayMaker.Tooltip("Store the length of the direction vector."), UIHint(UIHint.Variable)]
         public FsmFloat storeMagnitude;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the direction vector."), RequiredField]
+        [HutongGames.PlayMaker.Tooltip("Store the direction vector."), RequiredField, UIHint(UIHint.Variable)]
         public FsmVector3 storeVector;
         [HutongGames.PlayMaker.Tooltip("The vertical input."), UIHint(UIHint.Variable)]
         public FsmFloat verticalInput;

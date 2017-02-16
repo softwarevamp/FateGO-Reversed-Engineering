@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("End a centered GUILayout block started with GUILayoutBeginCentered."), ActionCategory(ActionCategory.GUILayout)]
+    [ActionCategory(ActionCategory.GUILayout), HutongGames.PlayMaker.Tooltip("End a centered GUILayout block started with GUILayoutBeginCentered.")]
     public class GUILayoutEndCentered : FsmStateAction
     {
         public override void OnGUI()

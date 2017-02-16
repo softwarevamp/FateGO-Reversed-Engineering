@@ -4,11 +4,11 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets the Intensity of a Light."), ActionCategory(ActionCategory.Lights)]
+    [ActionCategory(ActionCategory.Lights), HutongGames.PlayMaker.Tooltip("Sets the Intensity of a Light.")]
     public class SetLightIntensity : ComponentAction<Light>
     {
         public bool everyFrame;
-        [CheckForComponent(typeof(Light)), RequiredField]
+        [RequiredField, CheckForComponent(typeof(Light))]
         public FsmOwnerDefault gameObject;
         public FsmFloat lightIntensity;
 

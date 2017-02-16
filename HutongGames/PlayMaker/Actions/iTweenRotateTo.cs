@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory("iTween"), HutongGames.PlayMaker.Tooltip("Rotates a GameObject to the supplied Euler angles in degrees over time.")]
+    [HutongGames.PlayMaker.Tooltip("Rotates a GameObject to the supplied Euler angles in degrees over time."), ActionCategory("iTween")]
     public class iTweenRotateTo : iTweenFsmAction
     {
         [HutongGames.PlayMaker.Tooltip("The time in seconds the animation will wait before beginning.")]

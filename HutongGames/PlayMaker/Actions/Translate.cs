@@ -4,14 +4,14 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Translates a Game Object. Use a Vector3 variable and/or XYZ components. To leave any axis unchanged, set variable to 'None'.")]
+    [HutongGames.PlayMaker.Tooltip("Translates a Game Object. Use a Vector3 variable and/or XYZ components. To leave any axis unchanged, set variable to 'None'."), ActionCategory(ActionCategory.Transform)]
     public class Translate : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame.")]
         public bool everyFrame;
         [HutongGames.PlayMaker.Tooltip("Perform the translate in FixedUpdate. This is useful when working with rigid bodies and physics.")]
         public bool fixedUpdate;
-        [HutongGames.PlayMaker.Tooltip("The game object to translate."), RequiredField]
+        [RequiredField, HutongGames.PlayMaker.Tooltip("The game object to translate.")]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Perform the translate in LateUpdate. This is useful if you want to override the position of objects that are animated or otherwise positioned in Update.")]
         public bool lateUpdate;
@@ -19,7 +19,7 @@
         public bool perSecond;
         [HutongGames.PlayMaker.Tooltip("Translate in local or world space.")]
         public Space space;
-        [HutongGames.PlayMaker.Tooltip("A translation vector. NOTE: You can override individual axis below."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("A translation vector. NOTE: You can override individual axis below.")]
         public FsmVector3 vector;
         [HutongGames.PlayMaker.Tooltip("Translation along x axis.")]
         public FsmFloat x;

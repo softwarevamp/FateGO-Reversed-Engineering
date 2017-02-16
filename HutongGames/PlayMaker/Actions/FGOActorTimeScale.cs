@@ -7,7 +7,7 @@
     [ActionCategory("FGOAction")]
     public class FGOActorTimeScale : FsmStateAction
     {
-        [RequiredField, CheckForComponent(typeof(BattleActorControl))]
+        [CheckForComponent(typeof(BattleActorControl)), RequiredField]
         public FsmGameObject actorObject;
         public FsmFloat timescale;
 

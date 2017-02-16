@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Get the network OnFailedToConnect or MasterServer OnFailedToConnectToMasterServer connection error message."), ActionCategory(ActionCategory.Network)]
+    [ActionCategory(ActionCategory.Network), HutongGames.PlayMaker.Tooltip("Get the network OnFailedToConnect or MasterServer OnFailedToConnectToMasterServer connection error message.")]
     public class NetworkGetOnFailedToConnectProperties : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Cannot connect to two servers at once. Close the connection before connecting again.")]

@@ -4,13 +4,13 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Moves a Game Object with a Character Controller. Velocity along the y-axis is ignored. Speed is in meters/s. Gravity is automatically applied."), ActionCategory(ActionCategory.Character)]
+    [ActionCategory(ActionCategory.Character), HutongGames.PlayMaker.Tooltip("Moves a Game Object with a Character Controller. Velocity along the y-axis is ignored. Speed is in meters/s. Gravity is automatically applied.")]
     public class ControllerSimpleMove : FsmStateAction
     {
         private CharacterController controller;
-        [RequiredField, CheckForComponent(typeof(CharacterController)), HutongGames.PlayMaker.Tooltip("The GameObject to move.")]
+        [CheckForComponent(typeof(CharacterController)), HutongGames.PlayMaker.Tooltip("The GameObject to move."), RequiredField]
         public FsmOwnerDefault gameObject;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The movement vector.")]
+        [HutongGames.PlayMaker.Tooltip("The movement vector."), RequiredField]
         public FsmVector3 moveVector;
         private GameObject previousGo;
         [HutongGames.PlayMaker.Tooltip("Move in local or word space.")]

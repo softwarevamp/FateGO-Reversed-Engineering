@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("Warp To Object"), USequencerEventHideDuration, USequencerEvent("Transform/Warp To Object")]
+    [USequencerEvent("Transform/Warp To Object"), USequencerFriendlyName("Warp To Object"), USequencerEventHideDuration]
     public class USWarpToObject : USEventBase
     {
         public GameObject objectToWarpTo;

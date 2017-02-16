@@ -8,19 +8,19 @@ public class UIAtlas : MonoBehaviour
 {
     [CompilerGenerated]
     private static Comparison<UISpriteData> <>f__am$cache8;
-    [HideInInspector, SerializeField]
-    private Material material;
     [SerializeField, HideInInspector]
+    private Material material;
+    [HideInInspector, SerializeField]
     private Coordinates mCoordinates;
     [SerializeField, HideInInspector]
     private float mPixelSize = 1f;
     private int mPMA = -1;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private UIAtlas mReplacement;
     private Dictionary<string, int> mSpriteIndices = new Dictionary<string, int>();
-    [SerializeField, HideInInspector]
-    private List<UISpriteData> mSprites = new List<UISpriteData>();
     [HideInInspector, SerializeField]
+    private List<UISpriteData> mSprites = new List<UISpriteData>();
+    [SerializeField, HideInInspector]
     private List<Sprite> sprites = new List<Sprite>();
 
     public static bool CheckIfRelated(UIAtlas a, UIAtlas b)

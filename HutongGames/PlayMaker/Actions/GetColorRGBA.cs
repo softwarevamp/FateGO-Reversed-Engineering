@@ -6,15 +6,15 @@
     [ActionCategory(ActionCategory.Color), Tooltip("Get the RGBA channels of a Color Variable and store them in Float Variables.")]
     public class GetColorRGBA : FsmStateAction
     {
-        [RequiredField, UIHint(UIHint.Variable), Tooltip("The Color variable.")]
+        [RequiredField, Tooltip("The Color variable."), UIHint(UIHint.Variable)]
         public FsmColor color;
         [Tooltip("Repeat every frame. Useful if the color variable is changing.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), Tooltip("Store the alpha channel in a float variable.")]
+        [Tooltip("Store the alpha channel in a float variable."), UIHint(UIHint.Variable)]
         public FsmFloat storeAlpha;
         [UIHint(UIHint.Variable), Tooltip("Store the blue channel in a float variable.")]
         public FsmFloat storeBlue;
-        [Tooltip("Store the green channel in a float variable."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), Tooltip("Store the green channel in a float variable.")]
         public FsmFloat storeGreen;
         [Tooltip("Store the red channel in a float variable."), UIHint(UIHint.Variable)]
         public FsmFloat storeRed;

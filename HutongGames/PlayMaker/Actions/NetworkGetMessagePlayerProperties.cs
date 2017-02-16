@@ -4,18 +4,18 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Network), HutongGames.PlayMaker.Tooltip("Get the network OnPlayerConnected or OnPlayerDisConnected message player info.")]
+    [HutongGames.PlayMaker.Tooltip("Get the network OnPlayerConnected or OnPlayerDisConnected message player info."), ActionCategory(ActionCategory.Network)]
     public class NetworkGetMessagePlayerProperties : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Get the external IP address of the network interface. This will only be populated after some external connection has been made."), UIHint(UIHint.Variable)]
         public FsmString externalIPAddress;
-        [HutongGames.PlayMaker.Tooltip("Get the external port of the network interface. This will only be populated after some external connection has been made."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the external port of the network interface. This will only be populated after some external connection has been made.")]
         public FsmInt externalPort;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the GUID for this connected player, used when connecting with NAT punchthrough.")]
         public FsmString guid;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the IP address of this connected player.")]
         public FsmString IpAddress;
-        [HutongGames.PlayMaker.Tooltip("Get the port of this connected player."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Get the port of this connected player.")]
         public FsmInt port;
 
         private void doGetOnPLayerConnectedProperties()

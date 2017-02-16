@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [ActionCategory(ActionCategory.Vector3), Tooltip("Get the XYZ channels of a Vector3 Variable and storew them in Float Variables.")]
+    [Tooltip("Get the XYZ channels of a Vector3 Variable and storew them in Float Variables."), ActionCategory(ActionCategory.Vector3)]
     public class GetVector3XYZ : FsmStateAction
     {
         public bool everyFrame;

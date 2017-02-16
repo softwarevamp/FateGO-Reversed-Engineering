@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Gets the top most parent of the Game Object.\nIf the game object has no parent, returns itself."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Gets the top most parent of the Game Object.\nIf the game object has no parent, returns itself.")]
     public class GetRoot : FsmStateAction
     {
         [RequiredField]

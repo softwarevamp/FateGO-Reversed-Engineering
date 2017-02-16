@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Sets a Float variable to its absolute value."), ActionCategory(ActionCategory.Math)]
+    [ActionCategory(ActionCategory.Math), HutongGames.PlayMaker.Tooltip("Sets a Float variable to its absolute value.")]
     public class FloatAbs : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the Float variable is changing.")]

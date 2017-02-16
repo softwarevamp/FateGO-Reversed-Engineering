@@ -5,7 +5,7 @@
     using System.Collections;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Animation), HutongGames.PlayMaker.Tooltip("Captures the current pose of a hierarchy as an animation clip.\n\nUseful to blend from an arbitrary pose (e.g. a ragdoll death) back to a known animation (e.g. idle).")]
+    [HutongGames.PlayMaker.Tooltip("Captures the current pose of a hierarchy as an animation clip.\n\nUseful to blend from an arbitrary pose (e.g. a ragdoll death) back to a known animation (e.g. idle)."), ActionCategory(ActionCategory.Animation)]
     public class CapturePoseAsAnimationClip : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("The GameObject root of the hierarchy to capture."), CheckForComponent(typeof(Animation)), RequiredField]

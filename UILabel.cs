@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-[ExecuteInEditMode, AddComponentMenu("NGUI/UI/NGUI Label")]
+[AddComponentMenu("NGUI/UI/NGUI Label"), ExecuteInEditMode]
 public class UILabel : UIWidget
 {
     public Crispness keepCrispWhenShrunk = Crispness.OnDesktop;
@@ -21,15 +21,15 @@ public class UILabel : UIWidget
     private Vector2 mEffectDistance = Vector2.one;
     [SerializeField, HideInInspector]
     private Effect mEffectStyle;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private bool mEncoding = true;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     private float mFloatSpacingX;
     [SerializeField, HideInInspector]
     private float mFloatSpacingY;
-    [HideInInspector, SerializeField]
-    private UIFont mFont;
     [SerializeField, HideInInspector]
+    private UIFont mFont;
+    [HideInInspector, SerializeField]
     private int mFontSize = 0x10;
     [SerializeField, HideInInspector]
     private FontStyle mFontStyle;
@@ -43,7 +43,7 @@ public class UILabel : UIWidget
     [HideInInspector, SerializeField]
     private float mLineWidth;
     private static BetterList<UILabel> mList = new BetterList<UILabel>();
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private Material mMaterial;
     [HideInInspector, SerializeField]
     private int mMaxLineCount;
@@ -51,9 +51,9 @@ public class UILabel : UIWidget
     private int mMaxLineHeight;
     [HideInInspector, SerializeField]
     private int mMaxLineWidth;
-    [HideInInspector, SerializeField]
-    private bool mMultiline = true;
     [SerializeField, HideInInspector]
+    private bool mMultiline = true;
+    [HideInInspector, SerializeField]
     private Overflow mOverflow;
     private bool mPremultiply;
     private int mPrintedSize;
@@ -62,20 +62,20 @@ public class UILabel : UIWidget
     private bool mShouldBeProcessed = true;
     [SerializeField, HideInInspector]
     private bool mShrinkToFit;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private int mSpacingX;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private int mSpacingY;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private NGUIText.SymbolStyle mSymbols = NGUIText.SymbolStyle.Normal;
     private static BetterList<int> mTempIndices = new BetterList<int>();
     private static BetterList<Vector3> mTempVerts = new BetterList<Vector3>();
     private static bool mTexRebuildAdded = false;
-    [Multiline(6), SerializeField, HideInInspector]
+    [Multiline(6), HideInInspector, SerializeField]
     private string mText = string.Empty;
     [SerializeField, HideInInspector]
     private Font mTrueTypeFont;
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private bool mUseFloatSpacing;
 
     public Vector2 ApplyOffset(BetterList<Vector3> verts, int start)

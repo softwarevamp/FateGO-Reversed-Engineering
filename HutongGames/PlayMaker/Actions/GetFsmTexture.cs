@@ -15,7 +15,7 @@
         [HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM."), RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
-        [RequiredField, UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), RequiredField]
         public FsmTexture storeValue;
         [UIHint(UIHint.FsmTexture), RequiredField]
         public FsmString variableName;

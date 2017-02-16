@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Adds a value to an Integer Variable."), ActionCategory(ActionCategory.Math)]
+    [ActionCategory(ActionCategory.Math), Tooltip("Adds a value to an Integer Variable.")]
     public class IntAdd : FsmStateAction
     {
         [RequiredField]

@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-[RequireComponent(typeof(Camera)), AddComponentMenu("NGUI/UI/NGUI Event System (UICamera)"), ExecuteInEditMode]
+[AddComponentMenu("NGUI/UI/NGUI Event System (UICamera)"), RequireComponent(typeof(Camera)), ExecuteInEditMode]
 public class UICamera : MonoBehaviour
 {
     [CompilerGenerated]

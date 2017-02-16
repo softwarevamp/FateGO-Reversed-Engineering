@@ -4,11 +4,11 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Character), HutongGames.PlayMaker.Tooltip("Moves a Game Object with a Character Controller. See also Controller Simple Move. NOTE: It is recommended that you make only one call to Move or SimpleMove per frame.")]
+    [HutongGames.PlayMaker.Tooltip("Moves a Game Object with a Character Controller. See also Controller Simple Move. NOTE: It is recommended that you make only one call to Move or SimpleMove per frame."), ActionCategory(ActionCategory.Character)]
     public class ControllerMove : FsmStateAction
     {
         private CharacterController controller;
-        [HutongGames.PlayMaker.Tooltip("The GameObject to move."), RequiredField, CheckForComponent(typeof(CharacterController))]
+        [RequiredField, CheckForComponent(typeof(CharacterController)), HutongGames.PlayMaker.Tooltip("The GameObject to move.")]
         public FsmOwnerDefault gameObject;
         [RequiredField, HutongGames.PlayMaker.Tooltip("The movement vector.")]
         public FsmVector3 moveVector;

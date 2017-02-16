@@ -15,7 +15,7 @@
         public FsmVector3 storeScreenPoint;
         [HutongGames.PlayMaker.Tooltip("Store the screen X position in a Float Variable."), UIHint(UIHint.Variable)]
         public FsmFloat storeScreenX;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the screen Y position in a Float Variable.")]
+        [HutongGames.PlayMaker.Tooltip("Store the screen Y position in a Float Variable."), UIHint(UIHint.Variable)]
         public FsmFloat storeScreenY;
         [HutongGames.PlayMaker.Tooltip("World position to transform into screen coordinates."), UIHint(UIHint.Variable)]
         public FsmVector3 worldPosition;

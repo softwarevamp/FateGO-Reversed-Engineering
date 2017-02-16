@@ -4,15 +4,15 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Animation), HutongGames.PlayMaker.Tooltip("Enables/Disables an Animation on a GameObject.\nAnimation time is paused while disabled. Animation must also have a non zero weight to play.")]
+    [HutongGames.PlayMaker.Tooltip("Enables/Disables an Animation on a GameObject.\nAnimation time is paused while disabled. Animation must also have a non zero weight to play."), ActionCategory(ActionCategory.Animation)]
     public class EnableAnimation : FsmStateAction
     {
         private AnimationState anim;
-        [UIHint(UIHint.Animation), HutongGames.PlayMaker.Tooltip("The name of the animation to enable/disable."), RequiredField]
+        [UIHint(UIHint.Animation), RequiredField, HutongGames.PlayMaker.Tooltip("The name of the animation to enable/disable.")]
         public FsmString animName;
         [HutongGames.PlayMaker.Tooltip("Set to True to enable, False to disable."), RequiredField]
         public FsmBool enable;
-        [RequiredField, CheckForComponent(typeof(Animation)), HutongGames.PlayMaker.Tooltip("The GameObject playing the animation.")]
+        [CheckForComponent(typeof(Animation)), HutongGames.PlayMaker.Tooltip("The GameObject playing the animation."), RequiredField]
         public FsmOwnerDefault gameObject;
         [HutongGames.PlayMaker.Tooltip("Reset the initial enabled state when exiting the state.")]
         public FsmBool resetOnExit;

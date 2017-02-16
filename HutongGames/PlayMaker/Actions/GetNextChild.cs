@@ -4,18 +4,18 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Each time this action is called it gets the next child of a GameObject. This lets you quickly loop through all the children of an object to perform actions on them. NOTE: To find a specific child use Find Child."), ActionCategory(ActionCategory.GameObject)]
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Each time this action is called it gets the next child of a GameObject. This lets you quickly loop through all the children of an object to perform actions on them. NOTE: To find a specific child use Find Child.")]
     public class GetNextChild : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Event to send when there are no more children.")]
         public FsmEvent finishedEvent;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("The parent GameObject. Note, if GameObject changes, this action will reset and start again at the first child.")]
+        [HutongGames.PlayMaker.Tooltip("The parent GameObject. Note, if GameObject changes, this action will reset and start again at the first child."), RequiredField]
         public FsmOwnerDefault gameObject;
         private GameObject go;
         [HutongGames.PlayMaker.Tooltip("Event to send to get the next child.")]
         public FsmEvent loopEvent;
         private int nextChildIndex;
-        [RequiredField, HutongGames.PlayMaker.Tooltip("Store the next child in a GameObject variable."), UIHint(UIHint.Variable)]
+        [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the next child in a GameObject variable.")]
         public FsmGameObject storeNextChild;
 
         private void DoGetNextChild(GameObject parent)

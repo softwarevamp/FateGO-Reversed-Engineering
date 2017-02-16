@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Transform), HutongGames.PlayMaker.Tooltip("Smoothly Rotates a Game Object so its forward vector points in the specified Direction.")]
+    [HutongGames.PlayMaker.Tooltip("Smoothly Rotates a Game Object so its forward vector points in the specified Direction."), ActionCategory(ActionCategory.Transform)]
     public class SmoothLookAtDirection : FsmStateAction
     {
         private Quaternion desiredRotation;
@@ -18,7 +18,7 @@
         [HutongGames.PlayMaker.Tooltip("Only rotate if Target Direction Vector length is greater than this threshold.")]
         public FsmFloat minMagnitude;
         private GameObject previousGo;
-        [HutongGames.PlayMaker.Tooltip("How quickly to rotate."), RequiredField, HasFloatSlider(0.5f, 15f)]
+        [HasFloatSlider(0.5f, 15f), HutongGames.PlayMaker.Tooltip("How quickly to rotate."), RequiredField]
         public FsmFloat speed;
         [RequiredField, HutongGames.PlayMaker.Tooltip("The direction to smoothly rotate towards.")]
         public FsmVector3 targetDirection;

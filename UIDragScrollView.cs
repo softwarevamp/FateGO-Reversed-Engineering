@@ -4,7 +4,7 @@ using UnityEngine;
 [AddComponentMenu("NGUI/Interaction/Drag Scroll View")]
 public class UIDragScrollView : MonoBehaviour
 {
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     private UIScrollView draggablePanel;
     private bool mAutoFind;
     private UIScrollView mScroll;

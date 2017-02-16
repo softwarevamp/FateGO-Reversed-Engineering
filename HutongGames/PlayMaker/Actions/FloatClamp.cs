@@ -4,12 +4,12 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Math), HutongGames.PlayMaker.Tooltip("Clamps the value of Float Variable to a Min/Max range.")]
+    [HutongGames.PlayMaker.Tooltip("Clamps the value of Float Variable to a Min/Max range."), ActionCategory(ActionCategory.Math)]
     public class FloatClamp : FsmStateAction
     {
         [HutongGames.PlayMaker.Tooltip("Repeate every frame. Useful if the float variable is changing.")]
         public bool everyFrame;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Float variable to clamp."), RequiredField]
+        [HutongGames.PlayMaker.Tooltip("Float variable to clamp."), RequiredField, UIHint(UIHint.Variable)]
         public FsmFloat floatVariable;
         [HutongGames.PlayMaker.Tooltip("The maximum value."), RequiredField]
         public FsmFloat maxValue;

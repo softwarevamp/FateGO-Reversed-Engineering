@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Gets the X Position of the mouse and stores it in a Float Variable."), ActionCategory(ActionCategory.Input)]
+    [ActionCategory(ActionCategory.Input), HutongGames.PlayMaker.Tooltip("Gets the X Position of the mouse and stores it in a Float Variable.")]
     public class GetMouseX : FsmStateAction
     {
         public bool normalize;

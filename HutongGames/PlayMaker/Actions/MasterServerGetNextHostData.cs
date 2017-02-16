@@ -9,17 +9,17 @@
     {
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("A miscellaneous comment (can hold data)")]
         public FsmString comment;
-        [HutongGames.PlayMaker.Tooltip("Currently connected players"), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Currently connected players")]
         public FsmInt connectedPlayers;
         [HutongGames.PlayMaker.Tooltip("Event to send when there are no more hosts.")]
         public FsmEvent finishedEvent;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The name of the game (e.g., 'John Does's Game')")]
         public FsmString gameName;
-        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The type of the game (e.g., 'MyUniqueGameType')")]
+        [HutongGames.PlayMaker.Tooltip("The type of the game (e.g., 'MyUniqueGameType')"), UIHint(UIHint.Variable)]
         public FsmString gameType;
-        [HutongGames.PlayMaker.Tooltip("The GUID of the host, needed when connecting with NAT punchthrough."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The GUID of the host, needed when connecting with NAT punchthrough.")]
         public FsmString guid;
-        [UIHint(UIHint.Variable), ActionSection("Result"), HutongGames.PlayMaker.Tooltip("The index into the MasterServer Host List")]
+        [HutongGames.PlayMaker.Tooltip("The index into the MasterServer Host List"), UIHint(UIHint.Variable), ActionSection("Result")]
         public FsmInt index;
         [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Server IP address.")]
         public FsmString ipAddress;

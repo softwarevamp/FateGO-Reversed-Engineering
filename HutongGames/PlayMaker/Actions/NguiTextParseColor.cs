@@ -7,7 +7,7 @@
     public class NguiTextParseColor : FsmStateAction
     {
         private string _lastColor;
-        [Tooltip("The Color result"), UIHint(UIHint.Variable), RequiredField]
+        [RequiredField, UIHint(UIHint.Variable), Tooltip("The Color result")]
         public FsmColor color;
         [RequiredField, Tooltip("The string representation of that color")]
         public FsmString colorString;

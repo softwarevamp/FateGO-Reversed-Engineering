@@ -10,9 +10,9 @@
         public bool everyFrame;
         [Tooltip("Optional Format, allows for leading zeroes. E.g., 0000")]
         public FsmString format;
-        [RequiredField, Tooltip("The Int variable to convert."), UIHint(UIHint.Variable)]
+        [RequiredField, UIHint(UIHint.Variable), Tooltip("The Int variable to convert.")]
         public FsmInt intVariable;
-        [RequiredField, UIHint(UIHint.Variable), Tooltip("A String variable to store the converted value.")]
+        [UIHint(UIHint.Variable), Tooltip("A String variable to store the converted value."), RequiredField]
         public FsmString stringVariable;
 
         private void DoConvertIntToString()

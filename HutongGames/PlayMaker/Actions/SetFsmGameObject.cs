@@ -10,14 +10,14 @@
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the value is changing.")]
         public bool everyFrame;
         private PlayMakerFSM fsm;
-        [HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object"), UIHint(UIHint.FsmName)]
+        [UIHint(UIHint.FsmName), HutongGames.PlayMaker.Tooltip("Optional name of FSM on Game Object")]
         public FsmString fsmName;
         [RequiredField, HutongGames.PlayMaker.Tooltip("The GameObject that owns the FSM.")]
         public FsmOwnerDefault gameObject;
         private GameObject goLastFrame;
         [HutongGames.PlayMaker.Tooltip("Set the value of the variable.")]
         public FsmGameObject setValue;
-        [RequiredField, UIHint(UIHint.FsmGameObject), HutongGames.PlayMaker.Tooltip("The name of the FSM variable.")]
+        [UIHint(UIHint.FsmGameObject), RequiredField, HutongGames.PlayMaker.Tooltip("The name of the FSM variable.")]
         public FsmString variableName;
 
         private void DoSetFsmGameObject()

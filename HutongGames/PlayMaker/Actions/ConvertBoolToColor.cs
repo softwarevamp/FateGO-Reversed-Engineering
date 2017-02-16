@@ -4,12 +4,12 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Converts a Bool value to a Color."), ActionCategory(ActionCategory.Convert)]
+    [ActionCategory(ActionCategory.Convert), HutongGames.PlayMaker.Tooltip("Converts a Bool value to a Color.")]
     public class ConvertBoolToColor : FsmStateAction
     {
         [RequiredField, UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("The Bool variable to test.")]
         public FsmBool boolVariable;
-        [HutongGames.PlayMaker.Tooltip("The Color variable to set based on the bool variable value."), UIHint(UIHint.Variable), RequiredField]
+        [HutongGames.PlayMaker.Tooltip("The Color variable to set based on the bool variable value."), RequiredField, UIHint(UIHint.Variable)]
         public FsmColor colorVariable;
         [HutongGames.PlayMaker.Tooltip("Repeat every frame. Useful if the Bool variable is changing.")]
         public bool everyFrame;

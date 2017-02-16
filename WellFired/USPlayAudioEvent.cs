@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerEvent("Audio/Play Audio"), USequencerFriendlyName("Play Audio"), USequencerEventHideDuration]
+    [USequencerFriendlyName("Play Audio"), USequencerEvent("Audio/Play Audio"), USequencerEventHideDuration]
     public class USPlayAudioEvent : USEventBase
     {
         public AudioClip audioClip;

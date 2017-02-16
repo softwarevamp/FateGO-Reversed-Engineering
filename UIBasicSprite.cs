@@ -6,11 +6,11 @@ public abstract class UIBasicSprite : UIWidget
     public AdvancedType bottomType = AdvancedType.Sliced;
     public AdvancedType centerType = AdvancedType.Sliced;
     public AdvancedType leftType = AdvancedType.Sliced;
-    [HideInInspector, SerializeField, Range(0f, 1f)]
+    [Range(0f, 1f), SerializeField, HideInInspector]
     protected float mFillAmount = 1f;
     [SerializeField, HideInInspector]
     protected FillDirection mFillDirection = FillDirection.Radial360;
-    [HideInInspector, SerializeField]
+    [SerializeField, HideInInspector]
     protected Flip mFlip;
     [NonSerialized]
     private Rect mInnerUV = new Rect();
@@ -20,7 +20,7 @@ public abstract class UIBasicSprite : UIWidget
     private Rect mOuterUV = new Rect();
     protected static Vector2[] mTempPos = new Vector2[4];
     protected static Vector2[] mTempUVs = new Vector2[4];
-    [SerializeField, HideInInspector]
+    [HideInInspector, SerializeField]
     protected Type mType;
     public AdvancedType rightType = AdvancedType.Sliced;
     public AdvancedType topType = AdvancedType.Sliced;

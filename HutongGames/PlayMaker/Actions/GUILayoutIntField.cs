@@ -9,7 +9,7 @@
     {
         [HutongGames.PlayMaker.Tooltip("Optional event to send when the value changes.")]
         public FsmEvent changedEvent;
-        [HutongGames.PlayMaker.Tooltip("Int Variable to show in the edit field."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Int Variable to show in the edit field.")]
         public FsmInt intVariable;
         [HutongGames.PlayMaker.Tooltip("Optional GUIStyle in the active GUISKin.")]
         public FsmString style;

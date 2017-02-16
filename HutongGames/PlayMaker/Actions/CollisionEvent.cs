@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [ActionCategory(ActionCategory.Physics), HutongGames.PlayMaker.Tooltip("Detect collisions between the Owner of this FSM and other Game Objects that have RigidBody components.\nNOTE: The system events, COLLISION ENTER, COLLISION STAY, and COLLISION EXIT are sent automatically on collisions with any object. Use this action to filter collisions by Tag.")]
+    [HutongGames.PlayMaker.Tooltip("Detect collisions between the Owner of this FSM and other Game Objects that have RigidBody components.\nNOTE: The system events, COLLISION ENTER, COLLISION STAY, and COLLISION EXIT are sent automatically on collisions with any object. Use this action to filter collisions by Tag."), ActionCategory(ActionCategory.Physics)]
     public class CollisionEvent : FsmStateAction
     {
         [UIHint(UIHint.Tag), HutongGames.PlayMaker.Tooltip("Filter by Tag.")]
@@ -13,9 +13,9 @@
         public CollisionType collision;
         [HutongGames.PlayMaker.Tooltip("Event to send if a collision is detected.")]
         public FsmEvent sendEvent;
-        [HutongGames.PlayMaker.Tooltip("Store the GameObject that collided with the Owner of this FSM."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the GameObject that collided with the Owner of this FSM.")]
         public FsmGameObject storeCollider;
-        [HutongGames.PlayMaker.Tooltip("Store the force of the collision. NOTE: Use Get Collision Info to get more info about the collision."), UIHint(UIHint.Variable)]
+        [UIHint(UIHint.Variable), HutongGames.PlayMaker.Tooltip("Store the force of the collision. NOTE: Use Get Collision Info to get more info about the collision.")]
         public FsmFloat storeForce;
 
         public override void Awake()

@@ -3,7 +3,7 @@
     using System;
     using UnityEngine;
 
-    [USequencerFriendlyName("Sleep Rigid Body"), USequencerEvent("Physics/Sleep Rigid Body"), USequencerEventHideDuration]
+    [USequencerEvent("Physics/Sleep Rigid Body"), USequencerFriendlyName("Sleep Rigid Body"), USequencerEventHideDuration]
     public class USSleepRigidBody : USEventBase
     {
         public override void FireEvent()

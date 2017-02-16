@@ -6,7 +6,7 @@
     [Tooltip("Sends an Event by name after an optional delay. NOTE: Use this over Send Event if you store events as string variables."), ActionCategory(ActionCategory.StateMachine)]
     public class SendEventByName : FsmStateAction
     {
-        [Tooltip("Optional delay in seconds."), HasFloatSlider(0f, 10f)]
+        [HasFloatSlider(0f, 10f), Tooltip("Optional delay in seconds.")]
         public FsmFloat delay;
         private DelayedEvent delayedEvent;
         [Tooltip("Where to send the event.")]

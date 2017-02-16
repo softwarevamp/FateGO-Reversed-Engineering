@@ -4,7 +4,7 @@
     using System;
     using UnityEngine;
 
-    [HutongGames.PlayMaker.Tooltip("Adds a XYZ values to Vector3 Variable."), ActionCategory(ActionCategory.Vector3)]
+    [ActionCategory(ActionCategory.Vector3), HutongGames.PlayMaker.Tooltip("Adds a XYZ values to Vector3 Variable.")]
     public class Vector3AddXYZ : FsmStateAction
     {
         public FsmFloat addX;

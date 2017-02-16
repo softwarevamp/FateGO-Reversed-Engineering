@@ -3,7 +3,7 @@
     using HutongGames.PlayMaker;
     using System;
 
-    [Tooltip("Immediately return to the previously active state."), ActionCategory(ActionCategory.StateMachine)]
+    [ActionCategory(ActionCategory.StateMachine), Tooltip("Immediately return to the previously active state.")]
     public class GotoPreviousState : FsmStateAction
     {
         public override void OnEnter()

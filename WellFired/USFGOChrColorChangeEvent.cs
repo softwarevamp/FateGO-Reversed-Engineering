@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using UnityEngine;
 
-    [USequencerEvent("FGO/Character/Change Chr Color"), USequencerFriendlyName("FGO Chr Color Change"), USequencerEventHideDuration]
+    [USequencerEventHideDuration, USequencerFriendlyName("FGO Chr Color Change"), USequencerEvent("FGO/Character/Change Chr Color")]
     public class USFGOChrColorChangeEvent : USEventBase
     {
         private float currentCurveSampleTime;

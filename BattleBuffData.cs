@@ -653,8 +653,12 @@ public class BattleBuffData
         return this.checkAddParam(bufflist, false);
     }
 
-    public int getRegainStar() => 
-        50;
+    public int getRegainStar()
+    {
+        BuffList.TYPE[] types = new BuffList.TYPE[] { BuffList.TYPE.REGAIN_STAR };
+        BuffData[] bufflist = this.getBuffList(types, null, null);
+        return this.checkAddParam(bufflist, false);
+    }
 
     public int getReturn(int val, int maxVal)
     {
