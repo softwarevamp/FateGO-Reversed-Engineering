@@ -1,0 +1,47 @@
+﻿namespace HutongGames.PlayMaker.Actions
+{
+    using HutongGames.PlayMaker;
+    using System;
+    using UnityEngine;
+
+    [ActionCategory(ActionCategory.GameObject), HutongGames.PlayMaker.Tooltip("Gets the name of a Game Object and stores it in a String Variable.")]
+    public class GetName : FsmStateAction
+    {
+        public bool everyFrame;
+        [RequiredField]
+        public FsmGameObject gameObject;
+        [UIHint(UIHint.Variable), RequiredField]
+        public FsmString storeName;
+
+        private void DoGetGameObjectName()
+        {
+            GameObject obj2 = this.gameObject.Value;
+            this.storeName.Value = (obj2 == null) ? string.Empty : obj2.name;
+        }
+
+        public override void OnEnter()
+        {
+            this.DoGetGameObjectName();
+            if (!this.everyFrame)
+            {
+                base.Finish();
+            }
+        }
+
+        public override void OnUpdate()
+        {
+            this.DoGetGameObjectName();
+        }
+
+        public override void Reset()
+        {
+            FsmGameObject obj2 = new FsmGameObject {
+                UseVariable = true
+            };
+            this.gameObject = obj2;
+            this.storeName = null;
+            this.everyFrame = false;
+        }
+    }
+}
+

@@ -1,0 +1,35 @@
+﻿namespace HutongGames.PlayMaker.Actions
+{
+    using HutongGames.PlayMaker;
+    using System;
+    using UnityEngine;
+
+    [HutongGames.PlayMaker.Tooltip("Returns true if key exists in the preferences."), ActionCategory("PlayerPrefs")]
+    public class PlayerPrefsHasKey : FsmStateAction
+    {
+        [HutongGames.PlayMaker.Tooltip("Event to send if key does not exist.")]
+        public FsmEvent falseEvent;
+        [RequiredField]
+        public FsmString key;
+        [HutongGames.PlayMaker.Tooltip("Event to send if key exists.")]
+        public FsmEvent trueEvent;
+        [Title("Store Result"), UIHint(UIHint.Variable)]
+        public FsmBool variable;
+
+        public override void OnEnter()
+        {
+            base.Finish();
+            if (!this.key.IsNone && !this.key.Value.Equals(string.Empty))
+            {
+                this.variable.Value = PlayerPrefs.HasKey(this.key.Value);
+            }
+            base.Fsm.Event(!this.variable.Value ? this.falseEvent : this.trueEvent);
+        }
+
+        public override void Reset()
+        {
+            this.key = string.Empty;
+        }
+    }
+}
+
